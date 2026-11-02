@@ -63,6 +63,40 @@ summary{cursor:pointer;color:#1f5fd0;font-size:13px}
 .gvec .ar{color:#98a2b3;margin:0 6px}
 .foot{margin-top:34px;color:#98a2b3;font-size:12.5px;text-align:center}
 @media (max-width:720px){.cand .rk{font-size:20px;min-width:30px}.wrap{padding:14px 12px 50px}.hd{padding:10px 12px}}
+/* ---- 实时监测（每小时） ---- */
+.hbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0 2px}
+.hbar .hlabel{color:#67707e;font-size:12.5px;margin-right:2px}
+.hchip{padding:3px 12px;border-radius:999px;border:1px solid #e3e8ee;background:#fff;font-size:13px;color:#33415c;cursor:pointer;user-select:none}
+.hchip:hover{border-color:#b9c6d8}
+.hchip.cur{background:#14202e;color:#fff;border-color:#14202e;font-weight:600}
+.hchip.live::after{content:'●';color:#d64541;font-size:9px;margin-left:5px;vertical-align:2px}
+.hstats{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 2px}
+.hstat{background:#fff;border:1px solid #e3e8ee;border-radius:10px;padding:8px 14px;font-size:13px;color:#4a5563}
+.hstat b{font-size:17px;color:#14202e;margin-right:4px}
+.hstat.red b{color:#d6392f}
+.hstat.green b{color:#1e9e5a}
+.hfilter{display:flex;gap:6px;margin:9px 0 7px}
+.hfilter button{border:1px solid #e3e8ee;background:#fff;color:#4a5563;font-size:12.5px;padding:3px 12px;border-radius:999px;cursor:pointer}
+.hfilter button.on{background:#14202e;color:#fff;border-color:#14202e}
+.hlist{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:5px 16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.hrow{display:flex;align-items:center;gap:9px;padding:7px 0;border-bottom:1px dashed #eef1f5;font-size:14px;flex-wrap:wrap}
+.hrow:last-child{border-bottom:none}
+.hup{flex:0 0 auto;min-width:56px;text-align:center;background:#fdeceb;color:#d6392f;border-radius:8px;padding:1px 8px;font-weight:700;font-size:12.5px}
+.hup.hnew{background:#d6392f;color:#fff;letter-spacing:2px}
+.hsrc{flex:0 0 auto;font-size:12px;color:#67707e;background:#f1f4f8;border-radius:6px;padding:1px 7px}
+.hrk{color:#d6392f;font-weight:700;font-size:13px;flex:0 0 auto}
+.hrk s{color:#98a2b3;font-weight:400;font-size:12px}
+.hrow a{color:#14202e;font-weight:600}
+.hrow a:hover{color:#1f5fd0}
+.hheat{color:#d64541;font-size:12.5px;font-weight:600;flex:0 0 auto;margin-left:auto}
+.hheat.dim{color:#8a94a3;font-weight:400}
+.hsub{font-size:13.5px;font-weight:700;color:#14202e;margin:12px 0 2px;padding-top:10px;border-top:1px solid #eef1f5}
+.hsub:first-child{border-top:none;padding-top:2px}
+.hsub .hcnt{font-weight:400;color:#67707e;font-size:12px;margin-left:6px}
+.hempty2{color:#98a2b3;font-size:13px;padding:6px 2px 10px}
+.fin-tag{background:#fff6e8;border:1px solid #f2d9b5;color:#b26a1b;font-size:11.5px;border-radius:6px;padding:0 6px;flex:0 0 auto}
+.hnote{color:#67707e;font-size:12.5px;margin-top:7px}
+.hempty{color:#98a2b3;font-size:13.5px;padding:14px 4px}
 </style></head><body>
 <header><div class='hd'><div class='l1'>
 <h1>每日财经热榜 · <b>2026-10-30</b>（周五）</h1>
