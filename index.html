@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>财经监控站</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f4f6f8;color:#1c2430;font:15px/1.7 "Microsoft YaHei","PingFang SC",system-ui,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 18px}
+.wrap{width:100%;max-width:860px;text-align:center}
+h1{font-size:30px;color:#14202e;letter-spacing:1px}
+.sub{color:#67707e;margin-top:8px;font-size:15px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+@media(max-width:680px){.grid{grid-template-columns:1fr}}
+.card{display:block;background:#fff;border:1px solid #e3e8ee;border-radius:16px;padding:26px 22px 22px;text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(16,24,40,.05);transition:box-shadow .18s,transform .18s;text-align:left}
+a.card:hover{box-shadow:0 6px 20px rgba(16,24,40,.1);transform:translateY(-2px)}
+.ic{font-size:34px}
+.card h2{font-size:19px;color:#14202e;margin:10px 0 8px}
+.card p{color:#5b6472;font-size:14px;line-height:1.7}
+.go{display:inline-block;margin-top:14px;color:#1f5fd0;font-weight:600;font-size:14px}
+.soon{opacity:.72;cursor:default}
+.badge{display:inline-block;background:#fff3e2;color:#c07a1e;border:1px solid #f2d9b5;border-radius:999px;padding:1px 10px;font-size:12px;font-weight:400;vertical-align:2px;margin-left:6px}
+.foot{margin-top:30px;color:#98a2b3;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>财经监控站</h1>
+  <p class="sub">每日财经热点 · 短视频账号监控 —— 浅色版</p>
+  <div class="grid">
+    <a class="card" href="hot/">
+      <div class="ic">💹</div>
+      <h2>财经热点监控</h2>
+      <p>17 源采集（微博/抖音/知乎/微信热文…）· 财经筛选 · 选题决策 · 隔夜美股与 A 股映射<br>每日更新，可回看历史日期</p>
+      <span class="go">进入 →</span>
+    </a>
+    <a class="card soon" href="javascript:void(0)">
+      <div class="ic">📊</div>
+      <h2>抖音账号监控<span class="badge">合并建设中</span></h2>
+      <p>15 个频道 · 粉丝 / 作品 / 互动追踪 · 实时看板<br>看板与平台总览合并中，即将上线</p>
+      <span class="go">即将上线</span>
+    </a>
+  </div>
+  <p class="foot">自动发布 · 数据每日刷新</p>
+</div>
+</body>
+</html>

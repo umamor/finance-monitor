@@ -1,0 +1,553 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>每日财经热榜 · 2026-10-30</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f4f6f8;color:#1c2430;font:15px/1.68 "Microsoft YaHei","PingFang SC",system-ui,-apple-system,sans-serif}
+a{color:#1f5fd0;text-decoration:none}a:hover{text-decoration:underline}
+header{background:#fff;border-bottom:1px solid #e3e8ee;position:sticky;top:0;z-index:20}
+.hd{max-width:1180px;margin:0 auto;padding:13px 20px 9px}
+.hd .l1{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.hd h1{font-size:21px;font-weight:700;color:#14202e}
+.hd h1 b{color:#d64541}
+.meta{color:#67707e;font-size:13px}
+.chip{display:inline-block;background:#f1f4f8;border:1px solid #e3e8ee;border-radius:999px;padding:1px 10px;font-size:12.5px;color:#4a5563;margin-right:6px}
+.chip.ok{color:#1e7f4f;border-color:#bfe3cf;background:#eefaf3}
+.chip.bad{color:#c0392b;border-color:#f2c4bf;background:#fdf0ee}
+.datenav{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.datenav a{padding:2px 11px;border-radius:999px;border:1px solid #e3e8ee;background:#fff;font-size:12.5px;color:#4a5563}
+.datenav a.cur{background:#14202e;color:#fff;border-color:#14202e}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 20px 70px}
+.overview{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ov{background:#fff;border:1px solid #e3e8ee;border-radius:12px;padding:10px 16px;flex:1 1 0;min-width:140px}
+.ov b{display:block;font-size:22px;color:#14202e}
+.ov span{color:#67707e;font-size:12.5px}
+section{margin-top:26px}
+h2{font-size:17.5px;color:#14202e;display:flex;align-items:center;gap:9px}
+h2 .no{display:inline-flex;width:24px;height:24px;border-radius:7px;background:#14202e;color:#fff;font-size:13px;align-items:center;justify-content:center}
+h2 .cnt{font-size:13px;color:#67707e;font-weight:400}
+.card{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:16px 19px;margin:11px 0;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.cand{display:flex;gap:15px}
+.cand .rk{font-size:26px;font-weight:800;color:#c8d2de;min-width:44px;line-height:1.1;padding-top:2px}
+.cand .bd{flex:1;min-width:0}
+.cand .tt{font-size:16.5px;font-weight:700;line-height:1.5}
+.score{display:inline-block;background:#eef4ff;color:#1f5fd0;border:1px solid #cfe0ff;border-radius:8px;padding:0 9px;font-size:13px;font-weight:700;margin-left:8px;vertical-align:1px}
+.score.hot{background:#fdf0ee;color:#c0392b;border-color:#f2c4bf}
+.plat{display:inline-block;background:#f1f4f8;border:1px solid #e3e8ee;border-radius:999px;padding:1px 9px;font-size:12px;color:#4a5563;margin:2px 6px 2px 0}
+.plat b{color:#14202e}
+.line{margin-top:6px;color:#3c4653;font-size:14px}
+.line .k{color:#67707e}
+ul.deep{margin:4px 0 0 18px;color:#4a5563;font-size:13.5px}
+ul.deep li{margin:2px 0}
+.angles{margin-top:6px;color:#46506d;font-size:13.5px;background:#f7f9fc;border:1px dashed #dde5ef;border-radius:10px;padding:8px 12px}
+details{margin-top:7px}
+summary{cursor:pointer;color:#1f5fd0;font-size:13px}
+.mem{margin:6px 0 0 18px;font-size:13px;color:#4a5563}
+.mem div{margin:2px 0}
+.tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e3e8ee;border-radius:14px;overflow:hidden;font-size:14px}
+.tbl th{background:#f7f9fc;color:#5b6472;font-weight:600;text-align:left;padding:9px 12px;border-bottom:1px solid #e3e8ee;font-size:13px;white-space:nowrap}
+.tbl td{padding:8px 12px;border-bottom:1px solid #eef1f5;vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:nth-child(even) td{background:#fafbfc}
+.fire{color:#e0701d;font-weight:700}
+.src{margin-top:12px}
+.src h3{font-size:15.5px;color:#14202e;display:flex;align-items:center;gap:8px}
+.src h3 .cnt{font-size:12.5px;color:#67707e;font-weight:400}
+.it{margin:5px 0 0 4px;font-size:14px;color:#2a3442}
+.it .r{color:#98a2b3;font-size:12.5px;margin-right:4px}
+.tm{display:inline-block;background:#f1f4f8;border-radius:6px;padding:0 7px;font-size:12.5px;color:#4a5563;margin-right:6px}
+.chg.up{color:#d6392f;font-weight:700}.chg.down{color:#1e9e5a;font-weight:700}.chg.flat{color:#67707e}
+.q{display:inline-flex;gap:9px;align-items:baseline;background:#fff;border:1px solid #e3e8ee;border-radius:11px;padding:8px 13px;margin:0 8px 8px 0;font-size:14px}
+.q b{color:#14202e}
+.q .px{color:#5b6472;font-size:12.5px}
+.gvec{margin:4px 0 0 2px;font-size:14px;color:#2a3442}
+.gvec .ar{color:#98a2b3;margin:0 6px}
+.foot{margin-top:34px;color:#98a2b3;font-size:12.5px;text-align:center}
+@media (max-width:720px){.cand .rk{font-size:20px;min-width:30px}.wrap{padding:14px 12px 50px}.hd{padding:10px 12px}}
+</style></head><body>
+<header><div class='hd'><div class='l1'>
+<h1>每日财经热榜 · <b>2026-10-30</b>（周五）</h1>
+<span class='meta'>采集 2026-10-30 16:26</span>
+<span class='chip ok'>信源 17 · 成功 17</span>
+</div><div class='datenav'>
+<a href='2026-11-02.html'>2026-11-02</a>
+<a href='2026-10-30.html' class='cur'>2026-10-30</a>
+<a href='2026-10-29.html'>2026-10-29</a>
+</div></div></header>
+<div class='wrap'>
+<div class='overview'>
+<div class='ov'><b>45</b><span>跨平台聚类</span></div>
+<div class='ov'><b>50</b><span>财经命中条目</span></div>
+<div class='ov'><b>17/17</b><span>信源成功</span></div>
+<div class='ov'><b>80</b><span>环球头条</span></div>
+</div>
+<section><h2><span class='no'>1</span>今日选题候选 TOP10 <span class='cnt'>按推荐指数排序</span></h2>
+<div class='card cand'><div class='rk'>01</div><div class='bd'>
+<div class='tt'><a href="https://m.baidu.com/s?word=A%E8%82%A110%E6%9C%88%E6%94%B6%E5%AE%98+%E5%8F%8C%E5%88%9B%E6%8C%87%E6%95%B0%E5%9D%87%E8%B7%8C%E8%B6%8523%25&amp;sa=fyb_news" target="_blank" rel="noopener">A股10月收官 双创指数均跌超23%</a><span class='score hot'>指数 192</span></div>
+<div class='line'><span class="cat" style="color:#2f6be4;background:#2f6be41c;border-color:#2f6be455">市场行情</span> <span class='plat'>快手热榜 <b>#35</b></span><span class='plat'>百度热搜 <b>#9</b></span><span class='plat'>腾讯新闻热榜 <b>#15</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《4700家个股再度下跌，A股接连重挫！》11.9万播放</li><li>知乎讨论 10 条，最高《怎么看待2026年10月30日A股行情? - 知乎》</li></ul>
+<div class='angles'>切入角度：① 复盘型：3分钟讲清今天为什么涨/跌（K线+板块数据）；② 分歧型：机构观点 vs 盘面走势，谁更可信</div>
+<details><summary>上榜明细（3 条）</summary><div class='mem'>
+<div>[百度热搜 #9] <a href="https://m.baidu.com/s?word=A%E8%82%A110%E6%9C%88%E6%94%B6%E5%AE%98+%E5%8F%8C%E5%88%9B%E6%8C%87%E6%95%B0%E5%9D%87%E8%B7%8C%E8%B6%8523%25&amp;sa=fyb_news" target="_blank" rel="noopener">A股10月收官 双创指数均跌超23%</a></div>
+<div>[腾讯新闻热榜 #15] <a href="https://new.qq.com/rain/a/20261030A08P4O00" target="_blank" rel="noopener">A股10月收官！双创指数均跌超23% 工商银行等多只红利股本月逆势创新高</a></div>
+<div>[快手热榜 #35] <a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=A%E8%82%A110%E6%9C%88%E5%8F%8C%E5%88%9B%E8%B7%8C%E8%B6%8523%25&amp;rankType=1" target="_blank" rel="noopener">A股10月双创跌超23%</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>02</div><div class='bd'>
+<div class='tt'><a href="https://www.toutiao.com/trending/7701723306651123753/" target="_blank" rel="noopener">打破“茅台洗脚”污名谣言</a><span class='score'>指数 136</span></div>
+<div class='line'><span class="cat" style="color:#6b7280;background:#6b72801c;border-color:#6b728055">其他财经</span> <span class='plat'>头条热榜 <b>#11</b></span><span class='plat'>快手热榜 <b>#11</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《《茅台局长和退休哥》茅台也能喝死人|还有2个月退休不该多问》24.0万播放</li><li>知乎讨论 10 条，最高《红军铁纪篇 | 打破“茅台洗脚”污名谣言 - 知乎》</li></ul>
+<div class='angles'>切入角度：① 解读型：背景+影响+看点；② 对比型：和同类事件比有什么不同</div>
+<details><summary>上榜明细（2 条）</summary><div class='mem'>
+<div>[头条热榜 #11] <a href="https://www.toutiao.com/trending/7701723306651123753/" target="_blank" rel="noopener">打破“茅台洗脚”污名谣言</a></div>
+<div>[快手热榜 #11] <a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E6%89%93%E7%A0%B4%E2%80%9C%E8%8C%85%E5%8F%B0%E6%B4%97%E8%84%9A%E2%80%9D%E6%B1%A1%E5%90%8D%E8%B0%A3%E8%A8%80&amp;rankType=1" target="_blank" rel="noopener">打破“茅台洗脚”污名谣言</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>03</div><div class='bd'>
+<div class='tt'><a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a><span class='score'>指数 116</span></div>
+<div class='line'><span class="cat" style="color:#0e8a6e;background:#0e8a6e1c;border-color:#0e8a6e55">公司产业</span> <span class='plat'>微信24h热文榜 <b>#1</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《你买的iPhone是全新吗？最全验机指南来了！》17.7万播放</li><li>知乎讨论 10 条，最高《苹果亲口承认iPhone Duo开裂,韩供应商撇干净,绕开中国的》</li></ul>
+<div class='angles'>切入角度：① 事件型：发生了什么+关键数字一目了然；② 逻辑型：背后的商业/行业逻辑拆解</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微信24h热文榜 #1] <a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>04</div><div class='bd'>
+<div class='tt'><a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E7%A8%80%E5%9C%9F%E8%AE%A1%E5%88%92%E9%81%AD%E9%87%8D%E6%8C%AB&amp;sa=fyb_news" target="_blank" rel="noopener">美国稀土计划遭重挫</a><span class='score'>指数 115</span></div>
+<div class='line'><span class="cat" style="color:#6b7280;background:#6b72801c;border-color:#6b728055">其他财经</span> <span class='plat'>百度热搜 <b>#6</b></span><span class='plat'>腾讯新闻热榜 <b>#19</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《10.27劲爆消息！东大欠了60万亿内债！老美欠了40万亿外债！》6.0万播放</li><li>知乎讨论 10 条，最高《美国最大的稀土项目凉凉了?工厂刚建好,美巨头就撕毁10年长约? 》</li></ul>
+<div class='angles'>切入角度：① 解读型：背景+影响+看点；② 对比型：和同类事件比有什么不同</div>
+<details><summary>上榜明细（2 条）</summary><div class='mem'>
+<div>[百度热搜 #6] <a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E7%A8%80%E5%9C%9F%E8%AE%A1%E5%88%92%E9%81%AD%E9%87%8D%E6%8C%AB&amp;sa=fyb_news" target="_blank" rel="noopener">美国稀土计划遭重挫</a></div>
+<div>[腾讯新闻热榜 #19] <a href="https://new.qq.com/rain/a/20261030A02XI600" target="_blank" rel="noopener">美国稀土计划遭重挫</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>05</div><div class='bd'>
+<div class='tt'><a href="https://s.weibo.com/weibo?q=A%E8%82%A1%E5%8D%88%E5%90%8E%E6%8B%89%E8%B5%B7%E6%9D%A5%E4%BA%86" target="_blank" rel="noopener">A股午后拉起来了</a><span class='score'>指数 114</span></div>
+<div class='line'><span class="cat" style="color:#2f6be4;background:#2f6be41c;border-color:#2f6be455">市场行情</span> <span class='plat'>微博热搜 <b>#10</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《4700家个股再度下跌，A股接连重挫！》11.9万播放</li><li>知乎讨论 10 条，最高《a股26-10-23日算是底部反转吗? - 知乎》</li></ul>
+<div class='angles'>切入角度：① 复盘型：3分钟讲清今天为什么涨/跌（K线+板块数据）；② 分歧型：机构观点 vs 盘面走势，谁更可信</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微博热搜 #10] <a href="https://s.weibo.com/weibo?q=A%E8%82%A1%E5%8D%88%E5%90%8E%E6%8B%89%E8%B5%B7%E6%9D%A5%E4%BA%86" target="_blank" rel="noopener">A股午后拉起来了</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>06</div><div class='bd'>
+<div class='tt'><a href="https://www.toutiao.com/trending/7702315150556007974/" target="_blank" rel="noopener">第一个15万亿经济大省要来了吗</a><span class='score'>指数 105</span></div>
+<div class='line'><span class="cat" style="color:#7a4fd6;background:#7a4fd61c;border-color:#7a4fd655">宏观政策</span> <span class='plat'>头条热榜 <b>#1</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《GDP增速连续三年第一，2018年突然掉队！重庆这20年，经历了》63.9万播放</li><li>知乎讨论 10 条，最高《2026年前三季度各省GDP出炉,山西增速倒数第一 - 知乎》</li></ul>
+<div class='angles'>切入角度：① 翻译型：这件事和你的钱包有什么关系；② 机制型：为什么会这样（通俗机制拆解）</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[头条热榜 #1] <a href="https://www.toutiao.com/trending/7702315150556007974/" target="_blank" rel="noopener">第一个15万亿经济大省要来了吗</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>07</div><div class='bd'>
+<div class='tt'><a href="https://s.weibo.com/weibo?q=A%E8%82%A1" target="_blank" rel="noopener">A股</a><span class='score'>指数 101</span></div>
+<div class='line'><span class="cat" style="color:#2f6be4;background:#2f6be41c;border-color:#2f6be455">市场行情</span> <span class='plat'>微博热搜 <b>#15</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《不要抱有幻想！谷歌业绩暴雷，三星不及预期！》12.1万播放</li><li>知乎讨论 10 条，最高《如何看待 2026 年 10 月 30 日 A 股市场行情? -》</li></ul>
+<div class='angles'>切入角度：① 复盘型：3分钟讲清今天为什么涨/跌（K线+板块数据）；② 分歧型：机构观点 vs 盘面走势，谁更可信</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微博热搜 #15] <a href="https://s.weibo.com/weibo?q=A%E8%82%A1" target="_blank" rel="noopener">A股</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>08</div><div class='bd'>
+<div class='tt'><a href="https://s.weibo.com/weibo?q=%E4%BA%AC%E4%B8%9C%E9%BB%84%E9%87%91%E4%BB%8A%E6%99%9A8%E7%82%B9%E5%86%8D%E9%99%8D%E4%BB%B7" target="_blank" rel="noopener">京东黄金今晚8点再降价</a><span class='score'>指数 101</span></div>
+<div class='line'><span class="cat" style="color:#d64541;background:#d645411c;border-color:#d6454155">政策民生</span> <span class='plat'>微博热搜 <b>#18</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《UP课代表带头抄好价！京东直播间，双11 3C数码分享，关注我们》4.0万播放</li><li>知乎讨论 10 条，最高《金店又降价了,你看黄金,还是只有“上车”和“下车”吗? - 知乎》</li></ul>
+<div class='angles'>切入角度：① 算账型：对普通人的钱包逐项算一笔账（数据卡）；② 时间线型：要点+何时落地+普通人怎么做</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微博热搜 #18] <a href="https://s.weibo.com/weibo?q=%E4%BA%AC%E4%B8%9C%E9%BB%84%E9%87%91%E4%BB%8A%E6%99%9A8%E7%82%B9%E5%86%8D%E9%99%8D%E4%BB%B7" target="_blank" rel="noopener">京东黄金今晚8点再降价</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>09</div><div class='bd'>
+<div class='tt'><a href="https://m.baidu.com/s?word=%E5%85%9A%E5%BB%BA%2B%E4%B8%9A%E5%8A%A1+%E6%BF%80%E5%8F%91%E6%96%B0%E7%BB%8F%E6%B5%8E%E7%BB%84%E7%BB%87%E6%B4%BB%E5%8A%9B&amp;sa=fyb_news" target="_blank" rel="noopener">党建+业务 激发新经济组织活力</a><span class='score'>指数 99</span></div>
+<div class='line'><span class="cat" style="color:#7a4fd6;background:#7a4fd61c;border-color:#7a4fd655">宏观政策</span> <span class='plat'>百度热搜 <b>#4</b></span></div>
+<div class='angles'>切入角度：① 翻译型：这件事和你的钱包有什么关系；② 机制型：为什么会这样（通俗机制拆解）</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[百度热搜 #4] <a href="https://m.baidu.com/s?word=%E5%85%9A%E5%BB%BA%2B%E4%B8%9A%E5%8A%A1+%E6%BF%80%E5%8F%91%E6%96%B0%E7%BB%8F%E6%B5%8E%E7%BB%84%E7%BB%87%E6%B4%BB%E5%8A%9B&amp;sa=fyb_news" target="_blank" rel="noopener">党建+业务 激发新经济组织活力</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>10</div><div class='bd'>
+<div class='tt'><a href="https://s.weibo.com/weibo?q=%E7%94%B7%E5%AD%90%E4%BC%9A%E6%89%80%E6%8C%89%E6%91%A9%E7%9D%A1%E7%9D%80%E9%81%AD%E6%8A%80%E5%B8%88%E4%BE%B5%E7%8A%AF%E5%B7%B2%E7%AB%8B%E6%A1%88" target="_blank" rel="noopener">男子会所按摩睡着遭技师侵犯已立案</a><span class='score'>指数 94</span></div>
+<div class='line'><span class="cat" style="color:#6b7280;background:#6b72801c;border-color:#6b728055">其他财经</span> <span class='plat'>微博热搜 <b>#5</b></span></div>
+<div class='angles'>切入角度：① 解读型：背景+影响+看点；② 对比型：和同类事件比有什么不同</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微博热搜 #5] <a href="https://s.weibo.com/weibo?q=%E7%94%B7%E5%AD%90%E4%BC%9A%E6%89%80%E6%8C%89%E6%91%A9%E7%9D%A1%E7%9D%80%E9%81%AD%E6%8A%80%E5%B8%88%E4%BE%B5%E7%8A%AF%E5%B7%B2%E7%AB%8B%E6%A1%88" target="_blank" rel="noopener">男子会所按摩睡着遭技师侵犯已立案</a></div>
+</div></details>
+</div></div>
+</section>
+<section><h2><span class='no'>2</span>跨平台综合最热 TOP20</h2>
+<table class='tbl'><tr><th>#</th><th>话题</th><th>上榜平台（位次）</th><th>综合分</th></tr>
+<tr><td>1</td><td><a href="https://m.baidu.com/s?word=A%E8%82%A110%E6%9C%88%E6%94%B6%E5%AE%98+%E5%8F%8C%E5%88%9B%E6%8C%87%E6%95%B0%E5%9D%87%E8%B7%8C%E8%B6%8523%25&amp;sa=fyb_news" target="_blank" rel="noopener">A股10月收官 双创指数均跌超23%</a></td><td><span class='fire'>🔥</span>快手热榜#35 · 百度热搜#9 · 腾讯新闻热榜#15</td><td>167</td></tr>
+<tr><td>2</td><td><a href="https://www.toutiao.com/trending/7701723306651123753/" target="_blank" rel="noopener">打破“茅台洗脚”污名谣言</a></td><td>头条热榜#11 · 快手热榜#11</td><td>160</td></tr>
+<tr><td>3</td><td><a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E7%A8%80%E5%9C%9F%E8%AE%A1%E5%88%92%E9%81%AD%E9%87%8D%E6%8C%AB&amp;sa=fyb_news" target="_blank" rel="noopener">美国稀土计划遭重挫</a></td><td>百度热搜#6 · 腾讯新闻热榜#19</td><td>135</td></tr>
+<tr><td>4</td><td><a href="https://s.weibo.com/weibo?q=%E7%94%B7%E5%AD%90%E4%BC%9A%E6%89%80%E6%8C%89%E6%91%A9%E7%9D%A1%E7%9D%80%E9%81%AD%E6%8A%80%E5%B8%88%E4%BE%B5%E7%8A%AF%E5%B7%B2%E7%AB%8B%E6%A1%88" target="_blank" rel="noopener">男子会所按摩睡着遭技师侵犯已立案</a></td><td>微博热搜#5</td><td>111</td></tr>
+<tr><td>5</td><td><a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a></td><td>微信24h热文榜#1</td><td>110</td></tr>
+<tr><td>6</td><td><a href="https://www.toutiao.com/trending/7702315150556007974/" target="_blank" rel="noopener">第一个15万亿经济大省要来了吗</a></td><td>头条热榜#1</td><td>100</td></tr>
+<tr><td>7</td><td><a href="https://s.weibo.com/weibo?q=A%E8%82%A1%E5%8D%88%E5%90%8E%E6%8B%89%E8%B5%B7%E6%9D%A5%E4%BA%86" target="_blank" rel="noopener">A股午后拉起来了</a></td><td>微博热搜#10</td><td>99</td></tr>
+<tr><td>8</td><td><a href="https://m.baidu.com/s?word=%E5%85%9A%E5%BB%BA%2B%E4%B8%9A%E5%8A%A1+%E6%BF%80%E5%8F%91%E6%96%B0%E7%BB%8F%E6%B5%8E%E7%BB%84%E7%BB%87%E6%B4%BB%E5%8A%9B&amp;sa=fyb_news" target="_blank" rel="noopener">党建+业务 激发新经济组织活力</a></td><td>百度热搜#4</td><td>94</td></tr>
+<tr><td>9</td><td><a href="https://www.toutiao.com/trending/7702016939769646619/" target="_blank" rel="noopener">工资改发数字人民币了有啥变化</a></td><td>头条热榜#7</td><td>88</td></tr>
+<tr><td>10</td><td><a href="https://s.weibo.com/weibo?q=A%E8%82%A1" target="_blank" rel="noopener">A股</a></td><td>微博热搜#15</td><td>88</td></tr>
+<tr><td>11</td><td><a href="https://s.weibo.com/weibo?q=%E9%87%91%E4%BB%B7" target="_blank" rel="noopener">金价</a></td><td>微博热搜#16</td><td>85</td></tr>
+<tr><td>12</td><td><a href="https://www.toutiao.com/trending/7702324412527152681/" target="_blank" rel="noopener">科技巨头一夜蒸发3万亿美股要崩了吗</a></td><td>头条热榜#10</td><td>82</td></tr>
+<tr><td>13</td><td><a href="https://s.weibo.com/weibo?q=%E4%BA%AC%E4%B8%9C%E9%BB%84%E9%87%91%E4%BB%8A%E6%99%9A8%E7%82%B9%E5%86%8D%E9%99%8D%E4%BB%B7" target="_blank" rel="noopener">京东黄金今晚8点再降价</a></td><td>微博热搜#18</td><td>81</td></tr>
+<tr><td>14</td><td><a href="https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B317%E4%BA%BF%E5%85%83%E5%85%A5%E8%82%A1%E6%AC%A3%E6%97%BA%E8%BE%BE%E5%8A%A8%E5%8A%9B" target="_blank" rel="noopener">小米17亿元入股欣旺达动力</a></td><td>微博热搜#43 · 腾讯新闻热榜#14</td><td>75</td></tr>
+<tr><td>15</td><td><a href="https://www.zhihu.com/question/2099258545564643597" target="_blank" rel="noopener">谷歌美股开盘大跌超13%，创历史最大单日跌幅，总市值蒸发5000亿美元，为啥会这样？还会持续下跌吗？</a></td><td>知乎热榜#6</td><td>74</td></tr>
+<tr><td>16</td><td><a href="https://s.weibo.com/weibo?q=%E5%8D%8E%E4%B8%BA%E9%AB%98%E7%AE%A1%E5%8F%8D%E9%97%AE%E5%B9%B2%E5%AE%9E%E9%AA%8C%E4%B8%BA%E4%BD%95%E4%B8%8D%E6%98%AF%E4%B8%80%E5%A4%A9" target="_blank" rel="noopener">华为高管反问干实验为何不是一天</a></td><td>微博热搜#22</td><td>72</td></tr>
+<tr><td>17</td><td><a href="https://new.qq.com/rain/a/20261030A04KHF00" target="_blank" rel="noopener">今年以来以旧换新带动相关品类销售额超2万亿元</a></td><td>腾讯新闻热榜#4</td><td>66</td></tr>
+<tr><td>18</td><td><a href="https://www.zhihu.com/question/2099265704436425632" target="_blank" rel="noopener">如何评价媒体锐评近期一些自媒体瞄准中青年群体，曲解社保制度，质疑养老金公平性？</a></td><td>知乎热榜#11</td><td>59</td></tr>
+<tr><td>19</td><td><a href="https://s.weibo.com/weibo?q=A%E8%82%A1%E4%B8%8B%E5%91%A8%E8%83%BD%E6%AD%A2%E8%B7%8C%E5%90%97" target="_blank" rel="noopener">A股下周能止跌吗</a></td><td>微博热搜#28</td><td>58</td></tr>
+<tr><td>20</td><td><a href="https://mp.weixin.qq.com/s?__biz=MzkyNzY0NzcwNQ==&amp;mid=2247507884&amp;idx=6&amp;sn=cf32ee614a425ed024d1f3175bc3a504#rd" target="_blank" rel="noopener">签了！签了！中国和美国真签了！你敢相信？中美关税依然维持25%，结果9月14号，中国燃气企业和美国天然气企业，却低调签下了长达20年合同</a></td><td>微信24h热文榜#17</td><td>51</td></tr>
+</table></section>
+<section><h2><span class='no'>3</span>各平台财经热点 <span class='cnt'>社交/内容平台 · 财经筛选</span></h2>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>微博热搜</b> <span class='cnt'>财经 9/52 条</span></summary>
+<div class='it'><span class='r'>#5</span><a href="https://s.weibo.com/weibo?q=%E7%94%B7%E5%AD%90%E4%BC%9A%E6%89%80%E6%8C%89%E6%91%A9%E7%9D%A1%E7%9D%80%E9%81%AD%E6%8A%80%E5%B8%88%E4%BE%B5%E7%8A%AF%E5%B7%B2%E7%AB%8B%E6%A1%88" target="_blank" rel="noopener">男子会所按摩睡着遭技师侵犯已立案</a> <span class='chg flat'>101.6万</span> <span class='chip'>新</span></div>
+<div class='it'><span class='r'>#10</span><a href="https://s.weibo.com/weibo?q=A%E8%82%A1%E5%8D%88%E5%90%8E%E6%8B%89%E8%B5%B7%E6%9D%A5%E4%BA%86" target="_blank" rel="noopener">A股午后拉起来了</a> <span class='chg flat'>96.0万</span></div>
+<div class='it'><span class='r'>#15</span><a href="https://s.weibo.com/weibo?q=A%E8%82%A1" target="_blank" rel="noopener">A股</a> <span class='chg flat'>80.5万</span> <span class='chip'>沸</span></div>
+<div class='it'><span class='r'>#16</span><a href="https://s.weibo.com/weibo?q=%E9%87%91%E4%BB%B7" target="_blank" rel="noopener">金价</a> <span class='chg flat'>55.1万</span> <span class='chip'>热</span></div>
+<div class='it'><span class='r'>#18</span><a href="https://s.weibo.com/weibo?q=%E4%BA%AC%E4%B8%9C%E9%BB%84%E9%87%91%E4%BB%8A%E6%99%9A8%E7%82%B9%E5%86%8D%E9%99%8D%E4%BB%B7" target="_blank" rel="noopener">京东黄金今晚8点再降价</a> <span class='chg flat'>48.3万</span> <span class='chip'>新</span></div>
+<div class='it'><span class='r'>#22</span><a href="https://s.weibo.com/weibo?q=%E5%8D%8E%E4%B8%BA%E9%AB%98%E7%AE%A1%E5%8F%8D%E9%97%AE%E5%B9%B2%E5%AE%9E%E9%AA%8C%E4%B8%BA%E4%BD%95%E4%B8%8D%E6%98%AF%E4%B8%80%E5%A4%A9" target="_blank" rel="noopener">华为高管反问干实验为何不是一天</a> <span class='chg flat'>40.8万</span></div>
+<div class='it'><span class='r'>#28</span><a href="https://s.weibo.com/weibo?q=A%E8%82%A1%E4%B8%8B%E5%91%A8%E8%83%BD%E6%AD%A2%E8%B7%8C%E5%90%97" target="_blank" rel="noopener">A股下周能止跌吗</a> <span class='chg flat'>36.3万</span> <span class='chip'>新</span></div>
+<div class='it'><span class='r'>#41</span><a href="https://s.weibo.com/weibo?q=%E6%AC%A3%E6%97%BA%E8%BE%BE%E5%9B%9E%E5%BA%94%E7%90%86%E6%83%B3%E5%B0%8F%E7%B1%B3%E8%87%AA%E7%A0%94%E7%94%B5%E6%B1%A0" target="_blank" rel="noopener">欣旺达回应理想小米自研电池</a> <span class='chg flat'>16.0万</span></div>
+<div class='it'><span class='r'>#43</span><a href="https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B317%E4%BA%BF%E5%85%83%E5%85%A5%E8%82%A1%E6%AC%A3%E6%97%BA%E8%BE%BE%E5%8A%A8%E5%8A%9B" target="_blank" rel="noopener">小米17亿元入股欣旺达动力</a> <span class='chg flat'>15.5万</span></div>
+</details>
+<details class='card' style='margin:10px 0'><summary><b style='color:#14202e'>抖音热榜</b> <span class='cnt'>财经 0/48 条</span></summary>
+<div class='it' style='color:#98a2b3'>（今日无命中）</div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>百度热搜</b> <span class='cnt'>财经 7/51 条</span></summary>
+<div class='it'><span class='r'>#4</span><a href="https://m.baidu.com/s?word=%E5%85%9A%E5%BB%BA%2B%E4%B8%9A%E5%8A%A1+%E6%BF%80%E5%8F%91%E6%96%B0%E7%BB%8F%E6%B5%8E%E7%BB%84%E7%BB%87%E6%B4%BB%E5%8A%9B&amp;sa=fyb_news" target="_blank" rel="noopener">党建+业务 激发新经济组织活力</a></div>
+<div class='it'><span class='r'>#6</span><a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E7%A8%80%E5%9C%9F%E8%AE%A1%E5%88%92%E9%81%AD%E9%87%8D%E6%8C%AB&amp;sa=fyb_news" target="_blank" rel="noopener">美国稀土计划遭重挫</a></div>
+<div class='it'><span class='r'>#9</span><a href="https://m.baidu.com/s?word=A%E8%82%A110%E6%9C%88%E6%94%B6%E5%AE%98+%E5%8F%8C%E5%88%9B%E6%8C%87%E6%95%B0%E5%9D%87%E8%B7%8C%E8%B6%8523%25&amp;sa=fyb_news" target="_blank" rel="noopener">A股10月收官 双创指数均跌超23%</a></div>
+<div class='it'><span class='r'>#26</span><a href="https://m.baidu.com/s?word=A%E8%82%A1%E2%80%9C%E7%BE%8A%E2%80%9D%E5%AD%97%E8%BE%88%E5%A4%9A%E8%82%A1%E6%B6%A8%E5%81%9C&amp;sa=fyb_news" target="_blank" rel="noopener">A股“羊”字辈多股涨停</a></div>
+<div class='it'><span class='r'>#32</span><a href="https://m.baidu.com/s?word=%E2%80%9C%E9%BB%91%E8%89%B2%E9%BB%84%E9%87%91%E2%80%9D%E6%98%AF%E4%BB%80%E4%B9%88+%E4%B8%BA%E5%95%A5%E8%BF%99%E4%B9%88%E9%87%8D%E8%A6%81&amp;sa=fyb_news" target="_blank" rel="noopener">“黑色黄金”是什么 为啥这么重要</a></div>
+<div class='it'><span class='r'>#34</span><a href="https://m.baidu.com/s?word=%E7%94%B5%E5%8A%A8%E8%BD%A6%E5%85%85%E4%B8%AA%E7%94%B5%E8%83%BD%E4%B8%8D%E8%83%BD%E5%88%AB%E9%82%A3%E4%B9%88%E9%BA%BB%E7%83%A6&amp;sa=fyb_news" target="_blank" rel="noopener">电动车充个电能不能别那么麻烦</a></div>
+<div class='it'><span class='r'>#42</span><a href="https://m.baidu.com/s?word=%E8%8B%B9%E6%9E%9C%E2%80%9C%E8%83%8C%E5%88%BA%E2%80%9D%E4%B9%94%E5%B8%83%E6%96%AF+1%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%9610%E4%B8%87&amp;sa=fyb_news" target="_blank" rel="noopener">苹果“背刺”乔布斯 1台电脑卖10万</a> <span class='chip'>新</span></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>头条热榜</b> <span class='cnt'>财经 6/50 条</span></summary>
+<div class='it'><span class='r'>#1</span><a href="https://www.toutiao.com/trending/7702315150556007974/" target="_blank" rel="noopener">第一个15万亿经济大省要来了吗</a> <span class='chg flat'>1650.1万</span> <span class='chip'>depth</span></div>
+<div class='it'><span class='r'>#7</span><a href="https://www.toutiao.com/trending/7702016939769646619/" target="_blank" rel="noopener">工资改发数字人民币了有啥变化</a> <span class='chg flat'>905.6万</span> <span class='chip'>interpretation</span></div>
+<div class='it'><span class='r'>#10</span><a href="https://www.toutiao.com/trending/7702324412527152681/" target="_blank" rel="noopener">科技巨头一夜蒸发3万亿美股要崩了吗</a> <span class='chg flat'>670.9万</span> <span class='chip'>depth</span></div>
+<div class='it'><span class='r'>#11</span><a href="https://www.toutiao.com/trending/7701723306651123753/" target="_blank" rel="noopener">打破“茅台洗脚”污名谣言</a> <span class='chg flat'>607.0万</span> <span class='chip'>refuteRumors</span></div>
+<div class='it'><span class='r'>#34</span><a href="https://www.toutiao.com/trending/7702108479284055561/" target="_blank" rel="noopener">比亚迪仰望鼎曜要卖到200万吗</a> <span class='chg flat'>60.9万</span> <span class='chip'>new</span></div>
+<div class='it'><span class='r'>#45</span><a href="https://www.toutiao.com/trending/7702368503327641097/" target="_blank" rel="noopener">黄金或将遭遇更深的调整</a> <span class='chg flat'>20.3万</span> <span class='chip'>new</span></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>知乎热榜</b> <span class='cnt'>财经 4/29 条</span></summary>
+<div class='it'><span class='r'>#6</span><a href="https://www.zhihu.com/question/2099258545564643597" target="_blank" rel="noopener">谷歌美股开盘大跌超13%，创历史最大单日跌幅，总市值蒸发5000亿美元，为啥会这样？还会持续下跌吗？</a> <span class='chg flat'>388万热度</span></div>
+<div class='it'><span class='r'>#11</span><a href="https://www.zhihu.com/question/2099265704436425632" target="_blank" rel="noopener">如何评价媒体锐评近期一些自媒体瞄准中青年群体，曲解社保制度，质疑养老金公平性？</a> <span class='chg flat'>363万热度</span></div>
+<div class='it'><span class='r'>#17</span><a href="https://www.zhihu.com/question/2099157654643986768" target="_blank" rel="noopener">国际油价大幅上涨，国家出手继续对成品油价临时调控，汽油每吨应涨440元实涨345元，如何解读？</a> <span class='chg flat'>333万热度</span></div>
+<div class='it'><span class='r'>#22</span><a href="https://www.zhihu.com/question/2099415391965373063" target="_blank" rel="noopener">英特尔营收展望不及预期，股价盘后暴跌超 20%，问题出在哪儿？公司面临哪些经营压力？</a> <span class='chg flat'>165万热度</span></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>腾讯新闻热榜</b> <span class='cnt'>财经 14/50 条</span></summary>
+<div class='it'><span class='r'>#4</span><a href="https://new.qq.com/rain/a/20261030A04KHF00" target="_blank" rel="noopener">今年以来以旧换新带动相关品类销售额超2万亿元</a> <span class='chg flat'>182.7万</span></div>
+<div class='it'><span class='r'>#14</span><a href="https://new.qq.com/rain/a/20261030A06I0J00" target="_blank" rel="noopener">小米17亿元入股欣旺达动力成第三大股东</a> <span class='chg flat'>156.1万</span></div>
+<div class='it'><span class='r'>#15</span><a href="https://new.qq.com/rain/a/20261030A08P4O00" target="_blank" rel="noopener">A股10月收官！双创指数均跌超23% 工商银行等多只红利股本月逆势创新高</a> <span class='chg flat'>155.7万</span></div>
+<div class='it'><span class='r'>#16</span><a href="https://new.qq.com/rain/a/20261030A068I300" target="_blank" rel="noopener">特斯拉中国购车政策大调整：“5年0息”方案首付最低3.99万元，Model 3“尾款立减”升至1万元，Model Y优惠缩水3000元</a> <span class='chg flat'>148.3万</span></div>
+<div class='it'><span class='r'>#19</span><a href="https://new.qq.com/rain/a/20261030A02XI600" target="_blank" rel="noopener">美国稀土计划遭重挫</a> <span class='chg flat'>137.5万</span></div>
+<div class='it'><span class='r'>#22</span><a href="https://new.qq.com/rain/a/20261030A02ORP00" target="_blank" rel="noopener">美媒：美联储宣布“地震式”改变</a> <span class='chg flat'>117.6万</span></div>
+<div class='it'><span class='r'>#23</span><a href="https://new.qq.com/rain/a/20261030A075XF00" target="_blank" rel="noopener">“买Token的花销，比裁员省的钱还多”，AI未必能降本增效？调查显示：超九成企业应用AI，仅8%赚钱</a> <span class='chg flat'>116.1万</span></div>
+<div class='it'><span class='r'>#27</span><a href="https://new.qq.com/rain/a/20261030A073D500" target="_blank" rel="noopener">周六福珠宝回应“消费者361万买黄金未能提货，门店经理被刑拘”：报道反映的是事件部分情况，并非全貌，期待案件事实尽快查明</a> <span class='chg flat'>112.0万</span></div>
+<div class='it'><span class='r'>#31</span><a href="https://new.qq.com/rain/a/20261030A03F5H00" target="_blank" rel="noopener">亚马逊电话会：现金流“烧穿了”，但AI是“此生仅有的机遇”，AWS冲击万亿营收，零售业务被低估</a> <span class='chg flat'>108.1万</span></div>
+<div class='it'><span class='r'>#32</span><a href="https://new.qq.com/rain/a/20261029A0DKOR00" target="_blank" rel="noopener">王石重回房地产？携万科旧将成立城市更新公司：“中国城市化依然充满机遇”</a> <span class='chg flat'>107.5万</span></div>
+<div class='it'><span class='r'>#33</span><a href="https://new.qq.com/rain/a/20261030A05JIX00" target="_blank" rel="noopener">“文秀”与“娇龙”，两款“中国芯”鲜切花月季上市</a> <span class='chg flat'>106.2万</span></div>
+<div class='it'><span class='r'>#35</span><a href="https://new.qq.com/rain/a/20261029A0BQAE00" target="_blank" rel="noopener">13城现售制落地，“金九银十”楼市回温了吗?</a> <span class='chg flat'>104.4万</span></div>
+<div class='it'><span class='r'>#38</span><a href="https://new.qq.com/rain/a/20261029A0DE4Z00" target="_blank" rel="noopener">被压价二十年的存储厂，借AI向苹果“复仇”</a> <span class='chg flat'>101.8万</span></div>
+<div class='it'><span class='r'>#43</span><a href="https://new.qq.com/rain/a/20261029A0DDMQ00" target="_blank" rel="noopener">伪造印章帮243人骗提公积金1970万余元，男子被判刑两年十个月</a> <span class='chg flat'>96.2万</span></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>B站排行</b> <span class='cnt'>财经 3/100 条</span></summary>
+<div class='it'><span class='r'>#1</span><a href="https://www.bilibili.com/video/BV1kMxM6FECM" target="_blank" rel="noopener">旗舰手机芯片大横评：苹果高通发哥玄戒谁最强？</a> <span class='chg flat'>292.0万播放</span> <span class='chip'>极客湾Geekerwan</span></div>
+<div class='it'><span class='r'>#11</span><a href="https://www.bilibili.com/video/BV1uGxj68EKt" target="_blank" rel="noopener">忙着跟生活对线的你，有多久没上号了？谨以此片，致和游戏一起长大的我们。【AI全民制作人】</a> <span class='chg flat'>176.9万播放</span> <span class='chip'>我是日行一扇</span></div>
+<div class='it'><span class='r'>#81</span><a href="https://www.bilibili.com/video/BV1ffso6xEyP" target="_blank" rel="noopener">【巫师】马云的资本博弈</a> <span class='chg flat'>54.5万播放</span> <span class='chip'>巫师财经</span></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>微信24h热文榜</b> <span class='cnt'>财经 3/30 条</span></summary>
+<div class='it'><span class='r'>#1</span><a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a> <span class='chg flat'>10.0万</span></div>
+<div class='it'><span class='r'>#17</span><a href="https://mp.weixin.qq.com/s?__biz=MzkyNzY0NzcwNQ==&amp;mid=2247507884&amp;idx=6&amp;sn=cf32ee614a425ed024d1f3175bc3a504#rd" target="_blank" rel="noopener">签了！签了！中国和美国真签了！你敢相信？中美关税依然维持25%，结果9月14号，中国燃气企业和美国天然气企业，却低调签下了长达20年合同</a> <span class='chg flat'>7.9万</span></div>
+<div class='it'><span class='r'>#29</span><a href="https://mp.weixin.qq.com/s?__biz=MzU4NTYzMjU0OQ==&amp;mid=2247544614&amp;idx=2&amp;sn=e95cc340c6559357e48cfaa79e1c4140#rd" target="_blank" rel="noopener">李嘉诚曹德旺可能说对了！2026年不买房，5年后会庆幸还是后悔？</a> <span class='chg flat'>5.4万</span></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>快手热榜</b> <span class='cnt'>财经 4/50 条</span></summary>
+<div class='it'><span class='r'>#11</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E6%89%93%E7%A0%B4%E2%80%9C%E8%8C%85%E5%8F%B0%E6%B4%97%E8%84%9A%E2%80%9D%E6%B1%A1%E5%90%8D%E8%B0%A3%E8%A8%80&amp;rankType=1" target="_blank" rel="noopener">打破“茅台洗脚”污名谣言</a> <span class='chg flat'>1047.2万</span></div>
+<div class='it'><span class='r'>#35</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=A%E8%82%A110%E6%9C%88%E5%8F%8C%E5%88%9B%E8%B7%8C%E8%B6%8523%25&amp;rankType=1" target="_blank" rel="noopener">A股10月双创跌超23%</a> <span class='chg flat'>964.5万</span></div>
+<div class='it'><span class='r'>#43</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E5%AE%8B%E6%99%93%E5%B3%B0+%E8%A2%AB%E5%BF%AB%E6%89%8B%E6%95%B4%E6%88%90%E5%A4%AA%E9%98%B3%E4%BA%BA%E6%A0%BC%E4%BA%86&amp;rankType=1" target="_blank" rel="noopener">宋晓峰 被快手整成太阳人格了</a> <span class='chg flat'>937.7万</span></div>
+<div class='it'><span class='r'>#46</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E9%A4%90%E9%A5%AE%E5%BA%97%E5%8A%A0%E7%8F%AD%E5%91%98%E5%B7%A5%E6%97%A0%E9%A5%AD%E5%90%83&amp;rankType=1" target="_blank" rel="noopener">餐饮店加班员工无饭吃</a> <span class='chg flat'>929.7万</span></div>
+</details>
+</section>
+<section><h2><span class='no'>4</span>财经垂直源 <span class='cnt'>日榜与热门快讯</span></h2>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>财联社电报</b> <span class='cnt'>50 条</span></summary>
+<div class='it'><span class='tm'>16:07</span><a href="https://www.cls.cn/detail/2520622" target="_blank" rel="noopener">中微公司：第三季度扣非净利环比下降22.43%</a></div>
+<div class='it'><span class='tm'>16:00</span><a href="https://www.cls.cn/detail/2520600" target="_blank" rel="noopener">阳光电源：第三季度净利润同比下降68% 环比下降54%</a></div>
+<div class='it'><span class='tm'>16:00</span><a href="https://www.cls.cn/detail/2520598" target="_blank" rel="noopener">英特尔盘前重挫近24% PC业务疲软不及预期</a></div>
+<div class='it'><span class='tm'>15:43</span><a href="https://www.cls.cn/detail/2520553" target="_blank" rel="noopener">中国诚通Q3新进成为国博电子第七大股东</a></div>
+<div class='it'><span class='tm'>15:28</span><a href="https://www.cls.cn/detail/2520526" target="_blank" rel="noopener">外交部驳斥《纽约时报》涉华报道：捕风捉影 纯属对中国的污蔑抹黑</a></div>
+<div class='it'><span class='tm'>15:24</span><a href="https://www.cls.cn/detail/2520519" target="_blank" rel="noopener">外交部：美方无理打压中国企业 中方坚决反对、强烈不满</a></div>
+<div class='it'><span class='tm'>15:11</span><a href="https://www.cls.cn/detail/2520495" target="_blank" rel="noopener">10月30日涨停分析</a></div>
+<div class='it'><span class='tm'>15:04</span><a href="https://www.cls.cn/detail/2520482" target="_blank" rel="noopener">收评：A股10月收官！双创指数均跌超23% 工商银行等多只红利股本月逆势创新高</a></div>
+<div class='it'><span class='tm'>15:03</span><a href="https://www.cls.cn/detail/2520481" target="_blank" rel="noopener">财联社10月30日电，中国30年期国债期货主力合约日内跌1%，现报117.34元。</a></div>
+<div class='it'><span class='tm'>14:58</span><a href="https://www.cls.cn/detail/2520468" target="_blank" rel="noopener">多只宽基ETF持续放量 沪深300ETF华泰柏瑞（510300）15分钟成交超40亿</a></div>
+<div class='it'><span class='tm'>14:56</span><a href="https://www.cls.cn/detail/2520461" target="_blank" rel="noopener">“十五五”全国算力用电量预计年均新增1000亿千瓦时以上</a></div>
+<div class='it'><span class='tm'>14:49</span><a href="https://www.cls.cn/detail/2520443" target="_blank" rel="noopener">尾盘宽基ETF小幅放量 两只科创、创业板ETF成交超100亿</a></div>
+<div class='it'><span class='tm'>14:16</span><a href="https://www.cls.cn/detail/2520371" target="_blank" rel="noopener">银行间主要利率债收益率升幅扩大</a></div>
+<div class='it'><span class='tm'>13:08</span><a href="https://www.cls.cn/detail/2520314" target="_blank" rel="noopener">一图看懂：美股四大科技巨头2026年合计资本支出上限有望突破7400亿美元</a></div>
+<div class='it'><span class='tm'>13:02</span><a href="https://www.cls.cn/detail/2520312" target="_blank" rel="noopener">三大指数全部翻红</a></div>
+<div class='it'><span class='tm'>13:00</span><a href="https://www.cls.cn/detail/2520306" target="_blank" rel="noopener">沪指翻红</a></div>
+<div class='it'><span class='tm'>12:02</span><a href="https://www.cls.cn/detail/2520266" target="_blank" rel="noopener">财联社10月30日午间新闻精选</a></div>
+<div class='it'><span class='tm'>11:53</span><a href="https://www.cls.cn/detail/2520253" target="_blank" rel="noopener">10月30日午间涨停分析</a></div>
+<div class='it'><span class='tm'>11:32</span><a href="https://www.cls.cn/detail/2520248" target="_blank" rel="noopener">午评：沪指低开回升跌0.3% 医药、大消费板块集体走强</a></div>
+<div class='it'><span class='tm'>11:29</span><a href="https://www.cls.cn/detail/2520246" target="_blank" rel="noopener">沪深两市成交额突破1万亿 较上一日此时放量超100亿</a></div>
+<div class='it'><span class='tm'>11:07</span><a href="https://www.cls.cn/detail/2520209" target="_blank" rel="noopener">日本央行：从明年1月起 将每年出售ETF的规模由3300亿日元上调至约8600亿日元</a></div>
+<div class='it'><span class='tm'>11:05</span><a href="https://www.cls.cn/detail/2520206" target="_blank" rel="noopener">日本央行称基础通胀达到2%的目标水平</a></div>
+<div class='it'><span class='tm'>11:03</span><a href="https://www.cls.cn/detail/2520202" target="_blank" rel="noopener">财联社10月30日电，日本央行将政策利率维持在1.25%不变，符合市场预期。</a></div>
+<div class='it'><span class='tm'>10:24</span><a href="https://www.cls.cn/detail/2520166" target="_blank" rel="noopener">闪迪：将100%的盈余现金返还给股东 第一财季已投入50亿美元用于股票回购</a></div>
+<div class='it'><span class='tm'>10:03</span><a href="https://www.cls.cn/detail/2520141" target="_blank" rel="noopener">开盘半小时两市放量200亿 预计全天成交超1.7万亿</a></div>
+<div class='it' style='color:#98a2b3'>…（共 50 条，报告版截取）</div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>36氪热榜</b> <span class='cnt'>50 条</span></summary>
+<div class='it'><span class='tm'>2.4万</span><a href="https://36kr.com/p/4047618190883331" target="_blank" rel="noopener">8点1氪丨外交部回应三丽鸥取消Vivant联名；科创50指数创新低；上海一宜家餐厅开始实行“消费入座”，周二、周四有保安劝离</a></div>
+<div class='it'><span class='tm'>2.3万</span><a href="https://36kr.com/p/4046673516057477" target="_blank" rel="noopener">泡泡玛特不是段永平的可口可乐</a></div>
+<div class='it'><span class='tm'>1.8万</span><a href="https://36kr.com/p/4047595233098247" target="_blank" rel="noopener">刚刚，奥特曼自曝OpenAI新模型：让我兴奋到两晚没睡</a></div>
+<div class='it'><span class='tm'>1.5万</span><a href="https://36kr.com/p/4047729287346692" target="_blank" rel="noopener">一台MacBook卖11.26万，苹果首款触屏本登场，发光Logo回来了</a></div>
+<div class='it'><span class='tm'>1.2万</span><a href="https://36kr.com/p/4047676161047046" target="_blank" rel="noopener">好消息：我们能多活9年了</a></div>
+<div class='it'><span class='tm'>1.1万</span><a href="https://36kr.com/p/4046784076305283" target="_blank" rel="noopener">刚刚，国产模型拿下三大榜单第一，年底全面开源</a></div>
+<div class='it'><span class='tm'>9494</span><a href="https://36kr.com/p/4046769826354050" target="_blank" rel="noopener">AI王座，一夜两度易主，神秘模型Obsidian 3泄露</a></div>
+<div class='it'><span class='tm'>7307</span><a href="https://36kr.com/p/4047643422587401" target="_blank" rel="noopener">一群Smart，打不过一辆萤火虫</a></div>
+<div class='it'><span class='tm'>7222</span><a href="https://36kr.com/p/4047032889800965" target="_blank" rel="noopener">部署态加速，智元要打通物理AI全链路</a></div>
+<div class='it'><span class='tm'>6514</span><a href="https://36kr.com/p/4047012606671104" target="_blank" rel="noopener">AGI 时代，中产全都完蛋了</a></div>
+<div class='it'><span class='tm'>6098</span><a href="https://36kr.com/p/4047045707667329" target="_blank" rel="noopener">纳米纹理只是磨砂膜？iPhone Duo让果粉失望，也让苹果走下神坛</a></div>
+<div class='it'><span class='tm'>5998</span><a href="https://36kr.com/p/4046877633542656" target="_blank" rel="noopener">美团弯腰捡钢镚</a></div>
+<div class='it'><span class='tm'>5728</span><a href="https://36kr.com/p/4047841517484292" target="_blank" rel="noopener">ChatGPT Pro 额度翻倍：是让步，不是福利？</a></div>
+<div class='it'><span class='tm'>5035</span><a href="https://36kr.com/p/4039556157510790" target="_blank" rel="noopener">对你事业最有价值的人脉，或许是那些泛泛之交</a></div>
+<div class='it'><span class='tm'>4758</span><a href="https://36kr.com/p/4046787920156297" target="_blank" rel="noopener">只有一个人的制药公司，被Anthropic在 IPO前收购了</a></div>
+<div class='it'><span class='tm'>4735</span><a href="https://36kr.com/p/4046910113347844" target="_blank" rel="noopener">初代选秀，一地鸡毛</a></div>
+<div class='it'><span class='tm'>4712</span><a href="https://36kr.com/p/4047763713784329" target="_blank" rel="noopener">星巴克、山姆，开始拒绝“白嫖”</a></div>
+<div class='it'><span class='tm'>4696</span><a href="https://36kr.com/p/4047560652405000" target="_blank" rel="noopener">即日起，ChatGPT Pro使用额度翻倍</a></div>
+<div class='it'><span class='tm'>4566</span><a href="https://36kr.com/p/4047712378403074" target="_blank" rel="noopener">腾讯系办公开始围着workbuddy转</a></div>
+<div class='it'><span class='tm'>4550</span><a href="https://36kr.com/p/4046795886449797" target="_blank" rel="noopener">实测腾讯网盘：腾讯AI办公生态补上了最关键一环</a></div>
+<div class='it'><span class='tm'>4512</span><a href="https://36kr.com/p/4046826443871112" target="_blank" rel="noopener">谷歌一夜跌去 10%：AI 烧钱周期里，它还值不值得拿？</a></div>
+<div class='it'><span class='tm'>4481</span><a href="https://36kr.com/p/4046866715154050" target="_blank" rel="noopener">OpenAI健康板块负责人：AI医疗健康的上限和下限</a></div>
+<div class='it'><span class='tm'>4419</span><a href="https://36kr.com/p/4046870588979456" target="_blank" rel="noopener">嫌弃“老登”，但小鹏也没讨好到年轻人</a></div>
+<div class='it'><span class='tm'>4412</span><a href="https://36kr.com/p/4046972364421635" target="_blank" rel="noopener">龙虾尸骸，SaaS残梦，大厂焦虑：AI办公究竟是什么？</a></div>
+<div class='it'><span class='tm'>4396</span><a href="https://36kr.com/p/4047073856076036" target="_blank" rel="noopener">一刷起来至少两小时，全网戒不掉的红果怕“捧杀”</a></div>
+<div class='it' style='color:#98a2b3'>…（共 50 条，报告版截取）</div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>新浪财经7x24</b> <span class='cnt'>30 条</span></summary>
+<div class='it'><span class='tm'>16:26:54</span>金天钛业：2026年第三季度净利润4536.77万元，同比增长559.04%</div>
+<div class='it'><span class='tm'>16:26:50</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtv8214923.d.html" target="_blank" rel="noopener">铁龙物流：前三季度营收83.62亿元 净利同比增2.61%</a></div>
+<div class='it'><span class='tm'>16:26:49</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtv8214897.d.html" target="_blank" rel="noopener">上海贝岭：前三季度营收25.54亿元 净利同比降9.52%</a></div>
+<div class='it'><span class='tm'>16:26:45</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2303442.d.html" target="_blank" rel="noopener">昱能科技：前三季度营收4.67亿元 同比降50.48%</a></div>
+<div class='it'><span class='tm'>16:26:35</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2303252.d.html" target="_blank" rel="noopener">盟升电子：2026年第三季度净利润亏损2587.39万元</a></div>
+<div class='it'><span class='tm'>16:26:22</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywts5526991.d.html" target="_blank" rel="noopener">东山精密：2026年第三季度净利润23.32亿元，同比增长401.18%</a></div>
+<div class='it'><span class='tm'>16:26:00</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2302739.d.html" target="_blank" rel="noopener">法国经济第三季度意外萎缩 社会动荡等不利因素加剧</a></div>
+<div class='it'><span class='tm'>16:25:37</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2302323.d.html" target="_blank" rel="noopener">掌阅科技：前三季度营收27.75亿元 同比增12.73%</a></div>
+<div class='it'><span class='tm'>16:25:37</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtv8213530.d.html" target="_blank" rel="noopener">华光新材：前三季营收34.37亿元 同比增88.27%</a></div>
+<div class='it'><span class='tm'>16:25:01</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2301760.d.html" target="_blank" rel="noopener">科新发展：2026年第三季度净利润363.16万元，同比下降55.69%</a></div>
+<div class='it'><span class='tm'>16:24:52</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2301677.d.html" target="_blank" rel="noopener">新希望：2026年前三季度净利润亏损25.68亿元，同比由盈转亏</a></div>
+<div class='it'><span class='tm'>16:24:50</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywts5525650.d.html" target="_blank" rel="noopener">威奥股份：前三季度营收12.75亿元 净亏损5389.50万元</a></div>
+<div class='it'><span class='tm'>16:24:44</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2301568.d.html" target="_blank" rel="noopener">亚普股份：前三季度营收64.15亿元 净利同比增4.85%</a></div>
+<div class='it'><span class='tm'>16:24:37</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2301429.d.html" target="_blank" rel="noopener">阿斯利康第三季度营业利润同比增长26%</a></div>
+<div class='it'><span class='tm'>16:24:33</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2301323.d.html" target="_blank" rel="noopener">Evercore ISI 将闪迪股票目标价从2800美元下调至2500美元。</a></div>
+<div class='it'><span class='tm'>16:24:28</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtv8212537.d.html" target="_blank" rel="noopener">RIVIAN 第三季度营收超预期，上调 2026 财年汽车交付量预期，盘前股价上涨 7.3%。</a></div>
+<div class='it'><span class='tm'>16:24:09</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2300926.d.html" target="_blank" rel="noopener">阿斯塔纳航空与南航签署合资协议，哈萨克斯坦政府：将进一步扩大中哈航线网络</a></div>
+<div class='it'><span class='tm'>16:23:51</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2300698.d.html" target="_blank" rel="noopener">上金所发布关于山东招金金银精炼有限公司变更企业名称的公告</a></div>
+<div class='it'><span class='tm'>16:23:47</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtx4662569.d.html" target="_blank" rel="noopener">中国贸促会：前三季度累计签发各类证书同比增长7.29%</a></div>
+<div class='it'><span class='tm'>16:23:37</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtx4662394.d.html" target="_blank" rel="noopener">老白干酒：2026年第三季度净利润同比下降15.88%</a></div>
+<div class='it'><span class='tm'>16:23:25</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtx4662184.d.html" target="_blank" rel="noopener">电子城：2026年第三季度净利润亏损2.28亿元</a></div>
+<div class='it'><span class='tm'>16:23:04</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywts5523920.d.html" target="_blank" rel="noopener">大连电瓷：预中标国家电网项目合计约1.22亿元</a></div>
+<div class='it'><span class='tm'>16:22:38</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtv8210869.d.html" target="_blank" rel="noopener">南京熊猫：聘任万磊为公司总经理</a></div>
+<div class='it'><span class='tm'>16:22:27</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtu2299387.d.html" target="_blank" rel="noopener">南京熊猫：职工董事易国富及副总经理胡大立离任</a></div>
+<div class='it'><span class='tm'>16:22:22</span><a href="https://finance.sina.cn/7x24/2026-10-30/detail-iniwywtx4661147.d.html" target="_blank" rel="noopener">沧州大化：2026年第三季度净利润6566.11万元，同比增长170.92%</a></div>
+<div class='it' style='color:#98a2b3'>…（共 30 条，报告版截取）</div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>华尔街见闻</b> <span class='cnt'>30 条</span></summary>
+<div class='it'><span class='tm'>16:26</span><a href="https://wallstreetcn.com/livenews/3191234" target="_blank" rel="noopener">上金所公告，上海黄金交易所可提供标准金锭、金条、银锭企业“山东招金金银精炼有限公司”变更登记已被山东省市场监督管理局核准</a></div>
+<div class='it'><span class='tm'>16:25</span><a href="https://wallstreetcn.com/livenews/3191230" target="_blank" rel="noopener">新希望：2026年前三季度净利润亏损25.68亿元，同比由盈转亏</a></div>
+<div class='it'><span class='tm'>16:24</span><a href="https://wallstreetcn.com/livenews/3191229" target="_blank" rel="noopener">国家能源局：为进一步规范电力零售市场，我们即将出台一系列的政策文件</a></div>
+<div class='it'><span class='tm'>16:22</span><a href="https://wallstreetcn.com/livenews/3191226" target="_blank" rel="noopener">今世缘：前三季度归母净利润25.03亿元，同比下降1.80%</a></div>
+<div class='it'><span class='tm'>16:21</span><a href="https://wallstreetcn.com/livenews/3191223" target="_blank" rel="noopener">顺丰控股：董事会秘书、副总经理甘玲因个人原因辞职</a></div>
+<div class='it'><span class='tm'>16:21</span><a href="https://wallstreetcn.com/livenews/3191222" target="_blank" rel="noopener">日本央行行长植田和男新闻发布会讲话要点总结</a></div>
+<div class='it'><span class='tm'>16:18</span><a href="https://wallstreetcn.com/livenews/3191217" target="_blank" rel="noopener">金种子酒：前三季度归母净利润-9855.04万元，亏损同比收窄</a></div>
+<div class='it'><span class='tm'>16:17</span><a href="https://wallstreetcn.com/livenews/3191214" target="_blank" rel="noopener">习近平同瑞士联邦主席帕姆兰出席签字仪式</a></div>
+<div class='it'><span class='tm'>16:16</span><a href="https://wallstreetcn.com/livenews/3191207" target="_blank" rel="noopener">新华保险：第三季度净亏损5.11亿元；前三季度净利润222.82亿元，同比下降32.2%。</a></div>
+<div class='it'><span class='tm'>16:14</span><a href="https://wallstreetcn.com/livenews/3191203" target="_blank" rel="noopener">中远海发：前三季度归母净利润15.07亿元，同比增长8.35%</a></div>
+<div class='it'><span class='tm'>16:13</span><a href="https://wallstreetcn.com/livenews/3191201" target="_blank" rel="noopener">老凤祥：拟以集中竞价交易方式回购B股400万股-800万股，占总股本0.76%-1.53%，价格不超过3.707美元/股</a></div>
+<div class='it'><span class='tm'>16:13</span><a href="https://wallstreetcn.com/livenews/3191197" target="_blank" rel="noopener">新增878家售电公司 我国将进一步规范电力零售市场</a></div>
+<div class='it'><span class='tm'>16:11</span><a href="https://wallstreetcn.com/livenews/3191195" target="_blank" rel="noopener">港股收盘：恒生指数收涨1.46%，恒生科技指数涨0.29%。港股消费板块走强，毛戈平涨超13%，蒙牛乳业涨超9%，泡泡玛</a></div>
+<div class='it'><span class='tm'>16:09</span><a href="https://wallstreetcn.com/livenews/3191194" target="_blank" rel="noopener">国家统计局发布2025年社会民生统计报告</a></div>
+<div class='it'><span class='tm'>16:08</span><a href="https://wallstreetcn.com/livenews/3191193" target="_blank" rel="noopener">国金证券：前三季度归母净利润20.06亿元，同比增长18.01%</a></div>
+<div class='it'><span class='tm'>16:08</span><a href="https://wallstreetcn.com/livenews/3191192" target="_blank" rel="noopener">光明乳业：前三季度归母净利润1.61亿元，同比增长84.40%</a></div>
+<div class='it'><span class='tm'>16:06</span><a href="https://wallstreetcn.com/livenews/3191181" target="_blank" rel="noopener">中微公司：2026年第三季度净利润13.09亿元，同比增长159.02%</a></div>
+<div class='it'><span class='tm'>16:03</span><a href="https://wallstreetcn.com/livenews/3191180" target="_blank" rel="noopener">覆盖五大重点方向 多部门印发行动方案部署百余项产品碳足迹国家标准</a></div>
+<div class='it'><span class='tm'>16:03</span><a href="https://wallstreetcn.com/livenews/3191179" target="_blank" rel="noopener">陈云霁：算力需求年增10倍，AI与IC深度融合须靠架构创新破局</a></div>
+<div class='it'><span class='tm'>16:02</span><a href="https://wallstreetcn.com/livenews/3191178" target="_blank" rel="noopener">欧股开盘多数下跌</a></div>
+<div class='it'><span class='tm'>16:01</span><a href="https://wallstreetcn.com/livenews/3191177" target="_blank" rel="noopener">美股盘前，英特尔跌超23%，公司Q4指引远逊预期，以色列工厂爆炸，PC需求疲软，AI芯片供应受限；亚马逊跌超7%，公司三</a></div>
+<div class='it'><span class='tm'>16:00</span><a href="https://wallstreetcn.com/livenews/3191176" target="_blank" rel="noopener">绿地控股：前三季度归母净利润-7.22亿元，同比减亏89.21%</a></div>
+<div class='it'><span class='tm'>16:00</span><a href="https://wallstreetcn.com/livenews/3191175" target="_blank" rel="noopener">瑞士10月KOF经济领先指标 107.6，预期 108.1，前值 109.1。</a></div>
+<div class='it'><span class='tm'>15:59</span><a href="https://wallstreetcn.com/livenews/3191174" target="_blank" rel="noopener">极米科技：前三季度归母净利润1.23亿元，同比增长54.68%</a></div>
+<div class='it'><span class='tm'>15:59</span><a href="https://wallstreetcn.com/livenews/3191173" target="_blank" rel="noopener">石头科技：前三季度归母净利润14.66亿元，同比增长41.23%</a></div>
+<div class='it' style='color:#98a2b3'>…（共 30 条，报告版截取）</div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>东方财富快讯</b> <span class='cnt'>30 条</span></summary>
+<div class='it'><span class='tm'>16:21:58</span><a href="https://finance.eastmoney.com/a/202610303916501728.html" target="_blank" rel="noopener">今世缘：2026年前三季度净利润同比下降1.8%</a></div>
+<div class='it'><span class='tm'>16:21:24</span><a href="https://finance.eastmoney.com/a/202610303916501461.html" target="_blank" rel="noopener">顺丰控股：董事会秘书、副总经理甘玲因个人原因辞职</a></div>
+<div class='it'><span class='tm'>16:20:18</span><a href="https://finance.eastmoney.com/a/202610303916501549.html" target="_blank" rel="noopener">兴业银锡：子公司银漫矿业采区复产</a></div>
+<div class='it'><span class='tm'>16:19:31</span><a href="https://finance.eastmoney.com/a/202610303916495080.html" target="_blank" rel="noopener">宜春市生态环境局发布枧下窝锂矿采矿项目环境影响评价文件审批决定</a></div>
+<div class='it'><span class='tm'>16:18:05</span><a href="https://finance.eastmoney.com/a/202610303916502365.html" target="_blank" rel="noopener">老凤祥：2026年前三季度净利润同比下降58.86%</a></div>
+<div class='it'><span class='tm'>16:18:01</span><a href="https://finance.eastmoney.com/a/202610303916502595.html" target="_blank" rel="noopener">大连电瓷：预中标国家电网项目合计约1.22亿元</a></div>
+<div class='it'><span class='tm'>16:17:00</span><a href="https://finance.eastmoney.com/a/202610303916498218.html" target="_blank" rel="noopener">证监会同意季丰电子创业板IPO注册</a></div>
+<div class='it'><span class='tm'>16:16:33</span><a href="https://finance.eastmoney.com/a/202610303916495113.html" target="_blank" rel="noopener">红塔证券：2026年前三季度净利润同比下降32.22%</a></div>
+<div class='it'><span class='tm'>16:16:11</span><a href="https://finance.eastmoney.com/a/202610303916494980.html" target="_blank" rel="noopener">摩根士丹利下调英特尔目标价</a></div>
+<div class='it'><span class='tm'>16:14:52</span><a href="https://finance.eastmoney.com/a/202610303916494474.html" target="_blank" rel="noopener">利通电子：2026年前三季度净利润同比增长349%</a></div>
+<div class='it'><span class='tm'>16:14:03</span><a href="https://finance.eastmoney.com/a/202610303916494314.html" target="_blank" rel="noopener">烽火通信：2026年前三季度净利润同比下降38.61%</a></div>
+<div class='it'><span class='tm'>16:13:53</span><a href="https://finance.eastmoney.com/a/202610303916491528.html" target="_blank" rel="noopener">摩根士丹利下调亚马逊目标价</a></div>
+<div class='it'><span class='tm'>16:12:47</span><a href="https://finance.eastmoney.com/a/202610303916491449.html" target="_blank" rel="noopener">中远海发：2026年前三季度净利润同比增长8.35%</a></div>
+<div class='it'><span class='tm'>16:11:29</span><a href="https://finance.eastmoney.com/a/202610303916490786.html" target="_blank" rel="noopener">桐昆股份：第三季度净利润同比增长492.71%</a></div>
+<div class='it'><span class='tm'>16:11:00</span><a href="https://finance.eastmoney.com/a/202610303916486993.html" target="_blank" rel="noopener">国家能源局：引导地方和企业因地制宜做好算力设施绿电直连方案论证和项目落地</a></div>
+<div class='it'><span class='tm'>16:10:12</span><a href="https://finance.eastmoney.com/a/202610303916480183.html" target="_blank" rel="noopener">10月30日港股收盘：恒指涨1.46% 恒生科技指数涨0.29%</a></div>
+<div class='it'><span class='tm'>16:08:11</span><a href="https://finance.eastmoney.com/a/202610303916488980.html" target="_blank" rel="noopener">安集科技：Q3净利润同比增长262% 环比增长159%</a></div>
+<div class='it'><span class='tm'>16:07:15</span><a href="https://finance.eastmoney.com/a/202610303916481241.html" target="_blank" rel="noopener">中微公司：第三季度净利润同比增长159% 环比下降30%</a></div>
+<div class='it'><span class='tm'>16:06:52</span><a href="https://finance.eastmoney.com/a/202610303916481031.html" target="_blank" rel="noopener">传音控股：第三季度净利润同比下降8.4% 环比下降20%</a></div>
+<div class='it'><span class='tm'>16:06:14</span><a href="https://finance.eastmoney.com/a/202610303916479520.html" target="_blank" rel="noopener">美股存储板块盘前普跌 SK海力士跌超6%</a></div>
+<div class='it'><span class='tm'>16:06:00</span><a href="https://finance.eastmoney.com/a/202610303916480677.html" target="_blank" rel="noopener">市场监管总局等五部门联合印发《重点产品碳足迹标准体系建设行动方案（2026—2028年）》</a></div>
+<div class='it'><span class='tm'>16:04:43</span><a href="https://finance.eastmoney.com/a/202610303916479750.html" target="_blank" rel="noopener">欧股开盘涨跌不一</a></div>
+<div class='it'><span class='tm'>16:03:32</span><a href="https://finance.eastmoney.com/a/202610303916474136.html" target="_blank" rel="noopener">阳光电源：第三季度净利润同比下降68%</a></div>
+<div class='it'><span class='tm'>16:03:30</span><a href="https://finance.eastmoney.com/a/202610303916473838.html" target="_blank" rel="noopener">戴尔科技美股盘前跌超8% 惠普、慧与科技跌超5%</a></div>
+<div class='it'><span class='tm'>16:02:57</span><a href="https://finance.eastmoney.com/a/202610303916472020.html" target="_blank" rel="noopener">Strategy美股盘前跌近5%</a></div>
+<div class='it' style='color:#98a2b3'>…（共 30 条，报告版截取）</div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>雪球今日话题</b> <span class='cnt'>20 条</span></summary>
+<div class='it'><a href="http://www.xueqiu.com/3350642636/414268775" target="_blank" rel="noopener">我如何管理自己的投资（5）非对称赔率</a></div>
+<div class='it'><a href="http://www.xueqiu.com/4777061674/414429151" target="_blank" rel="noopener">两轮创新药出海熊市：从准入门槛之争到商业化兑现大考</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1438190065/414367748" target="_blank" rel="noopener">随想383 10月FOMC会议，给反弹一个稳定土壤？</a></div>
+<div class='it'><a href="http://www.xueqiu.com/2351470882/414408793" target="_blank" rel="noopener">《40%跌幅之后：五维出清到哪一步了？——一次基于历史样本的交叉验证》</a></div>
+<div class='it'><a href="http://www.xueqiu.com/7448161277/414359355" target="_blank" rel="noopener">再聊灵宝黄金辛贝里金矿的额外利润税</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1437248694/414403942" target="_blank" rel="noopener">最土的煤，最硬的底牌</a></div>
+<div class='it'><a href="http://www.xueqiu.com/9391624441/414385910" target="_blank" rel="noopener">一图看温度：红利类指数估值全景图（10.29）</a></div>
+<div class='it'><a href="http://www.xueqiu.com/5332385101/414367554" target="_blank" rel="noopener">从微软与谷歌财报谈谈云厂商的分化</a></div>
+<div class='it'><a href="http://www.xueqiu.com/9201106692/414191919" target="_blank" rel="noopener">消费老登的估值变化</a></div>
+<div class='it'><a href="http://www.xueqiu.com/9743713791/414264937" target="_blank" rel="noopener">AI应用怎么兑现利润？从易点天下三季报聊起</a></div>
+<div class='it'><a href="http://www.xueqiu.com/7271353740/414229579" target="_blank" rel="noopener">一个卖保险，一个收过路费——恒瑞和药明三季报给我的启发</a></div>
+<div class='it'><a href="http://www.xueqiu.com/4531216350/414141182" target="_blank" rel="noopener">油运投资坚持的理由</a></div>
+<div class='it'><a href="http://www.xueqiu.com/7271353740/414020458" target="_blank" rel="noopener">神华买踏实，紫金买赔率：市场把账算在不同时间点</a></div>
+<div class='it'><a href="http://www.xueqiu.com/4790816824/413913539" target="_blank" rel="noopener">本轮创业板下跌和过去两轮股灾对比再次思考</a></div>
+<div class='it'><a href="http://www.xueqiu.com/5739488179/414222683" target="_blank" rel="noopener">我在泡泡玛特上犯的几个错误</a></div>
+<div class='it'><a href="http://www.xueqiu.com/5332385101/413971245" target="_blank" rel="noopener">对Anthropic招股书的解读与思考</a></div>
+<div class='it'><a href="http://www.xueqiu.com/5742821612/414016123" target="_blank" rel="noopener">跳出季报牢笼：给中远海控和紫金矿业算一算账</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1867214831/414015761" target="_blank" rel="noopener">8位数没了后的复盘</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1354952276/414019639" target="_blank" rel="noopener">轮胎思考与独善其身</a></div>
+<div class='it'><a href="http://www.xueqiu.com/9665277960/413959781" target="_blank" rel="noopener">不要做任何人的信徒：学会自己读财报、做研究，同时建立自己的交易系统，并且控制情绪</a></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>虎嗅热文</b> <span class='cnt'>15 条</span></summary>
+<div class='it'><span class='tm'>132.9万</span><a href="https://www.huxiu.com/article/4900248.html" target="_blank" rel="noopener">儿女双全是一个家庭最差的生育配置</a></div>
+<div class='it'><span class='tm'>68.0万</span><a href="https://www.huxiu.com/article/4898061.html" target="_blank" rel="noopener">10万买皮肤，腾讯新王炸成了？</a></div>
+<div class='it'><span class='tm'>60.7万</span><a href="https://www.huxiu.com/article/4900335.html" target="_blank" rel="noopener">可怕的红果与中国互联网的字节时间</a></div>
+<div class='it'><span class='tm'>51.1万</span><a href="https://www.huxiu.com/article/4900332.html" target="_blank" rel="noopener">江淮汽车，假如刹车踏板没断</a></div>
+<div class='it'><span class='tm'>47.7万</span><a href="https://www.huxiu.com/article/4900169.html" target="_blank" rel="noopener">一张6元小卡，凭什么硬控00后？</a></div>
+<div class='it'><span class='tm'>43.5万</span><a href="https://www.huxiu.com/article/4900217.html" target="_blank" rel="noopener">贾乃亮一天卖了5.7亿，明星带货已经卷到这一步了</a></div>
+<div class='it'><span class='tm'>39.2万</span><a href="https://www.huxiu.com/article/4900648.html" target="_blank" rel="noopener">好工作为什么难找：从豆豉鲮鱼说起</a></div>
+<div class='it'><span class='tm'>35.1万</span><a href="https://www.huxiu.com/article/4898956.html" target="_blank" rel="noopener">鉴别“NPD父母”：年轻人迟来的清算</a></div>
+<div class='it'><span class='tm'>35.6万</span><a href="https://www.huxiu.com/article/4900057.html" target="_blank" rel="noopener">赚钱为什么越来越难？这是我看过最深刻的一篇</a></div>
+<div class='it'><span class='tm'>35.9万</span><a href="https://www.huxiu.com/article/4901243.html" target="_blank" rel="noopener">中国AI最有权力的数据掌舵人：8家公司，11位核心负责人</a></div>
+<div class='it'><span class='tm'>31.2万</span><a href="https://www.huxiu.com/article/4899941.html" target="_blank" rel="noopener">支付宝拿下特斯拉</a></div>
+<div class='it'><span class='tm'>31.0万</span><a href="https://www.huxiu.com/article/4900761.html" target="_blank" rel="noopener">姆巴佩一句话，让金主蒙牛东鹏紧急切割</a></div>
+<div class='it'><span class='tm'>29.8万</span><a href="https://www.huxiu.com/article/4900431.html" target="_blank" rel="noopener">从任泽平被取消“经济学家”认证说起</a></div>
+<div class='it'><span class='tm'>25.7万</span><a href="https://www.huxiu.com/article/4900352.html" target="_blank" rel="noopener">淡季抄底出境游的中产，傻眼了</a></div>
+<div class='it'><span class='tm'>28.3万</span><a href="https://www.huxiu.com/article/4900946.html" target="_blank" rel="noopener">小鹏之困：挣不到老登的钱，急了骂老登</a></div>
+</details>
+<details class='card' style='margin:10px 0' open><summary><b style='color:#14202e'>第一财经周榜</b> <span class='cnt'>10 条</span></summary>
+<div class='it'><a href="https://www.yicai.com/news/103407809.html" target="_blank" rel="noopener">31省份2025年婚姻数据公布，哪些省份结婚人数多？</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103410672.html" target="_blank" rel="noopener">东鹏饮料：即日起终止与基利安·姆巴佩全部合作</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103407823.html" target="_blank" rel="noopener">31省份2025年人口出生率公布，9省超7‰</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103408100.html" target="_blank" rel="noopener">老有所依｜毫米波雷达走进卧室，AI打开养老新世界</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103408213.html" target="_blank" rel="noopener">31省份去年平均工资出炉</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103411384.html" target="_blank" rel="noopener">律师观点：姆巴佩事件的“道德条款”困局，跨国追偿的管辖权与执行障碍</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103409671.html" target="_blank" rel="noopener">晚间公告｜10月26日这些公告有看头</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103411184.html" target="_blank" rel="noopener">签下姆巴佩第39天，昂跑遇上一道中国考题</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103411462.html" target="_blank" rel="noopener">晚间公告｜10月27日这些公告有看头</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103413657.html" target="_blank" rel="noopener">晚间公告｜10月28日这些公告有看头</a></div>
+</details>
+</section>
+<section><h2><span class='no'>5</span>隔夜美股与环球热点 <span class='cnt'>对A股影响</span></h2>
+<div class='card'><b>隔夜美股</b><div class='line' style='margin-top:8px'>
+<span class='q'><b>道琼斯</b><span class='px'>52,342.56</span><span class="chg down">-0.25%</span></span>
+<span class='q'><b>纳斯达克</b><span class='px'>26,184.72</span><span class="chg down">-1.38%</span></span>
+<span class='q'><b>标普500指数</b><span class='px'>7,720.39</span><span class="chg down">-0.30%</span></span>
+</div></div>
+<div class='card'><b>焦点个股</b><div class='line' style='margin-top:8px'>
+<span class='q'><b>英伟达</b><span class='px'>213.66</span><span class="chg down">-0.80%</span></span>
+<span class='q'><b>特斯拉</b><span class='px'>403.30</span><span class="chg down">-0.23%</span></span>
+<span class='q'><b>苹果</b><span class='px'>348.91</span><span class="chg up">+1.48%</span></span>
+<span class='q'><b>微软</b><span class='px'>530.14</span><span class="chg down">-0.16%</span></span>
+<span class='q'><b>谷歌A类股</b><span class='px'>283.82</span><span class="chg down">-12.64%</span></span>
+<span class='q'><b>亚马逊</b><span class='px'>243.79</span><span class="chg down">-4.25%</span></span>
+<span class='q'><b>Meta Platforms</b><span class='px'>624.52</span><span class="chg up">+1.96%</span></span>
+<span class='q'><b>超威半导体</b><span class='px'>566.42</span><span class="chg down">-2.08%</span></span>
+<span class='q'><b>COIN</b><span class='px'>160.59</span><span class="chg down">-1.07%</span></span>
+<span class='q'><b>PLTR</b><span class='px'>196.42</span><span class="chg down">-0.20%</span></span>
+</div></div>
+<div class='card'><b>新闻热度 · 板块</b><div class='line' style='margin-top:8px'>
+<span class='plat'>宏观/利率 <b>11</b></span>
+<span class='plat'>金融/银行 <b>9</b></span>
+<span class='plat'>能源 <b>4</b></span>
+<span class='plat'>半导体/AI芯片 <b>2</b></span>
+<span class='plat'>科技/AI/云 <b>2</b></span>
+<span class='plat'>汽车/新能源 <b>2</b></span>
+<span class='plat'>加密货币 <b>1</b></span>
+<span class='plat'>医药/生物科技 <b>1</b></span>
+</div>
+<div style='margin-top:9px'><b style='font-size:14px'>热点板块 → A股映射</b><span class='cnt' style='color:#98a2b3;font-size:12px'>（隔夜线索，仅供参考）</span>
+<div class='gvec'>宏观/利率（11 条报道）<span class='ar'>→</span>→ A股映射：大盘风向、流动性（风险偏好）</div>
+<div class='gvec'>金融/银行（9 条报道）<span class='ar'>→</span>→ A股映射：银行、券商（权重与情绪）</div>
+<div class='gvec'>能源（4 条报道）<span class='ar'>→</span>→ A股映射：石油石化、煤炭（大宗联动）</div>
+<div class='gvec'>半导体/AI芯片（2 条报道）<span class='ar'>→</span>→ A股映射：半导体/算力链（算力叙事联动）</div>
+<div class='gvec'>科技/AI/云（2 条报道）<span class='ar'>→</span>→ A股映射：AI应用、软件、算力</div>
+</div>
+</div>
+<div class='card'><b>美国热搜词</b><div class='line' style='margin-top:8px'>
+<span class='plat'>new zealand breakers <b>100+</b></span>
+<span class='plat'>alex eala <b>100+</b></span>
+<span class='plat'>pamela anderson <b>200+</b></span>
+<span class='plat'>uber ride <b>100+</b></span>
+<span class='plat'>mahomes <b>200+</b></span>
+<span class='plat'>kaitlin quevedo <b>200+</b></span>
+<span class='plat'>faith evans <b>100+</b></span>
+<span class='plat'>cricbuzz <b>200+</b></span>
+<span class='plat'>when is black friday 2026 <b>100+</b></span>
+<span class='plat'>macd <b>100+</b></span>
+</div></div>
+<details class='card'><summary><b>英文财经头条</b> <span class='cnt'>去重后 80 条</span></summary>
+<div class='it'><span class='chip'>CNBC</span><a href="https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html" target="_blank" rel="noopener">Biggest-ever crypto hack impacts $6.3 billion as Binance works to contain fallout</a></div>
+<div class='it'><span class='chip'>CNBC Markets</span><a href="https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html" target="_blank" rel="noopener">European Central Bank keeps key interest rate on hold at 2.5%</a></div>
+<div class='it'><span class='chip'>MarketWatch</span><a href="https://www.marketwatch.com/story/what-gave-this-city-its-best-place-to-retire-crown-you-can-actually-afford-to-live-there-a06f8f4d?mod=mw_rss_topstories" target="_blank" rel="noopener">What gave this city its ‘best place to retire’ crown? You can actually afford to live there.</a></div>
+<div class='it'><span class='chip'>WSJ Markets</span><a href="https://www.wsj.com/articles/nikkei-may-rise-as-weak-yen-raises-earnings-hopes-776a8056?mod=rss_markets_main" target="_blank" rel="noopener">Stocks Sink in Broad AI Rout Sparked by China&#x27;s DeepSeek</a></div>
+<div class='it'><span class='chip'>Investing.com</span><a href="https://www.investing.com/news/stock-market-news/european-shares-dip-as-amazon-intel-stoke-ai-cashburn-fears-4985916" target="_blank" rel="noopener">European shares dip as Amazon, Intel stoke AI cash-burn fears</a></div>
+<div class='it'><span class='chip'>Nasdaq</span><a href="https://www.nasdaq.com/articles/oracle-just-capped-how-much-new-money-it-will-raise-id-consider-buying-small-stake-stock" target="_blank" rel="noopener">Oracle Just Capped How Much New Money It Will Raise. I&#x27;d Consider Buying a Small Stake in the Stock.</a></div>
+<div class='it'><span class='chip'>CNBC</span><a href="https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html" target="_blank" rel="noopener">Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms</a></div>
+<div class='it'><span class='chip'>CNBC Markets</span><a href="https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html" target="_blank" rel="noopener">Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates</a></div>
+<div class='it'><span class='chip'>MarketWatch</span><a href="https://www.marketwatch.com/story/amazons-bold-cloud-forecast-isnt-enough-to-stave-off-a-stock-drop-ee23c1bb?mod=mw_rss_topstories" target="_blank" rel="noopener">Amazon’s stock drops — even in the face of a bold new cloud forecast</a></div>
+<div class='it'><span class='chip'>WSJ Markets</span><a href="https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb?mod=rss_markets_main" target="_blank" rel="noopener">Comex Gold, Silver Settle Lower</a></div>
+<div class='it'><span class='chip'>Investing.com</span><a href="https://www.investing.com/news/stock-market-news/why-is-sanofi-stock-surging-today-93CH-4986014" target="_blank" rel="noopener">Why is Sanofi stock surging today?</a></div>
+<div class='it'><span class='chip'>Nasdaq</span><a href="https://www.nasdaq.com/articles/big-short-investor-steve-eisman-highlights-biggest-risk-ai-stocks-right-now" target="_blank" rel="noopener">&amp;quot;Big Short&amp;quot; Investor Steve Eisman Highlights the Biggest Risk to AI Stocks Right Now</a></div>
+<div class='it'><span class='chip'>CNBC</span><a href="https://www.cnbc.com/2026/10/30/novartis-remibrutinib-multiple-sclerosis.html" target="_blank" rel="noopener">A pharma giant is moving past one patent cliff — but another is already looming</a></div>
+<div class='it'><span class='chip'>CNBC Markets</span><a href="https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html" target="_blank" rel="noopener">The politics of President Lagarde&#x27;s European Central Bank early exit — and who could replace her</a></div>
+<div class='it'><span class='chip'>MarketWatch</span><a href="https://www.marketwatch.com/story/a-starbucks-turnaround-is-brewing-but-perhaps-not-quickly-enough-3b5f57ac?mod=mw_rss_topstories" target="_blank" rel="noopener">A Starbucks turnaround is brewing — but perhaps not quickly enough for investors</a></div>
+</details>
+<div class='card'><b>新闻热度 · 热门美股</b><div class='line' style='margin-top:8px'>
+<span class='plat'><b>INTC</b> ×5</span><span class='plat'><b>AMZN</b> ×4</span><span class='plat'><b>MSFT</b> ×1</span><span class='plat'><b>NET</b> ×1</span><span class='plat'><b>TSLA</b> ×1</span>
+</div></div>
+</section>
+<section><h2><span class='no'>6</span>采集状态</h2><div class='card'>
+<div class='it'><span class='chip ok'>✅</span>微博热搜：52 条（财经命中 9 条）</div>
+<div class='it'><span class='chip ok'>✅</span>抖音热榜：48 条（财经命中 0 条）</div>
+<div class='it'><span class='chip ok'>✅</span>百度热搜：51 条（财经命中 7 条）</div>
+<div class='it'><span class='chip ok'>✅</span>头条热榜：50 条（财经命中 6 条）</div>
+<div class='it'><span class='chip ok'>✅</span>知乎热榜：29 条（财经命中 4 条）</div>
+<div class='it'><span class='chip ok'>✅</span>腾讯新闻热榜：50 条（财经命中 14 条）</div>
+<div class='it'><span class='chip ok'>✅</span>B站排行：100 条（财经命中 3 条）</div>
+<div class='it'><span class='chip ok'>✅</span>微信24h热文榜：30 条（财经命中 3 条）</div>
+<div class='it'><span class='chip ok'>✅</span>快手热榜：50 条（财经命中 4 条）</div>
+<div class='it'><span class='chip ok'>✅</span>财联社电报：50 条</div>
+<div class='it'><span class='chip ok'>✅</span>36氪热榜：50 条</div>
+<div class='it'><span class='chip ok'>✅</span>新浪财经7x24：30 条</div>
+<div class='it'><span class='chip ok'>✅</span>华尔街见闻：30 条</div>
+<div class='it'><span class='chip ok'>✅</span>东方财富快讯：30 条</div>
+<div class='it'><span class='chip ok'>✅</span>雪球今日话题：20 条</div>
+<div class='it'><span class='chip ok'>✅</span>虎嗅热文：15 条</div>
+<div class='it'><span class='chip ok'>✅</span>第一财经周榜：10 条</div>
+</div></section>
+<div class='foot'>每日财经热榜 · 浅色站点版 ｜ 数据文件 data/2026-10-30.json ｜ 由 hot_topics.py + site_build.py 生成</div>
+</div></body></html>
