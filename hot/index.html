@@ -140,7 +140,7 @@ function rowHtml(x){
   var badge = x.promo ? '<span class="hup hpromo">话题验证</span>' : (x.nw ? '<span class="hup hnew">新进</span>' : '<span class="hup">\u2191' + x.up + '</span>');
   var rk = x.promo ? '' : '<span class="hrk">#' + (x.rk==null?'?':x.rk) + (x.prk ? ' <s>#' + x.prk + '</s>' : '') + '</span>';
   var hp = x.hp ? ' \u2191' + x.hp + '%' : '';
-  var heat = x.ht ? '<span class="hheat' + (/^[\d.,]+[万亿]?$/.test(x.ht) ? '' : ' dim') + '">' + esc(x.ht) + hp + '</span>' : (x.hp ? '<span class="hheat">' + hp.slice(1) + '</span>' : '');
+  var heat = x.promo ? '' : (x.ht ? '<span class="hheat' + (/^[\d.,]+[万亿]?$/.test(x.ht) ? '' : ' dim') + '">' + esc(x.ht) + hp + '</span>' : (x.hp ? '<span class="hheat">' + hp.slice(1) + '</span>' : ''));
   var t = x.u ? '<a href="' + esc(x.u) + '" target="_blank" rel="noopener">' + esc(x.t) + '</a>' : esc(x.t);
   var fin = (x.fl === 1) ? '<span class="fin-tag pan">泛财</span>' : (x.fl === 2 ? '<span class="fin-tag">财经</span>' : '');
   var basis = x.basis ? '<span class="hbasis">\u2192 话题在榜：' + esc(x.basis) + '</span>' : '';
