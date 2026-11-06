@@ -1,0 +1,858 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>每日财经热榜 · 2026-11-07</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f4f6f8;color:#1c2430;font:15px/1.68 "Microsoft YaHei","PingFang SC",system-ui,-apple-system,sans-serif}
+a{color:#1f5fd0;text-decoration:none}a:hover{text-decoration:underline}
+header{background:#fff;border-bottom:1px solid #e3e8ee;position:sticky;top:0;z-index:20}
+.hd{max-width:1180px;margin:0 auto;padding:13px 20px 9px}
+.hd .l1{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.hd h1{font-size:21px;font-weight:700;color:#14202e}
+.hd h1 b{color:#d64541}
+.meta{color:#67707e;font-size:13px}
+.chip{display:inline-block;background:#f1f4f8;border:1px solid #e3e8ee;border-radius:999px;padding:1px 10px;font-size:12.5px;color:#4a5563;margin-right:6px}
+.chip.ok{color:#1e7f4f;border-color:#bfe3cf;background:#eefaf3}
+.chip.bad{color:#c0392b;border-color:#f2c4bf;background:#fdf0ee}
+.datenav{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.datenav a{padding:2px 11px;border-radius:999px;border:1px solid #e3e8ee;background:#fff;font-size:12.5px;color:#4a5563}
+.datenav a.cur{background:#14202e;color:#fff;border-color:#14202e}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 20px 70px}
+.overview{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ov{background:#fff;border:1px solid #e3e8ee;border-radius:12px;padding:10px 16px;flex:1 1 0;min-width:140px}
+.ov b{display:block;font-size:22px;color:#14202e}
+.ov span{color:#67707e;font-size:12.5px}
+section{margin-top:26px}
+h2{font-size:17.5px;color:#14202e;display:flex;align-items:center;gap:9px}
+h2 .no{display:inline-flex;width:24px;height:24px;border-radius:7px;background:#14202e;color:#fff;font-size:13px;align-items:center;justify-content:center}
+h2 .cnt{font-size:13px;color:#67707e;font-weight:400}
+.card{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:16px 19px;margin:11px 0;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.cand{display:flex;gap:15px}
+.cand .rk{font-size:26px;font-weight:800;color:#c8d2de;min-width:44px;line-height:1.1;padding-top:2px}
+.cand .bd{flex:1;min-width:0}
+.cand .tt{font-size:16.5px;font-weight:700;line-height:1.5}
+.score{display:inline-block;background:#eef4ff;color:#1f5fd0;border:1px solid #cfe0ff;border-radius:8px;padding:0 9px;font-size:13px;font-weight:700;margin-left:8px;vertical-align:1px}
+.score.hot{background:#fdf0ee;color:#c0392b;border-color:#f2c4bf}
+.plat{display:inline-block;background:#f1f4f8;border:1px solid #e3e8ee;border-radius:999px;padding:1px 9px;font-size:12px;color:#4a5563;margin:2px 6px 2px 0}
+.plat b{color:#14202e}
+.line{margin-top:6px;color:#3c4653;font-size:14px}
+.line .k{color:#67707e}
+ul.deep{margin:4px 0 0 18px;color:#4a5563;font-size:13.5px}
+ul.deep li{margin:2px 0}
+.angles{margin-top:6px;color:#46506d;font-size:13.5px;background:#f7f9fc;border:1px dashed #dde5ef;border-radius:10px;padding:8px 12px}
+details{margin-top:7px}
+summary{cursor:pointer;color:#1f5fd0;font-size:13px}
+.mem{margin:6px 0 0 18px;font-size:13px;color:#4a5563}
+.mem div{margin:2px 0}
+.tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e3e8ee;border-radius:14px;overflow:hidden;font-size:14px}
+.tbl th{background:#f7f9fc;color:#5b6472;font-weight:600;text-align:left;padding:9px 12px;border-bottom:1px solid #e3e8ee;font-size:13px;white-space:nowrap}
+.tbl td{padding:8px 12px;border-bottom:1px solid #eef1f5;vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:nth-child(even) td{background:#fafbfc}
+.fire{color:#e0701d;font-weight:700}
+.src{margin-top:12px}
+.src h3{font-size:15.5px;color:#14202e;display:flex;align-items:center;gap:8px}
+.src h3 .cnt{font-size:12.5px;color:#67707e;font-weight:400}
+.it{margin:5px 0 0 4px;font-size:14px;color:#2a3442}
+.it .r{color:#98a2b3;font-size:12.5px;margin-right:4px}
+.tm{display:inline-block;background:#f1f4f8;border-radius:6px;padding:0 7px;font-size:12.5px;color:#4a5563;margin-right:6px}
+.chg.up{color:#d6392f;font-weight:700}.chg.down{color:#1e9e5a;font-weight:700}.chg.flat{color:#67707e}
+.q{display:inline-flex;gap:9px;align-items:baseline;background:#fff;border:1px solid #e3e8ee;border-radius:11px;padding:8px 13px;margin:0 8px 8px 0;font-size:14px}
+.q b{color:#14202e}
+.q .px{color:#5b6472;font-size:12.5px}
+.gvec{margin:4px 0 0 2px;font-size:14px;color:#2a3442}
+.gvec .ar{color:#98a2b3;margin:0 6px}
+.foot{margin-top:34px;color:#98a2b3;font-size:12.5px;text-align:center}
+@media (max-width:720px){.cand .rk{font-size:20px;min-width:30px}.wrap{padding:14px 12px 50px}.hd{padding:10px 12px}}
+/* ---- 实时监测（每小时） ---- */
+.hbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0 2px}
+.hbar .hlabel{color:#67707e;font-size:12.5px;margin-right:2px}
+.hchip{padding:3px 12px;border-radius:999px;border:1px solid #e3e8ee;background:#fff;font-size:13px;color:#33415c;cursor:pointer;user-select:none}
+.hchip:hover{border-color:#b9c6d8}
+.hchip.cur{background:#14202e;color:#fff;border-color:#14202e;font-weight:600}
+.hchip.live::after{content:'●';color:#d64541;font-size:9px;margin-left:5px;vertical-align:2px}
+.hstats{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 2px}
+.hstat{background:#fff;border:1px solid #e3e8ee;border-radius:10px;padding:8px 14px;font-size:13px;color:#4a5563}
+.hstat b{font-size:17px;color:#14202e;margin-right:4px}
+.hstat.red b{color:#d6392f}
+.hstat.green b{color:#1e9e5a}
+.hfilter{display:flex;gap:6px;margin:9px 0 7px}
+.hfilter button{border:1px solid #e3e8ee;background:#fff;color:#4a5563;font-size:12.5px;padding:3px 12px;border-radius:999px;cursor:pointer}
+.hfilter button.on{background:#14202e;color:#fff;border-color:#14202e}
+.hlist{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:5px 16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.hrow{display:flex;align-items:center;gap:9px;padding:7px 0;border-bottom:1px dashed #eef1f5;font-size:14px;flex-wrap:wrap}
+.hrow:last-child{border-bottom:none}
+.hup{flex:0 0 auto;min-width:56px;text-align:center;background:#fdeceb;color:#d6392f;border-radius:8px;padding:1px 8px;font-weight:700;font-size:12.5px}
+.hup.hnew{background:#d6392f;color:#fff;letter-spacing:2px}
+.hup.hpromo{background:#7a4fd6;color:#fff;letter-spacing:0;min-width:64px}
+.hup.hpromo.key{background:#b25e0d}
+.hup.hpromo.multi{background:#0e8a6e}
+.hbasis{flex:0 0 auto;font-size:12px;color:#2f6be4;background:#eef4fb;border-radius:6px;padding:1px 7px}
+.hsrc{flex:0 0 auto;font-size:12px;color:#67707e;background:#f1f4f8;border-radius:6px;padding:1px 7px}
+.hrk{color:#d6392f;font-weight:700;font-size:13px;flex:0 0 auto}
+.hrk s{color:#98a2b3;font-weight:400;font-size:12px}
+.hrow a{color:#14202e;font-weight:600}
+.hrow a:hover{color:#1f5fd0}
+.hft{flex:0 0 auto;font-size:12px;color:#8a94a3;background:#f1f4f8;border-radius:6px;padding:1px 7px}
+.hrow.flash{font-size:13.5px}
+.hrow.flash a{font-weight:500;color:#33415c}
+.hheat{color:#d64541;font-size:12.5px;font-weight:600;flex:0 0 auto;margin-left:auto}
+.hheat.dim{color:#8a94a3;font-weight:400}
+.hsub{font-size:13.5px;font-weight:700;color:#14202e;margin:12px 0 2px;padding-top:10px;border-top:1px solid #eef1f5}
+.hsub:first-child{border-top:none;padding-top:2px}
+.hsub .hcnt{font-weight:400;color:#67707e;font-size:12px;margin-left:6px}
+.hempty2{color:#98a2b3;font-size:13px;padding:6px 2px 10px}
+.fin-tag{background:#fff6e8;border:1px solid #f2d9b5;color:#b26a1b;font-size:11.5px;border-radius:6px;padding:0 6px;flex:0 0 auto}
+.fin-tag.pan{background:#eef4fb;border-color:#cfe0f2;color:#2f6be4}
+.hnote{color:#67707e;font-size:12.5px;margin-top:7px}
+.hempty{color:#98a2b3;font-size:13.5px;padding:14px 4px}
+/* ---- 抖音视频精选版块 ---- */
+.dyv-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.dyv-tab{cursor:pointer;border:1px solid #e3e8ee;background:#fff;color:#33415c;border-radius:20px;padding:6px 14px;font-size:13.5px;font-weight:600;font-family:inherit}
+.dyv-tab.on{background:#14202e;border-color:#14202e;color:#fff}
+.dyv-tab .n{font-weight:400;opacity:.6;font-size:12px;margin-left:3px}
+.dyv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:13px}
+.dyv-card{background:#fff;border:1px solid #e3e8ee;border-radius:12px;overflow:hidden;cursor:pointer;transition:box-shadow .18s,transform .18s;display:flex;flex-direction:column}
+.dyv-card:hover{box-shadow:0 6px 20px rgba(20,32,46,.13);transform:translateY(-2px)}
+.dyv-thumb{position:relative;aspect-ratio:4/3;background:#f1f4f8;overflow:hidden}
+.dyv-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.dyv-thumb.noimg:before{content:'封面暂不可用';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#98a2b3;font-size:12.5px}
+.dyv-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:rgba(20,32,46,.55);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;padding-left:4px;pointer-events:none}
+.dyv-card:hover .dyv-play{background:#e03131}
+.dyv-dur{position:absolute;right:7px;bottom:7px;background:rgba(20,32,46,.75);color:#fff;font-size:11.5px;padding:1px 6px;border-radius:5px}
+.dyv-body{padding:9px 11px 10px;display:flex;flex-direction:column;gap:6px}
+.dyv-title{font-size:13.5px;color:#14202e;font-weight:600;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:38px;word-break:break-all}
+.dyv-meta{display:flex;gap:10px;color:#5b6472;font-size:12.5px;align-items:center}
+.dyv-meta .d1{color:#d64541;font-weight:700}
+.dyv-meta .sp{flex:1}
+.dyv-meta .dt{color:#98a2b3}
+.dyv-line2{display:flex;gap:6px;align-items:center;overflow:hidden}
+.dyv-line2 .au{color:#5b6472;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto;max-width:46%}
+.dyv-line2 .tg{background:#eef4fb;border:1px solid #cfe0f2;color:#2f6be4;font-size:11px;border-radius:6px;padding:0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto}
+.dyv-foot{color:#98a2b3;font-size:12px;margin-top:10px}
+.dyv-note{color:#98a2b3;font-size:12px;margin-top:8px}
+.dyv-modal{display:none;position:fixed;inset:0;background:rgba(15,23,36,.62);z-index:99;align-items:center;justify-content:center}
+.dyv-modal.on{display:flex}
+.dyv-mbox{background:#fff;border-radius:14px;width:min(324px,93vw);max-height:97vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.35)}
+.dyv-mhead{display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid #eef1f5}
+.dyv-mhead .mt{font-weight:700;color:#14202e;font-size:14px}
+.dyv-mhead .mo{margin-left:auto;color:#2f6be4;font-size:13px;text-decoration:none}
+.dyv-mhead .mx{border:0;background:#f1f4f8;border-radius:8px;width:28px;height:28px;cursor:pointer;font-size:14px;color:#5b6472}
+.dyv-frame{background:#000;width:100%;height:min(672px,calc(100vh - 162px))}
+@supports (height:100dvh){.dyv-frame{height:min(672px,calc(100dvh - 162px))}}
+.dyv-frame iframe{width:100%;height:100%;display:block;border:0}
+.dyv-mfoot{padding:9px 13px;color:#33415c;font-size:12.5px;line-height:1.5;max-height:70px;overflow:hidden}
+.dyv-badge{position:absolute;left:7px;top:7px;font-size:11.5px;padding:1px 7px;border-radius:6px;color:#fff;font-weight:600}
+.dyv-badge.hot{background:#e03131}
+.dyv-badge.rise{background:#2f6be4}
+.dyv-sub{color:#33415c;font-size:13px;margin:2px 0 4px}
+.dyv-sub b{color:#14202e}
+.dyv-sub .cnt{color:#98a2b3;font-size:12px;margin-left:6px}
+.dyv-gtitle{font-size:13.5px;font-weight:700;color:#14202e;margin:13px 0 8px}
+.dyv-gtitle span{font-weight:400;color:#98a2b3;font-size:12px;margin-left:6px}
+.dyv-empty{color:#98a2b3;font-size:13px;padding:12px 2px;border:1px dashed #e3e8ee;border-radius:10px;text-align:center;margin:8px 0}
+.dyv-vel{color:#1e9e5a;font-size:11.5px;font-weight:600;margin-left:auto;flex:0 0 auto;padding-left:6px}
+.dyv-sorth{display:flex;align-items:center;gap:8px;margin:0 0 10px;color:#5b6472;font-size:12.5px}
+.dyv-sort{cursor:pointer;border:1px solid #e3e8ee;background:#fff;color:#33415c;border-radius:15px;padding:3px 11px;font-size:12.5px;font-family:inherit}
+.dyv-sort.on{background:#1e9e5a;border-color:#1e9e5a;color:#fff}
+.dyv-sorth .cnt{color:#98a2b3;font-size:11.5px}
+html{scroll-behavior:smooth}
+section[id],details[id]{scroll-margin-top:102px}
+.sidenav{position:fixed;left:0;top:0;bottom:0;width:196px;background:#fff;border-right:1px solid #e7ecf3;padding:14px 12px 26px;overflow-y:auto;z-index:40}
+.sidenav .snb{font-size:15.5px;font-weight:700;color:#14202e;padding:2px 10px 8px;display:flex;align-items:center;gap:7px}
+.sidenav .sng{font-size:11.5px;color:#98a2b3;letter-spacing:.6px;margin:13px 10px 5px}
+.sidenav a.snl{display:block;padding:7px 10px;border-radius:8px;color:#33415c;font-size:14px;text-decoration:none;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sidenav a.snl:hover{background:#f1f5fb;color:#1f4fbf}
+.sidenav a.snl.on{background:#eef4ff;color:#2f6be4;font-weight:600}
+.sidenav details.snd{margin:8px 0 0}
+.sidenav details.snd summary{cursor:pointer;font-size:13px;color:#67707e;padding:6px 10px;border-radius:8px;list-style:none}
+.sidenav details.snd summary:hover{background:#f1f5fb}
+.sidenav details.snd a.snl{font-size:13.5px;padding:5.5px 10px 5.5px 20px}
+.sidenav .snfoot{margin-top:16px;padding:10px 10px 0;border-top:1px dashed #e7ecf3;font-size:12px;color:#67707e;line-height:1.6}
+.trz{color:#67707e;font-size:12.5px;line-height:1.5;margin:2px 0 0;padding-left:2px}
+.trz2{font-style:normal;color:#8a93a3;font-size:11.5px;margin:0 2px}
+@media (min-width:1260px){body{padding-left:196px}}
+@media (max-width:1259.9px){.sidenav{display:none}}
+</style></head><body>
+<aside class='sidenav'><div class='snb'>📊 财经热点站</div>
+<div class='sng'>本页版块</div>
+<a class='snl' data-t='tagvideos' href='#tagvideos'>🎬 抖音视频精选</a>
+<a class='snl' data-t='sec-top' href='#sec-top'>① 今日选题候选 TOP10</a>
+<a class='snl' data-t='sec-top20' href='#sec-top20'>② 综合最热 TOP20</a>
+<a class='snl' data-t='sec-social' href='#sec-social'>③ 各平台财经热点</a>
+<a class='snl' data-t='sec-vertical' href='#sec-vertical'>④ 财经垂直源</a>
+<a class='snl' data-t='sec-overseas' href='#sec-overseas'>⑤ 隔夜美股与环球</a>
+<a class='snl' data-t='sec-status' href='#sec-status'>⑥ 采集状态</a>
+<details class='snd'><summary>🏆 榜单直达（20 个）</summary>
+<a class='snl' data-t='src-s0' href='#src-s0'>微博热搜</a>
+<a class='snl' data-t='src-s1' href='#src-s1'>抖音热榜</a>
+<a class='snl' data-t='src-s2' href='#src-s2'>抖音上升热点</a>
+<a class='snl' data-t='src-s3' href='#src-s3'>百度热搜</a>
+<a class='snl' data-t='src-s4' href='#src-s4'>头条热榜</a>
+<a class='snl' data-t='src-s5' href='#src-s5'>知乎热榜</a>
+<a class='snl' data-t='src-s6' href='#src-s6'>腾讯新闻热榜</a>
+<a class='snl' data-t='src-s7' href='#src-s7'>B站排行</a>
+<a class='snl' data-t='src-s8' href='#src-s8'>微信24h热文榜</a>
+<a class='snl' data-t='src-s9' href='#src-s9'>联合早报</a>
+<a class='snl' data-t='src-s10' href='#src-s10'>快手热榜</a>
+<a class='snl' data-t='src-s11' href='#src-s11'>财联社电报</a>
+<a class='snl' data-t='src-s12' href='#src-s12'>36氪热榜</a>
+<a class='snl' data-t='src-s13' href='#src-s13'>新浪财经日榜</a>
+<a class='snl' data-t='src-s14' href='#src-s14'>华尔街见闻</a>
+<a class='snl' data-t='src-s15' href='#src-s15'>东方财富快讯</a>
+<a class='snl' data-t='src-s16' href='#src-s16'>雪球今日话题</a>
+<a class='snl' data-t='src-s17' href='#src-s17'>虎嗅热文</a>
+<a class='snl' data-t='src-s18' href='#src-s18'>第一财经周榜</a>
+<a class='snl' data-t='src-s19' href='#src-s19'>MKT News</a>
+</details>
+<div class='sng'>相关站点</div>
+<a class='snl' href='../douyin/'>📈 抖音账号监测 ↗</a>
+<div class='snfoot'>数据每小时更新<br>浅色站点版</div></aside>
+<header><div class='hd'><div class='l1'>
+<h1>每日财经热榜 · <b>2026-11-07</b>（周六）</h1>
+<span class='meta'>采集 2026-11-07 06:41 ｜ <a href='../douyin/'>抖音账号监控 ↗</a></span>
+<span class='chip ok'>信源 20 · 成功 20</span>
+</div><div class='datenav'>
+<a href='2026-11-07.html' class='cur'>2026-11-07</a>
+<a href='2026-11-06.html'>2026-11-06</a>
+<a href='2026-11-05.html'>2026-11-05</a>
+<a href='2026-11-04.html'>2026-11-04</a>
+<a href='2026-11-03.html'>2026-11-03</a>
+<a href='2026-11-02.html'>2026-11-02</a>
+<a href='2026-10-30.html'>2026-10-30</a>
+<a href='2026-10-29.html'>2026-10-29</a>
+</div></div></header>
+<div class='wrap'>
+<div class='overview'>
+<div class='ov'><b>48</b><span>跨平台聚类</span></div>
+<div class='ov'><b>49</b><span>财经命中条目</span></div>
+<div class='ov'><b>20/20</b><span>信源成功</span></div>
+<div class='ov'><b>82</b><span>环球头条</span></div>
+</div>
+<section id='tagvideos'><h2>🎬 抖音视频精选 <span class='cnt'>只收最近 24 小时发布 · 按热度分层 · 点击封面站内直接播放</span></h2>
+<div class='dyv-tabs'>
+<button class='dyv-tab on' type='button' data-t='0'>💰 财经 <span class='n'>20</span></button>
+<button class='dyv-tab' type='button' data-t='1'>📚 财经干货 <span class='n'>3</span></button>
+<button class='dyv-tab' type='button' data-t='2'>📈 股票·交易 <span class='n'>8</span></button>
+<button class='dyv-tab' type='button' data-t='3'>🏦 基金·理财 <span class='n'>3</span></button>
+<button class='dyv-tab' type='button' data-t='4'>🧠 商业·认知 <span class='n'>2</span></button>
+</div>
+<div class='dyv-sorth'>组内排序：<button class='dyv-sort on' type='button' data-s='heat'>按热度（点赞）</button><button class='dyv-sort' type='button' data-s='time'>按最新（时间）</button><span class='cnt'>默认热度降序 · 切换仅改展示顺序，不改变入榜门槛</span></div>
+<div class='dyv-panels'>
+<div class='dyv-panel'>
+<div class='dyv-sub'>过去 24 小时发布的新视频：<b>🔥 爆款 3</b> 条 · <b>📈 上升 17</b> 条<span class='cnt'>（窗口内共 21 条 · 池中累计 150 条）</span></div>
+<div class='dyv-gtitle'>🔥 爆款 <span>近 24 小时 · 点赞 ≥ 5000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7704970446329381731' data-ct='1793953229' data-dk='21091' title='11月6日复盘'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-0813c000-ce/o4DkAE9A3Ij7MF2AHowfDLwcmhAqC9wftqEYAE~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=bN1D8VepwkQ7H20fbGjux8NlRcM%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110622063582F1E5094072CA92950E' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>3:00</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>11月6日复盘</div><div class='dyv-meta'><span class='d1'>❤ 2.1万</span><span>💬 1285</span><span class='sp'></span><span class='dt'>14小时前</span></div><div class='dyv-line2'><span class='au'>@全能的野人</span><span class='tg'>#市场情绪解读</span><span class='tg'>#金融</span><span class='dyv-vel'>▲ 1840/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704892390230447561' data-ct='1793935055' data-dk='14595' title='科技的未来'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/b6c3aa5a00ebd3f59c43d8a7f08ecd7a~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109319200&amp;x-signature=ocfVklxxnhMcdL6DYgNg4cYGZK4%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106180632B518294451703177B135' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>8:23</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>科技的未来</div><div class='dyv-meta'><span class='d1'>❤ 1.5万</span><span>💬 648</span><span class='sp'></span><span class='dt'>19小时前</span></div><div class='dyv-line2'><span class='au'>@小说地产与财经</span><span class='tg'>#财经</span><span class='tg'>#干货分享</span><span class='dyv-vel'>▲ 2052/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704708507437992310' data-ct='1793892241' data-dk='6640' title='反弹怎么做'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/bcf650077a62ae6c2d1b13cd78ddf933~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109308400&amp;x-signature=NtMOVW7cRKOut1BFo0XTf%2FAhEAg%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110615063339AD9B1572D0297E9795' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>3:35</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>反弹怎么做</div><div class='dyv-meta'><span class='d1'>❤ 6640</span><span>💬 212</span><span class='sp'></span><span class='dt'>1.3天前</span></div><div class='dyv-line2'><span class='au'>@真如铁</span><span class='tg'>#股票</span><span class='tg'>#财经</span><span class='dyv-vel'>▲ 481/时</span></div></div></div>
+</div>
+<div class='dyv-gtitle'>📈 上升 <span>近 24 小时 · 点赞 ≥ 1000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7704871174287329401' data-ct='1793930115' data-dk='3917' title='3分钟跌8%熔断，集合竞价之前全绿，扛住'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/ec2b9aa0122849a4ba8a36c280630d2e~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109312000&amp;x-signature=hh9R6yArfGBoTqO4SLgZe%2Br3xwA%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106160629E9EB0C763EB1E68A1111' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>0:30</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>3分钟跌8%熔断，集合竞价之前全绿，扛住</div><div class='dyv-meta'><span class='d1'>❤ 3917</span><span>💬 32</span><span class='sp'></span><span class='dt'>20小时前</span></div><div class='dyv-line2'><span class='au'>@投资的智慧</span><span class='tg'>#财经</span><span class='dyv-vel'>▲ 585/时</span></div></div></div>
+<div class='dyv-card' data-vid='7705013105629089034' data-ct='1793963166' data-dk='2035' title='民主党中期选举大获全胜，美国的AI硬件板块跳水。 解答关键问题：AI还行吗？冲击有多大？对我们的影响？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-dy/08a0016f070f47abb69ee31add50581d~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=JO9Aa%2BkQwxDq9EJGNy4Caz5j1L4%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062206289C4FBE9828F117946605' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>6:54</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>民主党中期选举大获全胜，美国的AI硬件板块跳水。 解答关键问题：AI还行吗？冲击有多大？对我们的影响？</div><div class='dyv-meta'><span class='d1'>❤ 2035</span><span>💬 58</span><span class='sp'></span><span class='dt'>11小时前</span></div><div class='dyv-line2'><span class='au'>@爽姐讲财</span><span class='tg'>#零距离看财经</span><span class='tg'>#财经</span><span class='dyv-vel'>▲ 575/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704969011154504975' data-ct='1793952903' data-dk='4093' title='下周会大涨吗？外围股市影响低开震荡，A股下周能否继续大涨 受美股波动影响，A股出现震荡，但A股属于周线级别底部，因此我们判断下周会逐步向上冲击压力位，下一个压力在哪里？耐心看完这段视频，都会给你答案'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-dy/c716b825f7b14ee9a23e48028ff8fc9d~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=qfeoisO5A8%2FOlzjJG7KK7aXbbI4%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110622063582F1E5094072CA92950E' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>5:19</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>下周会大涨吗？外围股市影响低开震荡，A股下周能否继续大涨 受美股波动影响，A股出现震荡，但A股属于周线级别底部，因此我们判断下周会逐步向上冲击压力位，下一个压力在哪里？耐心看完这段视频，都会给你答案</div><div class='dyv-meta'><span class='d1'>❤ 4093</span><span>💬 40</span><span class='sp'></span><span class='dt'>14小时前</span></div><div class='dyv-line2'><span class='au'>@尚局说</span><span class='tg'>#财经</span><span class='tg'>#股票</span><span class='dyv-vel'>▲ 552/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704843081078384123' data-ct='1793923574' data-dk='2623' title='今天-3%打得住吗？'><div class='dyv-thumb'><img loading='lazy' src='https://p9-pc-sign.douyinpic.com/tos-cn-p-0015c000-ce/oo8VNf7HBaM2facQWMXObIBfJc4yQgCpjlE8gA~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109301200&amp;x-signature=8sSQraNwm1LRuhjrRnyFd4FamE8%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611061306265FC560941C618371724D' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>0:42</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>今天-3%打得住吗？</div><div class='dyv-meta'><span class='d1'>❤ 2623</span><span>💬 27</span><span class='sp'></span><span class='dt'>22小时前</span></div><div class='dyv-line2'><span class='au'>@投资的智慧</span><span class='tg'>#财经</span><span class='dyv-vel'>▲ 522/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704971514839371044' data-ct='1793953483' data-dk='2728' title='特朗普喊委内瑞拉做第51州，盯上的到底是什么？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-dy/4eb9bb212d554fffbfbe8bb01a2c9774~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=wWaT%2F7vicKLPTQbJ6LFqCn2cYgc%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110622063582F1E5094072CA92950E' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>5:11</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>特朗普喊委内瑞拉做第51州，盯上的到底是什么？</div><div class='dyv-meta'><span class='d1'>❤ 2728</span><span>💬 81</span><span class='sp'></span><span class='dt'>14小时前</span></div><div class='dyv-line2'><span class='au'>@老马的暴躁财经</span><span class='tg'>#财经</span><span class='tg'>#委内瑞拉</span><span class='dyv-vel'>▲ 438/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704974417360735514' data-ct='1793954158' data-dk='2334' title='美股重挫，AI硬件不行了？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/0e06c4551979c35792a5b8359ff6efa0~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=WIri8FwKdLgfjYCEGgR84C3VwxA%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110622063582F1E5094072CA92950E' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>3:54</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>美股重挫，AI硬件不行了？</div><div class='dyv-meta'><span class='d1'>❤ 2334</span><span>💬 60</span><span class='sp'></span><span class='dt'>14小时前</span></div><div class='dyv-line2'><span class='au'>@咖姐的第六感财经</span><span class='tg'>#财经</span><span class='tg'>#市场分析</span><span class='dyv-vel'>▲ 328/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704949761094194112' data-ct='1793948412' data-dk='1837' title='暴跌AI泡沫破灭？金融危机？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/3f99f782937beccad441a54b8bb3a841~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109326400&amp;x-signature=eapCzcmyXHeyGlT1YWbQ4iXGaCE%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106200630FCDCD2C84267F6A47260' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>4:25</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>暴跌AI泡沫破灭？金融危机？</div><div class='dyv-meta'><span class='d1'>❤ 1837</span><span>💬 51</span><span class='sp'></span><span class='dt'>15小时前</span></div><div class='dyv-line2'><span class='au'>@许琼娜</span><span class='tg'>#财经</span><span class='tg'>#投资</span><span class='dyv-vel'>▲ 322/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704904646338366755' data-ct='1793937913' data-dk='1590' title='#财经 · #金融'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/e70f4a175e2e6b473c23685a212fb02e~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109322800&amp;x-signature=BcRv4%2FRmWFHjWPgOsAOrkrlSutE%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106190632049369C0AC587E9B3567' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>4:20</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>#财经 · #金融</div><div class='dyv-meta'><span class='d1'>❤ 1590</span><span>💬 43</span><span class='sp'></span><span class='dt'>18小时前</span></div><div class='dyv-line2'><span class='au'>@伯涛论财道</span><span class='tg'>#财经</span><span class='tg'>#金融</span><span class='dyv-vel'>▲ 216/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704978507004235046' data-ct='1793955111' data-dk='1584' title='弱中有强！ 证券的机会！'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/d29d721926e78ce551bac00f228d9bf0~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=N%2F%2Bg4Z5GAMzpTbr%2BykKFtc%2Br7ME%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110622063582F1E5094072CA92950E' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>9:11</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>弱中有强！ 证券的机会！</div><div class='dyv-meta'><span class='d1'>❤ 1584</span><span>💬 79</span><span class='sp'></span><span class='dt'>13小时前</span></div><div class='dyv-line2'><span class='au'>@离火财经</span><span class='tg'>#财经</span><span class='tg'>#大盘分析</span><span class='dyv-vel'>▲ 180/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704888740749085987' data-ct='1793934211' data-dk='1796' title='AI泡沫正在破裂？华尔街集体抛售，美股下跌原因'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/f0795930edf48177c3e1d506b8c82dcd~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109319200&amp;x-signature=UeYj64lIAE8v6i%2Bs5J1Nk7OZ6Ss%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106180632B518294451703177B135' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>1:15</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>AI泡沫正在破裂？华尔街集体抛售，美股下跌原因</div><div class='dyv-meta'><span class='d1'>❤ 1796</span><span>💬 393</span><span class='sp'></span><span class='dt'>19小时前</span></div><div class='dyv-line2'><span class='au'>@明日走势</span><span class='tg'>#财经</span><span class='tg'>#股民</span><span class='dyv-vel'>▲ 134/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704717726929014070' data-ct='1793894401' data-dk='1985' title='11月6号凌晨，重大消息与信息差，60秒盘前汇总'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/ec51bcee50fa0d8ba3c1005b13f8b046~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109301200&amp;x-signature=ie9tAN3hl%2BOVSZKR3y4gUdJJ7RY%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106130629103B8BB905890F5A3B37' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>5:02</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>11月6号凌晨，重大消息与信息差，60秒盘前汇总</div><div class='dyv-meta'><span class='d1'>❤ 1985</span><span>💬 101</span><span class='sp'></span><span class='dt'>1.3天前</span></div><div class='dyv-line2'><span class='au'>@只做热点的道士</span><span class='tg'>#热点</span><span class='tg'>#股票</span><span class='dyv-vel'>▲ 123/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704920126323166491' data-ct='1793941516' data-dk='1411' title='美股暴跌，纳指跌超6%，数据中心叫停？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/cdcd40e36fab8bd9db1e0ad35812cdfd~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109326400&amp;x-signature=P7qUs6RzFGKKtM2BO%2F84jtpw5t8%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106200633FD8081A0436B6284D1F1' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>1:41</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>美股暴跌，纳指跌超6%，数据中心叫停？</div><div class='dyv-meta'><span class='d1'>❤ 1411</span><span>💬 132</span><span class='sp'></span><span class='dt'>17小时前</span></div><div class='dyv-line2'><span class='au'>@呱呱蛙Investing</span><span class='tg'>#财经</span><span class='tg'>#美股</span><span class='dyv-vel'>▲ 113/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704899175145639210' data-ct='1793936639' data-dk='1561' title='11.06午盘分析'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/c1389fda3f2c89bc58864dd218be5ae4~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109322800&amp;x-signature=No6F7%2BlnzTnc8NTeCH1B1uW6Fgg%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106190632049369C0AC587E9B3567' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>4:21</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>11.06午盘分析</div><div class='dyv-meta'><span class='d1'>❤ 1561</span><span>💬 117</span><span class='sp'></span><span class='dt'>18小时前</span></div><div class='dyv-line2'><span class='au'>@红旗大街发哥</span><span class='tg'>#证券</span><span class='tg'>#财经</span><span class='dyv-vel'>▲ 69/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704935779377712411' data-ct='1793951719' data-dk='2663' title='等红灯的几十秒，到底该谁买单？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-dy/3e5009ae89564291b46724358502ba4e~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109330000&amp;x-signature=ddaeK0QIwQ9t9xLNSN5LQWNc2WQ%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106210633F50EC414E482FC8B7256' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>4:22</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>等红灯的几十秒，到底该谁买单？</div><div class='dyv-meta'><span class='d1'>❤ 2663</span><span>💬 140</span><span class='sp'></span><span class='dt'>14小时前</span></div><div class='dyv-line2'><span class='au'>@晋公子</span><span class='tg'>#财经</span><span class='tg'>#红灯停表是怎么做到的</span></div></div></div>
+<div class='dyv-card' data-vid='7705026273537527091' data-ct='1793966235' data-dk='1784' title='市场如此动荡，我更佩服这家大机构'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-dy/dede417405c54c7f84de6e21b02c6726~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=DVvGjzgYTttilIItcQRkfw6tguM%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062306303FE39F7FCFDB76C56798' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>2:27</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>市场如此动荡，我更佩服这家大机构</div><div class='dyv-meta'><span class='d1'>❤ 1784</span><span>💬 85</span><span class='sp'></span><span class='dt'>10小时前</span></div><div class='dyv-line2'><span class='au'>@叶檀财经</span><span class='tg'>#市场</span><span class='tg'>#社保</span></div></div></div>
+<div class='dyv-card' data-vid='7705016102404754698' data-ct='1793963865' data-dk='1462' title='11.06复盘总结'><div class='dyv-thumb'><img loading='lazy' src='https://p9-pc-sign.douyinpic.com/tos-cn-i-dy/5d2daa49b438450682a180461006de31~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=b9mqd7XU%2BgzwI9B5NSI3Lqz61ag%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062206289C4FBE9828F117946605' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>7:58</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>11.06复盘总结</div><div class='dyv-meta'><span class='d1'>❤ 1462</span><span>💬 161</span><span class='sp'></span><span class='dt'>11小时前</span></div><div class='dyv-line2'><span class='au'>@红旗大街发哥</span><span class='tg'>#证券</span><span class='tg'>#财经</span></div></div></div>
+<div class='dyv-card' data-vid='7704875621704811115' data-ct='1793931150' data-dk='1334' title='很主观'><div class='dyv-thumb'><img loading='lazy' src='https://p9-pc-sign.douyinpic.com/image-cut-tos-priv/a5853c846d7fb3aa300daf39f4b30a34~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109319200&amp;x-signature=btdWinhbuygYcyYD69qRaE1a7jg%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106180632B518294451703177B135' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>1:34</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>很主观</div><div class='dyv-meta'><span class='d1'>❤ 1334</span><span>💬 65</span><span class='sp'></span><span class='dt'>20小时前</span></div><div class='dyv-line2'><span class='au'>@FIRE青年</span><span class='tg'>#真实生活分享计划</span><span class='tg'>#实盘记录</span></div></div></div>
+</div>
+<div class='dyv-foot'>本栏目池中累计 150 条 · 更新于 2026-11-06 23:06</div>
+</div>
+<div class='dyv-panel' style='display:none'>
+<div class='dyv-sub'>过去 24 小时发布的新视频：<b>🔥 爆款 0</b> 条 · <b>📈 上升 3</b> 条<span class='cnt'>（窗口内共 3 条 · 池中累计 150 条）</span></div>
+<div class='dyv-gtitle'>📈 上升 <span>近 24 小时 · 点赞 ≥ 1000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7705021867039411497' data-ct='1793965207' data-dk='4511' title='金融战火再起（13）美股崩了，新东升西降，万剑归宗？！'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-dy/09d5b7e540ac4dbca6ecd83f8b7c4382~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=AZImdMW3FIDMqL7lZKErm4XoUCI%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106230653B8CD2C27D432E2BD32EF' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>7:52</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>金融战火再起（13）美股崩了，新东升西降，万剑归宗？！</div><div class='dyv-meta'><span class='d1'>❤ 4511</span><span>💬 178</span><span class='sp'></span><span class='dt'>11小时前</span></div><div class='dyv-line2'><span class='au'>@笨嘴哥财经</span><span class='tg'>#财经知识</span><span class='tg'>#美国</span><span class='dyv-vel'>▲ 1301/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704809794503420329' data-ct='1793915824' data-dk='4893' title='隔夜全线重挫 有大事？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/608ab86a60a19cd2822f718f8253c20f~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=rXSgmidymQT7Fu7s8wxDrnbzp1Y%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062307091911CD2B1F052DBCE1A7' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>1:37</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>隔夜全线重挫 有大事？</div><div class='dyv-meta'><span class='d1'>❤ 4893</span><span>💬 42</span><span class='sp'></span><span class='dt'>1.0天前</span></div><div class='dyv-line2'><span class='au'>@黑桃</span><span class='tg'>#美股夜盘</span><span class='tg'>#用大白话讲解财经知识</span><span class='dyv-vel'>▲ 132/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704917816666819875' data-ct='1793940983' data-dk='1660' title='主力护盘！抵住冲击！硬件有超跌反的机会！'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/cd1d436c7f231736bbe144e2a957cabd~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=gF9tWJWwHO9c9cQIVwFxsayphuc%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062307068E76A31B591F54971787' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>2:00</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>主力护盘！抵住冲击！硬件有超跌反的机会！</div><div class='dyv-meta'><span class='d1'>❤ 1660</span><span>💬 84</span><span class='sp'></span><span class='dt'>17小时前</span></div><div class='dyv-line2'><span class='au'>@老刘聊财经（刘彬）</span><span class='tg'>#午评</span><span class='tg'>#行业分析</span><span class='dyv-vel'>▲ 86/时</span></div></div></div>
+</div>
+<div class='dyv-foot'>本栏目池中累计 150 条 · 更新于 2026-11-06 23:07</div>
+</div>
+<div class='dyv-panel' style='display:none'>
+<div class='dyv-sub'>过去 24 小时发布的新视频：<b>🔥 爆款 4</b> 条 · <b>📈 上升 4</b> 条<span class='cnt'>（窗口内共 11 条 · 池中累计 150 条）</span></div>
+<div class='dyv-gtitle'>🔥 爆款 <span>近 24 小时 · 点赞 ≥ 5000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7704988435291364175' data-ct='1793957417' data-dk='21081' title='紫阳东路'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-0813c000-ce/ocpeRAoB1Cn8j7EiiAAszAEIAETtPdgwteIiDK~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109333600&amp;x-signature=dUDQzT6RXpb790A8YDiy2kzmlyk%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106220751B8A95C47BA834D907654' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>1:14</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>紫阳东路</div><div class='dyv-meta'><span class='d1'>❤ 2.1万</span><span>💬 1294</span><span class='sp'></span><span class='dt'>13小时前</span></div><div class='dyv-line2'><span class='au'>@全能的野人</span><span class='tg'>#金融</span><span class='tg'>#游资</span><span class='dyv-vel'>▲ 4467/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704842295127996923' data-ct='1793923391' data-dk='13018' title='外围利空，今天该怎么办，我是这样计划的。'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/c0d3391403c868517c4d17cfbc94f634~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=9cYEwNkdrgE7eErkJGLq9v1i8z4%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110623084036779AE95AEF979884F9' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>1:57</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>外围利空，今天该怎么办，我是这样计划的。</div><div class='dyv-meta'><span class='d1'>❤ 1.3万</span><span>💬 1078</span><span class='sp'></span><span class='dt'>22小时前</span></div><div class='dyv-line2'><span class='au'>@全职股民小海</span><span class='tg'>#股民</span><span class='tg'>#股票</span><span class='dyv-vel'>▲ 150/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704872360251846833' data-ct='1793930392' data-dk='12316' title='今天我不用割肉了，MACD依然红柱状态。'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/1ad761027a5e124a7d8a1bfed75bf8ca~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=Hk%2F8iuGpwrs3Gp5Dq7DRqc9Zh6g%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110623084036779AE95AEF979884F9' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>0:37</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>今天我不用割肉了，MACD依然红柱状态。</div><div class='dyv-meta'><span class='d1'>❤ 1.2万</span><span>💬 1352</span><span class='sp'></span><span class='dt'>20小时前</span></div><div class='dyv-line2'><span class='au'>@全职股民小海</span><span class='tg'>#股民</span><span class='tg'>#股票</span><span class='dyv-vel'>▲ 255/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704963270167252265' data-ct='1793951562' data-dk='6673' title='11月6日复盘'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/14dacbf0f9810f54dad35b09ee712497~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=AgXh%2Fi98YIRYQzIEPnFqz0gK8sk%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106230824BC7B41AE340AFFBDD949' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>8:34</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>11月6日复盘</div><div class='dyv-meta'><span class='d1'>❤ 6673</span><span>💬 555</span><span class='sp'></span><span class='dt'>14小时前</span></div><div class='dyv-line2'><span class='au'>@老何学院</span><span class='tg'>#复盘</span><span class='dyv-vel'>▲ 749/时</span></div></div></div>
+</div>
+<div class='dyv-gtitle'>📈 上升 <span>近 24 小时 · 点赞 ≥ 1000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7704850641810567333' data-ct='1793925335' data-dk='3946' title='个人观点仅供参考，无任何操作意见'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/6a9e9c1b9e8e46b9fa7e0ef80fd877fd~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109312000&amp;x-signature=pIOJDYjSGKWcLtFyn8VblSbneBM%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110616083991A1FCBC1026B08B605A' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>8:59</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>个人观点仅供参考，无任何操作意见</div><div class='dyv-meta'><span class='d1'>❤ 3946</span><span>💬 260</span><span class='sp'></span><span class='dt'>22小时前</span></div><div class='dyv-line2'><span class='au'>@拐点王李晶</span><span class='tg'>#股民交流</span><span class='tg'>#负和游戏</span><span class='dyv-vel'>▲ 381/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704699867527974186' data-ct='1793922300' data-dk='3197' title='铂金2暮蝶天枢云阙POV复盘讲解'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/538a5a69e84be0399bf3cef8c47a5c81~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=pdnah7lmoBY4rJd6vbzKDi%2Fyv3I%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106230824BC7B41AE340AFFBDD949' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>25:49</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>铂金2暮蝶天枢云阙POV复盘讲解</div><div class='dyv-meta'><span class='d1'>❤ 3197</span><span>💬 156</span><span class='sp'></span><span class='dt'>22小时前</span></div><div class='dyv-line2'><span class='au'>@砚秋（无畏契约）</span><span class='tg'>#铂金</span><span class='tg'>#暮蝶</span><span class='dyv-vel'>▲ 177/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704901914018611962' data-ct='1793937272' data-dk='2788' title='满上了，我燃尽了。'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/682fc6229e8c247f4e0d7ca1da87dea8~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109330000&amp;x-signature=xsM%2Fy0qOppjiR4x4y98mr0qYdYk%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062108462CBAB07B3798EBB19586' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>1:35</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>满上了，我燃尽了。</div><div class='dyv-meta'><span class='d1'>❤ 2788</span><span>💬 106</span><span class='sp'></span><span class='dt'>18小时前</span></div><div class='dyv-line2'><span class='au'>@背个竹筐</span><span class='tg'>#背个竹筐</span><span class='tg'>#股民交流</span><span class='dyv-vel'>▲ 74/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704891787160210723' data-ct='1793934919' data-dk='2850' title='#股民交流 · #行情分析 · #股民'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/a6a9ccb0c6e9b5d3518f371c44aa4f86~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109326400&amp;x-signature=%2FPZuQTe5qEcKaSjPRk25F3jovoA%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062008507CBF856B18D750A28EAD' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>3:09</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>#股民交流 · #行情分析 · #股民</div><div class='dyv-meta'><span class='d1'>❤ 2850</span><span>💬 0</span><span class='sp'></span><span class='dt'>19小时前</span></div><div class='dyv-line2'><span class='au'>@秦姐还可以</span><span class='tg'>#股民交流</span><span class='tg'>#行情分析</span></div></div></div>
+</div>
+<div class='dyv-foot'>本栏目池中累计 150 条 · 更新于 2026-11-06 23:08</div>
+</div>
+<div class='dyv-panel' style='display:none'>
+<div class='dyv-sub'>过去 24 小时发布的新视频：<b>🔥 爆款 1</b> 条 · <b>📈 上升 2</b> 条<span class='cnt'>（窗口内共 13 条 · 池中累计 150 条）</span></div>
+<div class='dyv-gtitle'>🔥 爆款 <span>近 24 小时 · 点赞 ≥ 5000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7704969584143753615' data-ct='1793953028' data-dk='5221' title='11-6盘后'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/f6670e6f6c8c239c9fe9d263157b2b25~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=L4%2FkO2LfrKbSETNCMIrB5LhH9iE%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026110623085222C6152DBA10C5C29A84' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge hot'>🔥 爆款</span><span class='dyv-dur'>1:42</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>11-6盘后</div><div class='dyv-meta'><span class='d1'>❤ 5221</span><span>💬 516</span><span class='sp'></span><span class='dt'>14小时前</span></div><div class='dyv-line2'><span class='au'>@C哥养基</span><span class='tg'>#基金</span><span class='tg'>#理财</span><span class='dyv-vel'>▲ 355/时</span></div></div></div>
+</div>
+<div class='dyv-gtitle'>📈 上升 <span>近 24 小时 · 点赞 ≥ 1000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7704719383936111803' data-ct='1793894774' data-dk='2445' title='回调无法避免，我只能做好情绪 预期的管理和仓位管理'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/image-cut-tos-priv/269f0d5e1ebf056d5b1dd0bb0c86309c~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=IYpBqfcwM%2FQlPMJ5sAdPlgGQ66s%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106230908658B47899DCF99C4F6EE' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>0:57</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>回调无法避免，我只能做好情绪 预期的管理和仓位管理</div><div class='dyv-meta'><span class='d1'>❤ 2445</span><span>💬 445</span><span class='sp'></span><span class='dt'>1.3天前</span></div><div class='dyv-line2'><span class='au'>@维京航海日记簿</span><span class='tg'>#成长</span><span class='tg'>#记录</span><span class='dyv-vel'>▲ 129/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704881296569329098' data-ct='1793932489' data-dk='2670' title='这把输了虎总认了 够狠'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-0813/owbtUigIibBAdCcipGCUD1P54AOAeAAAETLsf1~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109301200&amp;x-signature=k5LwTsa3zLCRD%2FrOqMDo8DHMGzc%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106130851C0B906E94078AA5B6245' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>0:21</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>这把输了虎总认了 够狠</div><div class='dyv-meta'><span class='d1'>❤ 2670</span><span>💬 405</span><span class='sp'></span><span class='dt'>20小时前</span></div><div class='dyv-line2'><span class='au'>@胖虎爱理财</span><span class='tg'>#理财</span><span class='tg'>#科技</span></div></div></div>
+</div>
+<div class='dyv-foot'>本栏目池中累计 150 条 · 更新于 2026-11-06 23:09</div>
+</div>
+<div class='dyv-panel' style='display:none'>
+<div class='dyv-sub'>过去 24 小时发布的新视频：<b>🔥 爆款 0</b> 条 · <b>📈 上升 2</b> 条<span class='cnt'>（窗口内共 4 条 · 池中累计 150 条）</span></div>
+<div class='dyv-gtitle'>📈 上升 <span>近 24 小时 · 点赞 ≥ 1000</span></div>
+<div class='dyv-grid'>
+<div class='dyv-card' data-vid='7705007376750873892' data-ct='1793961834' data-dk='1380' title='明年开始贬值最狠的九样东西'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-dy/647212b013814a17960866e4eab75c33~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109337200&amp;x-signature=XmPyKG9M4pQA%2FfnRcONkKyNATnk%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202611062309259C1298F025667BC3DF37' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>7:04</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>明年开始贬值最狠的九样东西</div><div class='dyv-meta'><span class='d1'>❤ 1380</span><span>💬 52</span><span class='sp'></span><span class='dt'>11小时前</span></div><div class='dyv-line2'><span class='au'>@禹橙商业悟道</span><span class='tg'>#认知</span><span class='tg'>#商业思维</span><span class='dyv-vel'>▲ 219/时</span></div></div></div>
+<div class='dyv-card' data-vid='7704904803214249827' data-ct='1793937946' data-dk='1044' title='最小成本试错 其实创业最贵的从来不是学费，而是还没有验证市场，就先把底裤全交代了，让你没有了再试错的机会。如果是你，你会怎么做？'><div class='dyv-thumb'><img loading='lazy' src='https://p3-pc-sign.douyinpic.com/tos-cn-i-0813/o0NAnDF7qEDRZhAAIzAgfMEeqtIl9DMADAhVUC~tplv-dy-resize-origshort-autoq-75:330.jpeg?lk3s=138a59ce&amp;x-expires=2109330000&amp;x-signature=UHfGPGmamI3xoM8XkNJ9nV6z2iI%3D&amp;from=327834062&amp;s=PackSourceEnum_CHALLENGE_AWEME&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20261106210940B4EDC7D3E4944AB3EE5F' alt='' referrerpolicy='no-referrer' onerror="this.parentNode.classList.add('noimg');this.remove()"><span class='dyv-badge rise'>📈 上升</span><span class='dyv-dur'>0:51</span><span class='dyv-play'>▶</span></div><div class='dyv-body'><div class='dyv-title'>最小成本试错 其实创业最贵的从来不是学费，而是还没有验证市场，就先把底裤全交代了，让你没有了再试错的机会。如果是你，你会怎么做？</div><div class='dyv-meta'><span class='d1'>❤ 1044</span><span>💬 86</span><span class='sp'></span><span class='dt'>18小时前</span></div><div class='dyv-line2'><span class='au'>@艳子说🔥</span><span class='tg'>#赚钱逻辑</span><span class='tg'>#商业思维</span><span class='dyv-vel'>▲ 90/时</span></div></div></div>
+</div>
+<div class='dyv-foot'>本栏目池中累计 150 条 · 更新于 2026-11-06 23:09</div>
+</div>
+</div>
+<div class='dyv-note'>口径：只收过去 24 小时内发布；🔥 爆款 ≥ 5000 赞、📈 上升 ≥ 1000 赞（达不到不上榜）｜ ▲ 涨速为每小时轮询实测（监控满 1 小时后出现）｜ 数据：抖音话题页（最新/综合/最热三路），抓取于 2026-11-06 23:09 ｜ 视频版权归原作者，仅作选题参考</div>
+<div class="dyv-modal" id="dyvModal">
+  <div class="dyv-mbox">
+    <div class="dyv-mhead"><span class="mt">▶ 正在播放</span>
+      <a class="mo" target="_blank" rel="noopener">在抖音打开 ↗</a>
+      <button class="mx" type="button">✕</button></div>
+    <div class="dyv-frame"><iframe allowfullscreen scrolling="no" loading="lazy" allow="autoplay; fullscreen; encrypted-media"></iframe></div>
+    <div class="dyv-mfoot"></div>
+  </div>
+</div>
+<script>
+(function(){
+  var sec = document.getElementById('tagvideos');
+  var modal = document.getElementById('dyvModal');
+  if(!sec || !modal) return;
+  sec.querySelectorAll('.dyv-tab').forEach(function(b){
+    b.addEventListener('click', function(){
+      sec.querySelectorAll('.dyv-tab').forEach(function(x){ x.classList.toggle('on', x===b); });
+      var idx = parseInt(b.getAttribute('data-t'), 10);
+      sec.querySelectorAll('.dyv-panel').forEach(function(p, i){ p.style.display = (i===idx) ? '' : 'none'; });
+    });
+  });
+  var sortMode = 'heat';
+  function applySort(){
+    sec.querySelectorAll('.dyv-grid').forEach(function(g){
+      var cards = Array.prototype.slice.call(g.querySelectorAll('.dyv-card'));
+      cards.sort(function(a, b){
+        var ka = sortMode === 'time' ? (+a.dataset.ct || 0) : (+a.dataset.dk || 0);
+        var kb = sortMode === 'time' ? (+b.dataset.ct || 0) : (+b.dataset.dk || 0);
+        return kb - ka;
+      });
+      cards.forEach(function(c){ g.appendChild(c); });
+    });
+  }
+  sec.querySelectorAll('.dyv-sort').forEach(function(b){
+    b.addEventListener('click', function(){
+      sortMode = b.getAttribute('data-s') || 'heat';
+      sec.querySelectorAll('.dyv-sort').forEach(function(x){ x.classList.toggle('on', x===b); });
+      applySort();
+    });
+  });
+  var frame = modal.querySelector('.dyv-frame iframe');
+  var mo = modal.querySelector('.mo');
+  var mf = modal.querySelector('.dyv-mfoot');
+  function close(){
+    modal.classList.remove('on');
+    frame.src = 'about:blank';
+    document.body.style.overflow = '';
+  }
+  sec.querySelectorAll('.dyv-card').forEach(function(c){
+    c.addEventListener('click', function(){
+      var vid = c.getAttribute('data-vid');
+      frame.src = 'https://open.douyin.com/player/video?vid=' + vid + '&autoplay=1';
+      mo.href = 'https://www.douyin.com/video/' + vid;
+      var t = c.querySelector('.dyv-title');
+      mf.textContent = (t ? t.textContent : '') + '（内容由抖音话题页抓取，点击右上角可在抖音查看）';
+      modal.classList.add('on');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  modal.addEventListener('click', function(e){ if(e.target === modal) close(); });
+  modal.querySelector('.mx').addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+</script>
+</section>
+<section id='sec-top'><h2><span class='no'>1</span>今日选题候选 TOP10 <span class='cnt'>按推荐指数排序</span></h2>
+<div class='card cand'><div class='rk'>01</div><div class='bd'>
+<div class='tt'><a href="https://www.toutiao.com/article/7704952446535090738" target="_blank" rel="noopener">一组数据感受中国经济强劲脉动</a><span class='score'>指数 170</span></div>
+<div class='line'><span class="cat" style="color:#7a4fd6;background:#7a4fd61c;border-color:#7a4fd655">宏观政策</span> <span class='plat'>头条热榜 <b>#3</b></span><span class='plat'>腾讯新闻热榜 <b>#4</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《真正看懂中国经济》86.6万播放</li><li>知乎讨论 10 条，最高《2026年前三季度国内生产总值1071071亿元,同比增长4.6》</li></ul>
+<div class='angles'>切入角度：① 翻译型：这件事和你的钱包有什么关系；② 机制型：为什么会这样（通俗机制拆解）</div>
+<details><summary>上榜明细（2 条）</summary><div class='mem'>
+<div>[头条热榜 #3] <a href="https://www.toutiao.com/article/7704952446535090738" target="_blank" rel="noopener">一组数据感受中国经济强劲脉动</a></div>
+<div>[腾讯新闻热榜 #4] <a href="https://new.qq.com/rain/a/20261106A091FG00" target="_blank" rel="noopener">历史新高！翻番增长！一组数据感受中国经济强劲脉动</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>02</div><div class='bd'>
+<div class='tt'><a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a><span class='score'>指数 116</span></div>
+<div class='line'><span class="cat" style="color:#0e8a6e;background:#0e8a6e1c;border-color:#0e8a6e55">公司产业</span> <span class='plat'>微信24h热文榜 <b>#1</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《苹果手机密码忘了怎么办？跟维修师傅偷学一招，原来自己就能解开》35.6万播放</li><li>知乎讨论 10 条，最高《iPhone 18 Pro Max 出现断网故障,苹果确认中招后》</li></ul>
+<div class='angles'>切入角度：① 事件型：发生了什么+关键数字一目了然；② 逻辑型：背后的商业/行业逻辑拆解</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微信24h热文榜 #1] <a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>03</div><div class='bd'>
+<div class='tt'><a href="https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B3%E6%BE%8E%E7%A8%8B%E4%B8%BB%E9%A9%BE%E8%BD%A6%E9%97%A8%E8%A2%AB%E6%92%9E%E4%BB%8D%E4%BF%9D%E6%8A%A4%E8%BD%A6%E4%B8%BB" target="_blank" rel="noopener">小米澎程主驾车门被撞仍保护车主</a><span class='score'>指数 101</span></div>
+<div class='line'><span class="cat" style="color:#0e8a6e;background:#0e8a6e1c;border-color:#0e8a6e55">公司产业</span> <span class='plat'>微博热搜 <b>#11</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《【小米首批车主交付仪式】雷军亲自开车门》30.4万播放</li><li>知乎讨论 10 条，最高《上市第二天就撞了,小米“澎程首撞”背后藏着比事故更值得关注的东西》</li></ul>
+<div class='angles'>切入角度：① 事件型：发生了什么+关键数字一目了然；② 逻辑型：背后的商业/行业逻辑拆解</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微博热搜 #11] <a href="https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B3%E6%BE%8E%E7%A8%8B%E4%B8%BB%E9%A9%BE%E8%BD%A6%E9%97%A8%E8%A2%AB%E6%92%9E%E4%BB%8D%E4%BF%9D%E6%8A%A4%E8%BD%A6%E4%B8%BB" target="_blank" rel="noopener">小米澎程主驾车门被撞仍保护车主</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>04</div><div class='bd'>
+<div class='tt'><a href="https://www.zaobao.com/news/china/story20261107-9961160" target="_blank" rel="noopener">陈婧：AI热退潮，从股市开始？</a><span class='score'>指数 101</span></div>
+<div class='line'><span class="cat" style="color:#2f6be4;background:#2f6be41c;border-color:#2f6be455">市场行情</span> <span class='plat'>联合早报 <b>#2</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《【陈婧霏】夏宫（Official Music Video）》6.2万播放</li><li>知乎讨论 10 条，最高《AI造软件的热劲退潮后,我才看清什么叫&quot;正确的事&quot; - 知乎》</li></ul>
+<div class='angles'>切入角度：① 复盘型：3分钟讲清今天为什么涨/跌（K线+板块数据）；② 分歧型：机构观点 vs 盘面走势，谁更可信</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[联合早报 #2] <a href="https://www.zaobao.com/news/china/story20261107-9961160" target="_blank" rel="noopener">陈婧：AI热退潮，从股市开始？</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>05</div><div class='bd'>
+<div class='tt'><a href="https://www.toutiao.com/trending/7704890136399511606/" target="_blank" rel="noopener">存款利率拐点来了？有储户存500万</a><span class='score'>指数 99</span></div>
+<div class='line'><span class="cat" style="color:#7a4fd6;background:#7a4fd61c;border-color:#7a4fd655">宏观政策</span> <span class='plat'>头条热榜 <b>#4</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《有一千万存在银行，光靠吃利息，下半辈子能否躺赢？》133.8万播放</li><li>知乎讨论 10 条，最高《存款大搬家实锤!从官方数据,看懂居民财富正在悄悄转向 - 知乎》</li></ul>
+<div class='angles'>切入角度：① 翻译型：这件事和你的钱包有什么关系；② 机制型：为什么会这样（通俗机制拆解）</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[头条热榜 #4] <a href="https://www.toutiao.com/trending/7704890136399511606/" target="_blank" rel="noopener">存款利率拐点来了？有储户存500万</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>06</div><div class='bd'>
+<div class='tt'><a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E8%82%A1%E5%B8%82%E4%B8%BA%E4%BD%95%E6%9A%B4%E8%B7%8C&amp;sa=fyb_news" target="_blank" rel="noopener">美国股市为何暴跌</a><span class='score'>指数 97</span></div>
+<div class='line'><span class="cat" style="color:#2f6be4;background:#2f6be41c;border-color:#2f6be455">市场行情</span> <span class='plat'>百度热搜 <b>#9</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《看懂货币的力量：美国经济的崩溃与霸权》21.6万播放</li><li>知乎讨论 10 条，最高《美股史诗级暴跌,单日蒸发约 2.8 万亿美元,AI 产业链集体崩》</li></ul>
+<div class='angles'>切入角度：① 复盘型：3分钟讲清今天为什么涨/跌（K线+板块数据）；② 分歧型：机构观点 vs 盘面走势，谁更可信</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[百度热搜 #9] <a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E8%82%A1%E5%B8%82%E4%B8%BA%E4%BD%95%E6%9A%B4%E8%B7%8C&amp;sa=fyb_news" target="_blank" rel="noopener">美国股市为何暴跌</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>07</div><div class='bd'>
+<div class='tt'><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E9%A9%AC%E9%9E%8D%E5%B1%B1%E7%94%B5%E5%8A%A8%E8%BD%A6%E8%BF%9B%E6%A5%BC%E8%B5%B7%E7%81%AB&amp;rankType=1" target="_blank" rel="noopener">马鞍山电动车进楼起火</a><span class='score'>指数 94</span></div>
+<div class='line'><span class="cat" style="color:#0e8a6e;background:#0e8a6e1c;border-color:#0e8a6e55">公司产业</span> <span class='plat'>快手热榜 <b>#6</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《电瓶车在宿舍爆燃!室友逃出火场后，竟关门，致大学生杜均浩火灾重伤》69.4万播放</li><li>知乎讨论 10 条，最高《楼道停车再酿火灾!楼道、单元门,别再当成“停车位” - 知乎》</li></ul>
+<div class='angles'>切入角度：① 事件型：发生了什么+关键数字一目了然；② 逻辑型：背后的商业/行业逻辑拆解</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[快手热榜 #6] <a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E9%A9%AC%E9%9E%8D%E5%B1%B1%E7%94%B5%E5%8A%A8%E8%BD%A6%E8%BF%9B%E6%A5%BC%E8%B5%B7%E7%81%AB&amp;rankType=1" target="_blank" rel="noopener">马鞍山电动车进楼起火</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>08</div><div class='bd'>
+<div class='tt'><a href="https://www.toutiao.com/trending/7705046885274226226/" target="_blank" rel="noopener">未来谁能接棒房地产成中国经济新支柱</a><span class='score'>指数 90</span></div>
+<div class='line'><span class="cat" style="color:#7a4fd6;background:#7a4fd61c;border-color:#7a4fd655">宏观政策</span> <span class='plat'>头条热榜 <b>#8</b></span></div>
+<ul class='deep'><li>B站相关视频 1000+ 个，头部《代替房地产，新的“四万亿”来了》252.6万播放</li><li>知乎讨论 10 条，最高《房地产之后,谁能接棒万亿级产业? - 知乎》</li></ul>
+<div class='angles'>切入角度：① 翻译型：这件事和你的钱包有什么关系；② 机制型：为什么会这样（通俗机制拆解）</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[头条热榜 #8] <a href="https://www.toutiao.com/trending/7705046885274226226/" target="_blank" rel="noopener">未来谁能接棒房地产成中国经济新支柱</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>09</div><div class='bd'>
+<div class='tt'><a href="https://s.weibo.com/weibo?q=%E7%BE%8E%E5%9B%BD10%E6%9C%88%E9%9D%9E%E5%86%9C%E8%BF%9C%E8%B6%85%E9%A2%84%E6%9C%9F" target="_blank" rel="noopener">美国10月非农远超预期</a><span class='score'>指数 88</span></div>
+<div class='line'><span class="cat" style="color:#6b7280;background:#6b72801c;border-color:#6b728055">其他财经</span> <span class='plat'>微博热搜 <b>#8</b></span></div>
+<div class='angles'>切入角度：① 解读型：背景+影响+看点；② 对比型：和同类事件比有什么不同</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[微博热搜 #8] <a href="https://s.weibo.com/weibo?q=%E7%BE%8E%E5%9B%BD10%E6%9C%88%E9%9D%9E%E5%86%9C%E8%BF%9C%E8%B6%85%E9%A2%84%E6%9C%9F" target="_blank" rel="noopener">美国10月非农远超预期</a></div>
+</div></details>
+</div></div>
+<div class='card cand'><div class='rk'>10</div><div class='bd'>
+<div class='tt'><a href="https://www.zhihu.com/question/2101977105504235968" target="_blank" rel="noopener">民主党提出超级 AI 禁令，美股迎来 1896 年以来中期选举后表现最差的第二个交易日，影响有多大？</a><span class='score'>指数 86</span></div>
+<div class='line'><span class="cat" style="color:#2f6be4;background:#2f6be41c;border-color:#2f6be455">市场行情</span> <span class='plat'>知乎热榜 <b>#6</b></span></div>
+<div class='angles'>切入角度：① 复盘型：3分钟讲清今天为什么涨/跌（K线+板块数据）；② 分歧型：机构观点 vs 盘面走势，谁更可信</div>
+<details><summary>上榜明细（1 条）</summary><div class='mem'>
+<div>[知乎热榜 #6] <a href="https://www.zhihu.com/question/2101977105504235968" target="_blank" rel="noopener">民主党提出超级 AI 禁令，美股迎来 1896 年以来中期选举后表现最差的第二个交易日，影响有多大？</a></div>
+</div></details>
+</div></div>
+</section>
+<section id='sec-top20'><h2><span class='no'>2</span>跨平台综合最热 TOP20</h2>
+<table class='tbl'><tr><th>#</th><th>话题</th><th>上榜平台（位次）</th><th>综合分</th></tr>
+<tr><td>1</td><td><a href="https://www.toutiao.com/article/7704952446535090738" target="_blank" rel="noopener">一组数据感受中国经济强劲脉动</a></td><td>头条热榜#3 · 腾讯新闻热榜#4</td><td>162</td></tr>
+<tr><td>2</td><td><a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a></td><td>微信24h热文榜#1</td><td>110</td></tr>
+<tr><td>3</td><td><a href="https://s.weibo.com/weibo?q=%E7%BE%8E%E5%9B%BD10%E6%9C%88%E9%9D%9E%E5%86%9C%E8%BF%9C%E8%B6%85%E9%A2%84%E6%9C%9F" target="_blank" rel="noopener">美国10月非农远超预期</a></td><td>微博热搜#8</td><td>103</td></tr>
+<tr><td>4</td><td><a href="https://m.baidu.com/s?word=125%E5%8F%B0%E5%85%AC%E4%BA%A4%E8%BD%A6%E9%80%80%E5%BD%B9%E7%94%B5%E6%B1%A0%E5%8D%96%E4%BA%86300%E4%B8%87%E5%85%83&amp;sa=fyb_news" target="_blank" rel="noopener">125台公交车退役电池卖了300万元</a></td><td>百度热搜#3</td><td>96</td></tr>
+<tr><td>5</td><td><a href="https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B3%E6%BE%8E%E7%A8%8B%E4%B8%BB%E9%A9%BE%E8%BD%A6%E9%97%A8%E8%A2%AB%E6%92%9E%E4%BB%8D%E4%BF%9D%E6%8A%A4%E8%BD%A6%E4%B8%BB" target="_blank" rel="noopener">小米澎程主驾车门被撞仍保护车主</a></td><td>微博热搜#11</td><td>96</td></tr>
+<tr><td>6</td><td><a href="https://www.toutiao.com/trending/7704890136399511606/" target="_blank" rel="noopener">存款利率拐点来了？有储户存500万</a></td><td>头条热榜#4</td><td>94</td></tr>
+<tr><td>7</td><td><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E9%A9%AC%E9%9E%8D%E5%B1%B1%E7%94%B5%E5%8A%A8%E8%BD%A6%E8%BF%9B%E6%A5%BC%E8%B5%B7%E7%81%AB&amp;rankType=1" target="_blank" rel="noopener">马鞍山电动车进楼起火</a></td><td>快手热榜#6</td><td>90</td></tr>
+<tr><td>8</td><td><a href="https://www.zaobao.com/news/china/story20261107-9961160" target="_blank" rel="noopener">陈婧：AI热退潮，从股市开始？</a></td><td>联合早报#2</td><td>88</td></tr>
+<tr><td>9</td><td><a href="https://www.toutiao.com/trending/7705046885274226226/" target="_blank" rel="noopener">未来谁能接棒房地产成中国经济新支柱</a></td><td>头条热榜#8</td><td>86</td></tr>
+<tr><td>10</td><td><a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E8%82%A1%E5%B8%82%E4%B8%BA%E4%BD%95%E6%9A%B4%E8%B7%8C&amp;sa=fyb_news" target="_blank" rel="noopener">美国股市为何暴跌</a></td><td>百度热搜#9</td><td>84</td></tr>
+<tr><td>11</td><td><a href="https://www.zhihu.com/question/2101977105504235968" target="_blank" rel="noopener">民主党提出超级 AI 禁令，美股迎来 1896 年以来中期选举后表现最差的第二个交易日，影响有多大？</a></td><td>知乎热榜#6</td><td>75</td></tr>
+<tr><td>12</td><td><a href="https://www.douyin.com/hot/2731913" target="_blank" rel="noopener">美股大跌特朗普甩锅民主党</a></td><td>抖音热榜#21</td><td>71</td></tr>
+<tr><td>13</td><td><a href="https://m.baidu.com/s?word=%E8%8B%B9%E6%9E%9C%E9%A6%96%E6%AC%BE%E8%A7%A6%E6%8E%A7MacBook+Pro%E5%BC%80%E5%94%AE%E5%8D%B3%E7%A0%B4%E5%8F%91&amp;sa=fyb_news" target="_blank" rel="noopener">苹果首款触控MacBook Pro开售即破发</a></td><td>百度热搜#16</td><td>71</td></tr>
+<tr><td>14</td><td><a href="https://new.qq.com/rain/a/20261106A0D75W00" target="_blank" rel="noopener">国常会：完善资本市场稳市机制，增强股市内在稳定性，促进资本市场平稳健康发展</a></td><td>腾讯新闻热榜#2</td><td>69</td></tr>
+<tr><td>15</td><td><a href="https://www.toutiao.com/trending/7703861051373502500/" target="_blank" rel="noopener">张雪说入职1年员工百分百涨工资</a></td><td>头条热榜#18</td><td>66</td></tr>
+<tr><td>16</td><td><a href="https://www.zaobao.com/news/china/story20261106-9958996" target="_blank" rel="noopener">最高检：男护士猥亵14岁女患者被拘十日 监督立案后获刑</a></td><td>联合早报#14</td><td>64</td></tr>
+<tr><td>17</td><td><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E5%B0%9A%E5%85%AC%E4%B8%BB%E5%90%B4%E6%B1%89%E5%9D%A4%E5%BF%AB%E6%89%8B%E4%B8%93%E8%AE%BF&amp;rankType=1" target="_blank" rel="noopener">尚公主吴汉坤快手专访</a></td><td>快手热榜#21</td><td>60</td></tr>
+<tr><td>18</td><td><a href="https://new.qq.com/rain/a/20261106A0E4BI00" target="_blank" rel="noopener">中国经济看“新”|挖掘机海外大卖，国产装备凭实力“圈粉”</a></td><td>腾讯新闻热榜#9</td><td>59</td></tr>
+<tr><td>19</td><td><a href="https://www.zhihu.com/question/2101426752694261522" target="_blank" rel="noopener">男子预判金价能到2000元/克，花光积蓄买7斤黄金，9个月亏114万元，急用钱无奈割肉，如何看待此事？</a></td><td>知乎热榜#12</td><td>57</td></tr>
+<tr><td>20</td><td><a href="https://www.zaobao.com/news/china/story20261106-9959555" target="_blank" rel="noopener">中国反对美国破坏中古合作 称将维护涉制裁中企权益</a></td><td>联合早报#18</td><td>56</td></tr>
+</table></section>
+<section id='sec-social'><h2><span class='no'>3</span>各平台财经热点 <span class='cnt'>社交/内容平台 · 财经筛选</span></h2>
+<details class='card' id='src-s0' style='margin:10px 0' open><summary><b style='color:#14202e'>微博热搜</b> <span class='cnt'>财经 4/50 条</span></summary>
+<div class='it'><span class='r'>#8</span><a href="https://s.weibo.com/weibo?q=%E7%BE%8E%E5%9B%BD10%E6%9C%88%E9%9D%9E%E5%86%9C%E8%BF%9C%E8%B6%85%E9%A2%84%E6%9C%9F" target="_blank" rel="noopener">美国10月非农远超预期</a> <span class='chg flat'>11.4万</span></div>
+<div class='it'><span class='r'>#11</span><a href="https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B3%E6%BE%8E%E7%A8%8B%E4%B8%BB%E9%A9%BE%E8%BD%A6%E9%97%A8%E8%A2%AB%E6%92%9E%E4%BB%8D%E4%BF%9D%E6%8A%A4%E8%BD%A6%E4%B8%BB" target="_blank" rel="noopener">小米澎程主驾车门被撞仍保护车主</a> <span class='chg flat'>11.1万</span></div>
+<div class='it'><span class='r'>#34</span><a href="https://s.weibo.com/weibo?q=%E7%89%B9%E6%96%AF%E6%8B%89%E5%B0%86%E9%80%90%E6%AD%A5%E5%81%9C%E4%BA%A7Cybertruck" target="_blank" rel="noopener">特斯拉将逐步停产Cybertruck</a> <span class='chg flat'>8.6万</span></div>
+<div class='it'><span class='r'>#38</span><a href="https://s.weibo.com/weibo?q=%E5%8D%8E%E4%B8%BA%E8%BF%9E%E7%BB%AD%E4%B8%89%E5%B9%B4%E6%8B%8D%E9%87%91%E9%B8%A1%E7%99%BE%E8%8A%B1%E5%AE%A3%E4%BC%A0%E7%89%87" target="_blank" rel="noopener">华为连续三年拍金鸡百花宣传片</a> <span class='chg flat'>8.5万</span></div>
+</details>
+<details class='card' id='src-s1' style='margin:10px 0' open><summary><b style='color:#14202e'>抖音热榜</b> <span class='cnt'>财经 2/49 条</span></summary>
+<div class='it'><span class='r'>#21</span><a href="https://www.douyin.com/hot/2731913" target="_blank" rel="noopener">美股大跌特朗普甩锅民主党</a> <span class='chg flat'>832.4万</span></div>
+<div class='it'><span class='r'>#38</span><a href="https://www.douyin.com/hot/2730681" target="_blank" rel="noopener">首款华为鸿蒙台式机抢先体验</a> <span class='chg flat'>772.3万</span></div>
+</details>
+<details class='card' id='src-s2' style='margin:10px 0'><summary><b style='color:#14202e'>抖音上升热点</b> <span class='cnt'>财经 0/50 条</span></summary>
+<div class='it' style='color:#98a2b3'>（今日无命中）</div>
+</details>
+<details class='card' id='src-s3' style='margin:10px 0' open><summary><b style='color:#14202e'>百度热搜</b> <span class='cnt'>财经 5/51 条</span></summary>
+<div class='it'><span class='r'>#3</span><a href="https://m.baidu.com/s?word=125%E5%8F%B0%E5%85%AC%E4%BA%A4%E8%BD%A6%E9%80%80%E5%BD%B9%E7%94%B5%E6%B1%A0%E5%8D%96%E4%BA%86300%E4%B8%87%E5%85%83&amp;sa=fyb_news" target="_blank" rel="noopener">125台公交车退役电池卖了300万元</a></div>
+<div class='it'><span class='r'>#9</span><a href="https://m.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E8%82%A1%E5%B8%82%E4%B8%BA%E4%BD%95%E6%9A%B4%E8%B7%8C&amp;sa=fyb_news" target="_blank" rel="noopener">美国股市为何暴跌</a> <span class='chip'>热</span></div>
+<div class='it'><span class='r'>#16</span><a href="https://m.baidu.com/s?word=%E8%8B%B9%E6%9E%9C%E9%A6%96%E6%AC%BE%E8%A7%A6%E6%8E%A7MacBook+Pro%E5%BC%80%E5%94%AE%E5%8D%B3%E7%A0%B4%E5%8F%91&amp;sa=fyb_news" target="_blank" rel="noopener">苹果首款触控MacBook Pro开售即破发</a></div>
+<div class='it'><span class='r'>#33</span><a href="https://m.baidu.com/s?word=%E5%8D%8E%E5%B0%94%E8%A1%97%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E6%89%9B%E4%B8%8D%E4%BD%8F%E4%BA%86&amp;sa=fyb_news" target="_blank" rel="noopener">华尔街对冲基金扛不住了</a></div>
+<div class='it'><span class='r'>#37</span><a href="https://m.baidu.com/s?word=%E7%BA%B3%E6%8C%87%E7%BB%8F%E5%8E%86%E6%9A%B4%E8%B7%8C%E5%90%8E%E9%AB%98%E5%BC%801.3%25&amp;sa=fyb_news" target="_blank" rel="noopener">纳指经历暴跌后高开1.3%</a></div>
+</details>
+<details class='card' id='src-s4' style='margin:10px 0' open><summary><b style='color:#14202e'>头条热榜</b> <span class='cnt'>财经 8/50 条</span></summary>
+<div class='it'><span class='r'>#3</span><a href="https://www.toutiao.com/article/7704952446535090738" target="_blank" rel="noopener">一组数据感受中国经济强劲脉动</a> <span class='chg flat'>1154.3万</span></div>
+<div class='it'><span class='r'>#4</span><a href="https://www.toutiao.com/trending/7704890136399511606/" target="_blank" rel="noopener">存款利率拐点来了？有储户存500万</a> <span class='chg flat'>1044.4万</span></div>
+<div class='it'><span class='r'>#8</span><a href="https://www.toutiao.com/trending/7705046885274226226/" target="_blank" rel="noopener">未来谁能接棒房地产成中国经济新支柱</a> <span class='chg flat'>700.1万</span></div>
+<div class='it'><span class='r'>#18</span><a href="https://www.toutiao.com/trending/7703861051373502500/" target="_blank" rel="noopener">张雪说入职1年员工百分百涨工资</a> <span class='chg flat'>257.6万</span></div>
+<div class='it'><span class='r'>#32</span><a href="https://www.toutiao.com/trending/7705070037853277738/" target="_blank" rel="noopener">A股国家队最新增持路径浮出水面</a> <span class='chg flat'>63.5万</span> <span class='chip'>interpretation</span></div>
+<div class='it'><span class='r'>#40</span><a href="https://www.toutiao.com/trending/7705013194799975999/" target="_blank" rel="noopener">邵永灵：日企已扛不住稀土荒</a> <span class='chg flat'>28.5万</span></div>
+<div class='it'><span class='r'>#41</span><a href="https://www.toutiao.com/trending/7705025193269268019/" target="_blank" rel="noopener">日本经济又要被绑上战车了吗</a> <span class='chg flat'>25.8万</span></div>
+<div class='it'><span class='r'>#45</span><a href="https://www.toutiao.com/trending/7705024505386634794/" target="_blank" rel="noopener">公积金将如何活跃消费</a> <span class='chg flat'>17.3万</span></div>
+</details>
+<details class='card' id='src-s5' style='margin:10px 0' open><summary><b style='color:#14202e'>知乎热榜</b> <span class='cnt'>财经 6/30 条</span></summary>
+<div class='it'><span class='r'>#6</span><a href="https://www.zhihu.com/question/2101977105504235968" target="_blank" rel="noopener">民主党提出超级 AI 禁令，美股迎来 1896 年以来中期选举后表现最差的第二个交易日，影响有多大？</a> <span class='chg flat'>119万热度</span></div>
+<div class='it'><span class='r'>#12</span><a href="https://www.zhihu.com/question/2101426752694261522" target="_blank" rel="noopener">男子预判金价能到2000元/克，花光积蓄买7斤黄金，9个月亏114万元，急用钱无奈割肉，如何看待此事？</a> <span class='chg flat'>88万热度</span></div>
+<div class='it'><span class='r'>#15</span><a href="https://www.zhihu.com/question/2101923145217209086" target="_blank" rel="noopener">美股遭遇「黑色星期四」，AI板块重挫，SOX指数下跌超12%，国际原油大涨超3%，后市怎么看？</a> <span class='chg flat'>62万热度</span></div>
+<div class='it'><span class='r'>#16</span><a href="https://www.zhihu.com/question/2100626480447370431" target="_blank" rel="noopener">巴菲特称已 48 年不喝水只喝可乐，是真的吗？健康吗？如何从医学角度看待这一饮食习惯？</a> <span class='chg flat'>61万热度</span></div>
+<div class='it'><span class='r'>#23</span><a href="https://www.zhihu.com/question/2101037387820418433" target="_blank" rel="noopener">如何看待华为擎云 HM650系列实现 100%产品元器件国产化率，首款鸿蒙台式机对政企市场意味着什么？</a> <span class='chg flat'>59万热度</span></div>
+<div class='it'><span class='r'>#27</span><a href="https://www.zhihu.com/question/2098740382599328292" target="_blank" rel="noopener">方寸跃迁发布DeepSeek-V4.1-Flash安全报告，其评估的失控与有害操纵风险有哪些值得关注？</a> <span class='chg flat'>59万热度</span></div>
+</details>
+<details class='card' id='src-s6' style='margin:10px 0' open><summary><b style='color:#14202e'>腾讯新闻热榜</b> <span class='cnt'>财经 9/50 条</span></summary>
+<div class='it'><span class='r'>#2</span><a href="https://new.qq.com/rain/a/20261106A0D75W00" target="_blank" rel="noopener">国常会：完善资本市场稳市机制，增强股市内在稳定性，促进资本市场平稳健康发展</a> <span class='chg flat'>181.0万</span></div>
+<div class='it'><span class='r'>#4</span><a href="https://new.qq.com/rain/a/20261106A091FG00" target="_blank" rel="noopener">历史新高！翻番增长！一组数据感受中国经济强劲脉动</a> <span class='chg flat'>149.3万</span></div>
+<div class='it'><span class='r'>#9</span><a href="https://new.qq.com/rain/a/20261106A0E4BI00" target="_blank" rel="noopener">中国经济看“新”|挖掘机海外大卖，国产装备凭实力“圈粉”</a> <span class='chg flat'>136.1万</span></div>
+<div class='it'><span class='r'>#12</span><a href="https://new.qq.com/rain/a/20261106A0CUNL00" target="_blank" rel="noopener">一学生称因看热闹遭保安控制受伤，司法鉴定为轻伤二级 警方已刑事立案，校方回应</a> <span class='chg flat'>133.5万</span></div>
+<div class='it'><span class='r'>#15</span><a href="https://new.qq.com/rain/a/20261106A08UZ400" target="_blank" rel="noopener">浙江一男子花11元拍走黑龙江鹤岗一套60多平房屋，拍卖公司：还需支付2000元左右契税，一共1677人报名，不是法拍房，平台做活动补贴了房款</a> <span class='chg flat'>127.8万</span></div>
+<div class='it'><span class='r'>#29</span><a href="https://new.qq.com/rain/a/20261106A079KR00" target="_blank" rel="noopener">女子使用AI辅助办公，公司以严重违反信息安全等相关规定将其辞退；法院判决公司继续履行劳动合同，赔偿工资及年终奖差额共计46000余元</a> <span class='chg flat'>101.9万</span></div>
+<div class='it'><span class='r'>#39</span><a href="https://new.qq.com/rain/a/20261106A0CP6100" target="_blank" rel="noopener">岳父突发疾病离世，女婿将遗体移至车辆后方，伪造成倒车不慎致死，拟骗保47万余元，被行拘12日；检察机关：没拿到钱依然构成保险诈骗罪</a> <span class='chg flat'>93.1万</span></div>
+<div class='it'><span class='r'>#46</span><a href="https://new.qq.com/rain/a/20261106A03JGT00" target="_blank" rel="noopener">中国APEC第三城，剑指4万亿GDP</a> <span class='chg flat'>88.0万</span></div>
+<div class='it'><span class='r'>#48</span><a href="https://new.qq.com/rain/a/20261106A038QX00" target="_blank" rel="noopener">AI 视频模型卷出新高度：谷歌 Gemini Omni 1.2 Flash 发布，原生 15 秒生成</a> <span class='chg flat'>86.1万</span></div>
+</details>
+<details class='card' id='src-s7' style='margin:10px 0'><summary><b style='color:#14202e'>B站排行</b> <span class='cnt'>财经 0/0 条</span></summary>
+<div class='it' style='color:#98a2b3'>（今日无命中）</div>
+</details>
+<details class='card' id='src-s8' style='margin:10px 0' open><summary><b style='color:#14202e'>微信24h热文榜</b> <span class='cnt'>财经 3/30 条</span></summary>
+<div class='it'><span class='r'>#1</span><a href="https://mp.weixin.qq.com/s?__biz=MzIxNjQzNTM5Mw==&amp;mid=2247507218&amp;idx=1&amp;sn=b5ddaa09e4995ef5b014061de1bb5613#rd" target="_blank" rel="noopener">苹果最终确认！向每位用户最高赔 637 元</a> <span class='chg flat'>10.0万</span></div>
+<div class='it'><span class='r'>#17</span><a href="https://mp.weixin.qq.com/s?__biz=MzkyNzY0NzcwNQ==&amp;mid=2247507884&amp;idx=6&amp;sn=cf32ee614a425ed024d1f3175bc3a504#rd" target="_blank" rel="noopener">签了！签了！中国和美国真签了！你敢相信？中美关税依然维持25%，结果9月14号，中国燃气企业和美国天然气企业，却低调签下了长达20年合同</a> <span class='chg flat'>7.9万</span></div>
+<div class='it'><span class='r'>#29</span><a href="https://mp.weixin.qq.com/s?__biz=MzU4NTYzMjU0OQ==&amp;mid=2247544614&amp;idx=2&amp;sn=e95cc340c6559357e48cfaa79e1c4140#rd" target="_blank" rel="noopener">李嘉诚曹德旺可能说对了！2026年不买房，5年后会庆幸还是后悔？</a> <span class='chg flat'>5.4万</span></div>
+</details>
+<details class='card' id='src-s9' style='margin:10px 0' open><summary><b style='color:#14202e'>联合早报</b> <span class='cnt'>财经 8/45 条</span></summary>
+<div class='it'><span class='r'>#2</span><a href="https://www.zaobao.com/news/china/story20261107-9961160" target="_blank" rel="noopener">陈婧：AI热退潮，从股市开始？</a> <span class='chip'>中国</span></div>
+<div class='it'><span class='r'>#14</span><a href="https://www.zaobao.com/news/china/story20261106-9958996" target="_blank" rel="noopener">最高检：男护士猥亵14岁女患者被拘十日 监督立案后获刑</a> <span class='chip'>中国</span></div>
+<div class='it'><span class='r'>#18</span><a href="https://www.zaobao.com/news/china/story20261106-9959555" target="_blank" rel="noopener">中国反对美国破坏中古合作 称将维护涉制裁中企权益</a> <span class='chip'>中国</span></div>
+<div class='it'><span class='r'>#23</span><a href="https://www.zaobao.com/news/china/story20261106-9958832" target="_blank" rel="noopener">中国对欧两类化工产品发起反倾销调查 批欧盟贸易保护主义</a> <span class='chip'>中国</span></div>
+<div class='it'><span class='r'>#31</span><a href="https://www.zaobao.com/news/world/story20261106-9960842" target="_blank" rel="noopener">高市强推降消费税法案获众院通过 参院闯关存变数</a> <span class='chip'>国际</span></div>
+<div class='it'><span class='r'>#33</span><a href="https://www.zaobao.com/news/world/story20261106-9960212" target="_blank" rel="noopener">民主党拟推翻特朗普部分关税 加拿大成首个目标</a> <span class='chip'>国际</span></div>
+<div class='it'><span class='r'>#38</span><a href="https://www.zaobao.com/news/world/story20261106-9959332" target="_blank" rel="noopener">民主党大胜冲击美国AI业 数据中心扩建恐受阻</a> <span class='chip'>国际</span></div>
+<div class='it'><span class='r'>#45</span><a href="https://www.zaobao.com/news/world/story20261106-9959022" target="_blank" rel="noopener">美制裁太子集团41关联企业及四个人 马国籍头目非洲设窝点遭制裁</a> <span class='chip'>国际</span></div>
+</details>
+<details class='card' id='src-s10' style='margin:10px 0' open><summary><b style='color:#14202e'>快手热榜</b> <span class='cnt'>财经 4/50 条</span></summary>
+<div class='it'><span class='r'>#6</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E9%A9%AC%E9%9E%8D%E5%B1%B1%E7%94%B5%E5%8A%A8%E8%BD%A6%E8%BF%9B%E6%A5%BC%E8%B5%B7%E7%81%AB&amp;rankType=1" target="_blank" rel="noopener">马鞍山电动车进楼起火</a> <span class='chg flat'>1262.2万</span></div>
+<div class='it'><span class='r'>#21</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E5%B0%9A%E5%85%AC%E4%B8%BB%E5%90%B4%E6%B1%89%E5%9D%A4%E5%BF%AB%E6%89%8B%E4%B8%93%E8%AE%BF&amp;rankType=1" target="_blank" rel="noopener">尚公主吴汉坤快手专访</a> <span class='chg flat'>995.7万</span></div>
+<div class='it'><span class='r'>#30</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=%E6%96%B0%E8%83%BD%E6%BA%90%E8%BD%A6%E8%B6%8A%E9%80%A0%E8%B6%8A%E5%AE%BD%E5%81%9C%E8%BD%A6%E9%9A%BE&amp;rankType=1" target="_blank" rel="noopener">新能源车越造越宽停车难</a> <span class='chg flat'>971.8万</span></div>
+<div class='it'><span class='r'>#37</span><a href="https://index.e.kuaishou.com/rank/hotDetail?keyword=C%E7%BD%97%E5%BF%AB%E6%89%8B%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%85%A8%E6%98%AF%E8%87%B4%E6%95%AC&amp;rankType=1" target="_blank" rel="noopener">C罗快手评论区全是致敬</a> <span class='chg flat'>955.5万</span></div>
+</details>
+</section>
+<section id='sec-vertical'><h2><span class='no'>4</span>财经垂直源 <span class='cnt'>日榜与热门快讯</span></h2>
+<details class='card' id='src-s11' style='margin:10px 0' open><summary><b style='color:#14202e'>财联社电报</b> <span class='cnt'>50 条</span></summary>
+<div class='it'><span class='tm'>06:14</span><a href="https://www.cls.cn/detail/2527964" target="_blank" rel="noopener">周六你需要知道的隔夜全球要闻：芯片股反弹推动纳指收涨1%；微软据悉逐步终止从甲骨文租用AI云算力；欧洲央行据悉考虑审查数据中心相关银行贷款</a></div>
+<div class='it'><span class='tm'>05:01</span><a href="https://www.cls.cn/detail/2527950" target="_blank" rel="noopener">纳指收涨1% 芯片股反弹</a></div>
+<div class='it'><span class='tm'>01:37</span><a href="https://www.cls.cn/detail/2527916" target="_blank" rel="noopener">微软据悉逐步终止从甲骨文租用AI云算力的安排</a></div>
+<div class='it'><span class='tm'>11-06 22:48</span><a href="https://www.cls.cn/detail/2527874" target="_blank" rel="noopener">美股AI硬件股集体反弹 费城半导体指数涨6.50% 英伟达涨7%</a></div>
+<div class='it'><span class='tm'>11-06 22:42</span><a href="https://www.cls.cn/detail/2527871" target="_blank" rel="noopener">财联社11月6日电，费城半导体指数涨6%，报9563.68点。</a></div>
+<div class='it'><span class='tm'>11-06 22:31</span><a href="https://www.cls.cn/detail/2527862" target="_blank" rel="noopener">纳指经历昨日暴跌后高开1.3% 芯片、光通信板块反弹明显</a></div>
+<div class='it'><span class='tm'>11-06 22:30</span><a href="https://www.cls.cn/detail/2527861" target="_blank" rel="noopener">利弗莫尔中概股龙头指数开盘涨超2% 半导体板块领涨</a></div>
+<div class='it'><span class='tm'>11-06 22:18</span><a href="https://www.cls.cn/detail/2527858" target="_blank" rel="noopener">白宫经济顾问哈塞特：数据中心仍有很大发展空间 即使建设放缓美国经济仍可保持强劲增长</a></div>
+<div class='it'><span class='tm'>11-06 21:55</span><a href="https://www.cls.cn/detail/2527838" target="_blank" rel="noopener">财联社11月6日晚间新闻精选</a></div>
+<div class='it'><span class='tm'>11-06 21:31</span><a href="https://www.cls.cn/detail/2527824" target="_blank" rel="noopener">财联社11月6日电，交易员加大了对美联储12月加息的押注。</a></div>
+<div class='it'><span class='tm'>11-06 21:30</span><a href="https://www.cls.cn/detail/2527821" target="_blank" rel="noopener">美国10月失业率为4.1% 不及预期</a></div>
+<div class='it'><span class='tm'>11-06 21:30</span><a href="https://www.cls.cn/detail/2527820" target="_blank" rel="noopener">美国10月非农就业人数增加16.5万人 远超市场预期</a></div>
+<div class='it'><span class='tm'>11-06 21:09</span><a href="https://www.cls.cn/detail/2527806" target="_blank" rel="noopener">美股盘前要闻一览：AI硬件股集体反弹；英伟达拟将老旧机房改造为小型AI数据中心；投资大佬警告英伟达的循环融资终迎泡沫破灭</a></div>
+<div class='it'><span class='tm'>11-06 20:27</span><a href="https://www.cls.cn/detail/2527776" target="_blank" rel="noopener">11月6日周五《新闻联播》要闻26条</a></div>
+<div class='it'><span class='tm'>11-06 20:02</span><a href="https://www.cls.cn/detail/2527756" target="_blank" rel="noopener">财联社11月6日电，特朗普称，100%支持人工智能。</a></div>
+<div class='it'><span class='tm'>11-06 19:59</span><a href="https://www.cls.cn/detail/2527748" target="_blank" rel="noopener">杰创智能：签署49.15亿元算力技术服务合同</a></div>
+<div class='it'><span class='tm'>11-06 19:52</span><a href="https://www.cls.cn/detail/2527740" target="_blank" rel="noopener">国家广播电视总局部署开展新一轮微短剧专项治理工作 治理为期两个月</a></div>
+<div class='it'><span class='tm'>11-06 19:51</span><a href="https://www.cls.cn/detail/2527739" target="_blank" rel="noopener">五粮液：五粮液集团增持计划实施完成 累计增持约30亿元</a></div>
+<div class='it'><span class='tm'>11-06 19:41</span><a href="https://www.cls.cn/detail/2527728" target="_blank" rel="noopener">通合科技：拟投资10.03亿元建设算力储能一体化智能成套电源装备产业化项目</a></div>
+<div class='it'><span class='tm'>11-06 19:21</span><a href="https://www.cls.cn/detail/2527712" target="_blank" rel="noopener">国务院常务会议：完善资本市场稳市机制，增强股市内在稳定性</a></div>
+<div class='it'><span class='tm'>11-06 19:21</span><a href="https://www.cls.cn/detail/2527711" target="_blank" rel="noopener">国务院常务会议：加快重大项目和“六张网”建设实施进度</a></div>
+<div class='it'><span class='tm'>11-06 19:16</span><a href="https://www.cls.cn/detail/2527707" target="_blank" rel="noopener">深交所修订创业板指数编制方案：将单只样本股权重上限逐步调整至15% 于12月14日定期调整时生效</a></div>
+<div class='it'><span class='tm'>11-06 19:11</span><a href="https://www.cls.cn/detail/2527702" target="_blank" rel="noopener">国际复材：拟投资11.58亿元建设高性能电子纤维布项目</a></div>
+<div class='it'><span class='tm'>11-06 19:02</span><a href="https://www.cls.cn/detail/2527692" target="_blank" rel="noopener">上交所对浙文影业下发监管工作函</a></div>
+<div class='it'><span class='tm'>11-06 18:39</span><a href="https://www.cls.cn/detail/2527670" target="_blank" rel="noopener">5连板浙文影业：无AI短剧相关业务</a></div>
+<div class='it' style='color:#98a2b3'>…（共 50 条，报告版截取）</div>
+</details>
+<details class='card' id='src-s12' style='margin:10px 0' open><summary><b style='color:#14202e'>36氪热榜</b> <span class='cnt'>50 条</span></summary>
+<div class='it'><span class='tm'>3.4万</span><a href="https://36kr.com/p/4057467760661378" target="_blank" rel="noopener">刚刚，GPT-6 Cyber 正式发布，AI 最强的矛也成了最强的盾</a></div>
+<div class='it'><span class='tm'>3.2万</span><a href="https://36kr.com/p/4057514219131783" target="_blank" rel="noopener">8点1氪丨2027放假安排出炉，是近年调休最少的一年；美股现史诗级抛售，马斯克损失近千亿美元；《后会友期》爆火，致芒果服务器故障</a></div>
+<div class='it'><span class='tm'>2.8万</span><a href="https://36kr.com/p/4057553085404038" target="_blank" rel="noopener">突发：李飞飞最新 AI 成果发布，把世界模型装进复古掌机，单张图实时跑出 15 帧</a></div>
+<div class='it'><span class='tm'>2.0万</span><a href="https://36kr.com/p/4057751358100359" target="_blank" rel="noopener">一夜变天，奥特曼刚改名「Ram」，芯片股全崩 AI 基建踩刹车</a></div>
+<div class='it'><span class='tm'>1.7万</span><a href="https://36kr.com/p/4057765541794951" target="_blank" rel="noopener">美股一夜崩盘，Anthropic估值暴跌至5000亿，搞ASI或被判20年</a></div>
+<div class='it'><span class='tm'>1.5万</span><a href="https://36kr.com/p/4057431368782726" target="_blank" rel="noopener">GPT-6.2 Astra 要来了，厉娜</a></div>
+<div class='it'><span class='tm'>1.4万</span><a href="https://36kr.com/p/4057626189534338" target="_blank" rel="noopener">谷歌视频新模型双榜第一，力压Grok、Seedance，价格再砍三成</a></div>
+<div class='it'><span class='tm'>9463</span><a href="https://36kr.com/p/4057568656446592" target="_blank" rel="noopener">美股一夜蒸发万亿美元，AI泡沫破了？</a></div>
+<div class='it'><span class='tm'>9316</span><a href="https://36kr.com/p/4057938892133248" target="_blank" rel="noopener">董宇辉“反黑”</a></div>
+<div class='it'><span class='tm'>9139</span><a href="https://36kr.com/p/4057559909046153" target="_blank" rel="noopener">不拼外卖的京东，才是大家都爱的好京东</a></div>
+<div class='it'><span class='tm'>8816</span><a href="https://36kr.com/p/4056833146295170" target="_blank" rel="noopener">猎奇，为什么成为了沃尔玛的打法</a></div>
+<div class='it'><span class='tm'>7776</span><a href="https://36kr.com/p/4057655823684740" target="_blank" rel="noopener">时速400公里高铁，要来了</a></div>
+<div class='it'><span class='tm'>7723</span><a href="https://36kr.com/p/4057870964413312" target="_blank" rel="noopener">天天爆满却倒闭，南城香邻居，开始被年轻人清算</a></div>
+<div class='it'><span class='tm'>7576</span><a href="https://36kr.com/p/4056883801461638" target="_blank" rel="noopener">买山下有松的是什么人？</a></div>
+<div class='it'><span class='tm'>7145</span><a href="https://36kr.com/p/4057654794982537" target="_blank" rel="noopener">36氪首发丨轴向磁通电机企业获超亿元融资，产能将达15万台，已合作多家头部车企</a></div>
+<div class='it'><span class='tm'>6752</span><a href="https://36kr.com/p/4057068260841096" target="_blank" rel="noopener">腾讯Chatterfly上手，语音输入的下一站来了？</a></div>
+<div class='it'><span class='tm'>5921</span><a href="https://36kr.com/p/4057991041127301" target="_blank" rel="noopener">人均48杯，卖得比咖啡还疯</a></div>
+<div class='it'><span class='tm'>5828</span><a href="https://36kr.com/p/4057437511816329" target="_blank" rel="noopener">IT技术太烂，日本正在被黑客们当怪刷</a></div>
+<div class='it'><span class='tm'>5790</span><a href="https://36kr.com/p/4058139995575430" target="_blank" rel="noopener">扎克伯格29岁“接班人”的百亿朋友圈，藏着“硅谷新黑帮”</a></div>
+<div class='it'><span class='tm'>5751</span><a href="https://36kr.com/p/4057963796059017" target="_blank" rel="noopener">腾讯阿里字节，最担心的事情发生了？</a></div>
+<div class='it'><span class='tm'>5259</span><a href="https://36kr.com/p/4058172995736709" target="_blank" rel="noopener">重磅，Claude破解首个原核巨型蛋白，40年神秘结构现真身</a></div>
+<div class='it'><span class='tm'>5174</span><a href="https://36kr.com/p/4056745428865928" target="_blank" rel="noopener">谷歌30GWh订单之后，Watt讲台上出现中国的铁空气答案</a></div>
+<div class='it'><span class='tm'>5166</span><a href="https://36kr.com/p/4057578936505992" target="_blank" rel="noopener">芒果超媒又上头了</a></div>
+<div class='it'><span class='tm'>4704</span><a href="https://36kr.com/p/4057518313690248" target="_blank" rel="noopener">Claude进化速度翻倍了，80%增量来自AI</a></div>
+<div class='it'><span class='tm'>4635</span><a href="https://36kr.com/p/4057583174636677" target="_blank" rel="noopener">“老文青绝对是「顶级情人」啊，厉娜”</a></div>
+<div class='it' style='color:#98a2b3'>…（共 50 条，报告版截取）</div>
+</details>
+<details class='card' id='src-s13' style='margin:10px 0' open><summary><b style='color:#14202e'>新浪财经日榜</b> <span class='cnt'>10 条</span></summary>
+<div class='it'><span class='tm'>1,254</span><a href="https://finance.sina.com.cn/tech/shenji/2026-11-06/doc-inixuiza8841455.shtml" target="_blank" rel="noopener">《持械入宋》主创靠AI短剧还清负债 抖音李亮曾发文“安利”</a></div>
+<div class='it'><span class='tm'>1,209</span><a href="https://finance.sina.com.cn/jjxw/2026-11-06/doc-inixucte8968554.shtml" target="_blank" rel="noopener">任天堂Switch 2三季度销量暴跌41%，仅卖出267万台</a></div>
+<div class='it'><span class='tm'>1,172</span><a href="https://finance.sina.com.cn/jjxw/2026-11-06/doc-inixtxma5072404.shtml" target="_blank" rel="noopener">3个月买断式逆回购缩量续作，央行“削峰填谷”净回笼2000亿</a></div>
+<div class='it'><span class='tm'>1,077</span><a href="https://finance.sina.com.cn/roll/2026-11-06/doc-inixtxky8359945.shtml" target="_blank" rel="noopener">广汽丰田三个月召回超16万辆铂智 前9月销量降6%产能利用率70%</a></div>
+<div class='it'><span class='tm'>1,066</span><a href="https://finance.sina.com.cn/7x24/2026-11-06/doc-inixtnve8493942.shtml" target="_blank" rel="noopener">南方公司在电话会议上表示，五年资本计划规模可能接近1000亿美元，其中包括对各业务板块的额外投资。</a></div>
+<div class='it'><span class='tm'>1,047</span><a href="https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixtxmk5578458.shtml" target="_blank" rel="noopener">11月6日隔夜要闻：美股大跌 人工智能科技股遭遇重挫 中期选举后民主党高层呼吁限制人工智能产业扩张</a></div>
+<div class='it'><span class='tm'>1,023</span><a href="https://finance.sina.com.cn/money/forex/hbfx/2026-11-06/doc-inixtxmh8956677.shtml" target="_blank" rel="noopener">黄金交易提醒：非农来袭，金价能否一鼓作气冲向4200？</a></div>
+<div class='it'><span class='tm'>1,013</span><a href="https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixucte8861297.shtml" target="_blank" rel="noopener">美国德州候任州长：将暂停数据中心相关工作，绝不任由马斯克旗下企业损害公众利益</a></div>
+<div class='it'><span class='tm'>977</span><a href="https://finance.sina.com.cn/stock/relnews/dongmiqa/2026-11-06/doc-inixuuqy5453341.shtml" target="_blank" rel="noopener">三角轮胎：开展新材料应用研究 采取多项汇率对冲措施</a></div>
+<div class='it'><span class='tm'>969</span><a href="https://finance.sina.com.cn/wm/2026-11-06/doc-inixucsw8260417.shtml" target="_blank" rel="noopener">美股“血流成河”，科技股崩盘！特朗普回应：这不是共和党的锅，是那帮“笨蛋民主党人”造成的</a></div>
+</details>
+<details class='card' id='src-s14' style='margin:10px 0' open><summary><b style='color:#14202e'>华尔街见闻</b> <span class='cnt'>10 条</span></summary>
+<div class='it'><span class='tm'>35.5万阅读</span><a href="https://wallstreetcn.com/articles/3785235" target="_blank" rel="noopener">美科技股遭“血洗”，纳指重挫超5%，芯片指数跳水12%，闪迪暴跌22%，“恐慌指数”飙升</a></div>
+<div class='it'><span class='tm'>19.6万阅读</span><a href="https://wallstreetcn.com/articles/3785315" target="_blank" rel="noopener">强劲非农提振加息预期，美元大涨，美股分化道指收跌，芯片股技术性反弹，AMD涨11%</a></div>
+<div class='it'><span class='tm'>15.5万阅读</span><a href="https://wallstreetcn.com/articles/3785351" target="_blank" rel="noopener">撞上AI崩盘！今晚，一份强劲非农报告，或给美股又一重击</a></div>
+<div class='it'><span class='tm'>14.6万阅读</span><a href="https://wallstreetcn.com/articles/3785316" target="_blank" rel="noopener">美国得州当选州长：在保护人民利益措施出台之前，必须暂停数据中心相关工作</a></div>
+<div class='it'><span class='tm'>14.4万阅读</span><a href="https://wallstreetcn.com/articles/3785375" target="_blank" rel="noopener">民主党计划调查苹果、Meta和马斯克，特朗普的硅谷盟友面临“清算”！</a></div>
+<div class='it'><span class='tm'>12.3万阅读</span><a href="https://wallstreetcn.com/articles/3785338" target="_blank" rel="noopener">隔夜美股崩盘：一场由1000亿美元“抢跑”引爆的反身性风暴</a></div>
+<div class='it'><span class='tm'>12.0万阅读</span><a href="https://wallstreetcn.com/articles/3785302" target="_blank" rel="noopener">华尔街见闻早餐FM-Radio | 2026年11月6日</a></div>
+<div class='it'><span class='tm'>10.7万阅读</span><a href="https://wallstreetcn.com/articles/3785395" target="_blank" rel="noopener">美国10月非农就业激增16.5万，远超预期！失业率意外降至4.1%，12月加息预期升温</a></div>
+<div class='it'><span class='tm'>9.2万阅读</span><a href="https://wallstreetcn.com/articles/3785306" target="_blank" rel="noopener">AI抛售潮中买家消失！高盛交易台电话被“打爆”却无人接盘，对冲基金、散户齐撤</a></div>
+<div class='it'><span class='tm'>7.3万阅读</span><a href="https://wallstreetcn.com/articles/3785324" target="_blank" rel="noopener">资金巨变！香港及上海部分投资者对存储显著转空</a></div>
+</details>
+<details class='card' id='src-s15' style='margin:10px 0' open><summary><b style='color:#14202e'>东方财富快讯</b> <span class='cnt'>0 条</span></summary>
+</details>
+<details class='card' id='src-s16' style='margin:10px 0' open><summary><b style='color:#14202e'>雪球今日话题</b> <span class='cnt'>20 条</span></summary>
+<div class='it'><a href="http://www.xueqiu.com/9928479458/415729906" target="_blank" rel="noopener">聊聊这两天市场在交易什么</a></div>
+<div class='it'><a href="http://www.xueqiu.com/2340719306/415768768" target="_blank" rel="noopener">港股为什么总是暴涨暴跌？</a></div>
+<div class='it'><a href="http://www.xueqiu.com/2386334596/415786999" target="_blank" rel="noopener">股票长期投资的钱是如何赚到的？</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1170975436/415815665" target="_blank" rel="noopener">避免本金永久损失最重要</a></div>
+<div class='it'><a href="http://www.xueqiu.com/2299425930/415783056" target="_blank" rel="noopener">趋势和人性</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1833845374/415831918" target="_blank" rel="noopener">Hy4 配不配&quot;最强开源&quot;？</a></div>
+<div class='it'><a href="http://www.xueqiu.com/4550113527/415792425" target="_blank" rel="noopener">从芒格算错可口可乐的账到我们如何避免算错茅台的未来自由现金流</a></div>
+<div class='it'><a href="http://www.xueqiu.com/2735055577/415774460" target="_blank" rel="noopener">印尼的铝土矿会在十年内用尽？</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1553799558/415540071" target="_blank" rel="noopener">AI端侧的趋势跟踪</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1942135967/415651620" target="_blank" rel="noopener">模型的数据要变天了？</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1965756146/415627520" target="_blank" rel="noopener">苹果2026财年财报纵横分析(PPT)-20261105</a></div>
+<div class='it'><a href="http://www.xueqiu.com/3505189104/415612715" target="_blank" rel="noopener">买早了熬死，买晚了追高，以白酒，生猪为例，周期底部真信号大盘点</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1025819408/415629277" target="_blank" rel="noopener">为什么华尔街开始重估AI大模型的资本回报</a></div>
+<div class='it'><a href="http://www.xueqiu.com/9391624441/415645532" target="_blank" rel="noopener">有点意思！Q3财报，低估区反而在改善？（11.05）</a></div>
+<div class='it'><a href="http://www.xueqiu.com/1062170191/415657125" target="_blank" rel="noopener">花一周时间，做了一个银行量化系统</a></div>
+<div class='it'><a href="http://www.xueqiu.com/2340719306/415575698" target="_blank" rel="noopener">投资不要刻舟求剑，也不要叶公好龙！</a></div>
+<div class='it'><a href="http://www.xueqiu.com/5751298322/415419913" target="_blank" rel="noopener">黄金的体温计 ATR提前告诉你行情的质变</a></div>
+<div class='it'><a href="http://www.xueqiu.com/7516820417/415431757" target="_blank" rel="noopener">泸州老窖2026年三季报深度解读：报表慢一点，战略稳一点，一个浓香龙头的答卷</a></div>
+<div class='it'><a href="http://www.xueqiu.com/2340719306/415381166" target="_blank" rel="noopener">现在沪深300，比标普500，更有投资价值？</a></div>
+<div class='it'><a href="http://www.xueqiu.com/7271353740/415443420" target="_blank" rel="noopener">流动性只是表象，全球真正的战场是科技资产定价权</a></div>
+</details>
+<details class='card' id='src-s17' style='margin:10px 0' open><summary><b style='color:#14202e'>虎嗅热文</b> <span class='cnt'>15 条</span></summary>
+<div class='it'><span class='tm'>70.6万</span><a href="https://www.huxiu.com/article/4903068.html" target="_blank" rel="noopener">美国巨变</a></div>
+<div class='it'><span class='tm'>58.5万</span><a href="https://www.huxiu.com/article/4899986.html" target="_blank" rel="noopener">腾讯憋了个大招，就这？</a></div>
+<div class='it'><span class='tm'>53.7万</span><a href="https://www.huxiu.com/article/4902262.html" target="_blank" rel="noopener">哈佛经济学家追踪十万孩子的30年：搬家，可以“改命”</a></div>
+<div class='it'><span class='tm'>48.3万</span><a href="https://www.huxiu.com/article/4901412.html" target="_blank" rel="noopener">薄肌为体，孙学为魂：年轻男孩的新成功学</a></div>
+<div class='it'><span class='tm'>47.5万</span><a href="https://www.huxiu.com/article/4902658.html" target="_blank" rel="noopener">苹果又又又盯上你的钱了</a></div>
+<div class='it'><span class='tm'>47.3万</span><a href="https://www.huxiu.com/article/4902210.html" target="_blank" rel="noopener">大学生宿舍擦边直播：一门正在变脏的生意</a></div>
+<div class='it'><span class='tm'>46.5万</span><a href="https://www.huxiu.com/article/4902185.html" target="_blank" rel="noopener">这个看似自律的好习惯，正在耗尽你的能量</a></div>
+<div class='it'><span class='tm'>37.1万</span><a href="https://www.huxiu.com/article/4902240.html" target="_blank" rel="noopener">理发店这个生意感觉比饭店还惨</a></div>
+<div class='it'><span class='tm'>33.3万</span><a href="https://www.huxiu.com/article/4902987.html" target="_blank" rel="noopener">沃尔沃XC70落地不到20万元，销售称“卖一辆要亏两万多”</a></div>
+<div class='it'><span class='tm'>32.7万</span><a href="https://www.huxiu.com/article/4902871.html" target="_blank" rel="noopener">豆包，被字节另一款APP超越了</a></div>
+<div class='it'><span class='tm'>31.6万</span><a href="https://www.huxiu.com/article/4902598.html" target="_blank" rel="noopener">她花3年研究40个女富豪，发现酒桌上没有大女主</a></div>
+<div class='it'><span class='tm'>30.5万</span><a href="https://www.huxiu.com/article/4901965.html" target="_blank" rel="noopener">“开车12小时，反而亏了15元”，主持人跑网约车被气破防，为何挣钱变难了？</a></div>
+<div class='it'><span class='tm'>29.0万</span><a href="https://www.huxiu.com/article/4902718.html" target="_blank" rel="noopener">全美49个州爆发抗议</a></div>
+<div class='it'><span class='tm'>28.1万</span><a href="https://www.huxiu.com/article/4901869.html" target="_blank" rel="noopener">AI泡沫破裂的前夜</a></div>
+<div class='it'><span class='tm'>27.8万</span><a href="https://www.huxiu.com/article/4903114.html" target="_blank" rel="noopener">在农村，穷家娇子越来越多了</a></div>
+</details>
+<details class='card' id='src-s18' style='margin:10px 0' open><summary><b style='color:#14202e'>第一财经周榜</b> <span class='cnt'>10 条</span></summary>
+<div class='it'><a href="https://www.yicai.com/news/103420197.html" target="_blank" rel="noopener">A股迎利好！金融监管部门将召开座谈会，业内期待稳市措施修复情绪</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103420185.html" target="_blank" rel="noopener">独家调查|微创系子公司“孵化嫁接术”：体内孵化，体外摘桃</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103420264.html" target="_blank" rel="noopener">全球资产遭遇洗盘，国内市场迎来两场重磅会议</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103419411.html" target="_blank" rel="noopener">惨烈！英特尔狂泻近29%，英伟达重挫超4%，AI概念股再遭抛售，纳指跌近3%，中概股普跌，油价上涨</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103421856.html" target="_blank" rel="noopener">金价“跳水”，大金镯又热卖了：线下柜台被顾客包围</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103424764.html" target="_blank" rel="noopener">外卖大战不打了，瑞幸第三季度省了11个亿快递费</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103421115.html" target="_blank" rel="noopener">原奶价格下跌53个月后转正，乳业盈利点生变，深加工能否破局？</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103421896.html" target="_blank" rel="noopener">晚间公告丨11月2日这些公告有看头</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103423800.html" target="_blank" rel="noopener">晚间公告丨11月3日这些公告有看头</a></div>
+<div class='it'><a href="https://www.yicai.com/news/103419558.html" target="_blank" rel="noopener">明天起这些个人收入将由单位代缴增值税</a></div>
+</details>
+<details class='card' id='src-s19' style='margin:10px 0' open><summary><b style='color:#14202e'>MKT News</b> <span class='cnt'>12 条</span></summary>
+<div class='it'><span class='tm'>05:05</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2ae-7f8c-7ee0-aabb-fb0e54157bd9" target="_blank" rel="noopener">★ 【US close: major indexes mixed; SpaceX up &gt;8%】US equities closed mixed on Friday: the Dow fell 0.46%, the S&amp;P… 〔↑S&amp;P500·↓Dow·↑SPCX.O〕</a><div class='trz'>【美股收盘：主要指数涨跌不一；SpaceX涨超8%】美股周五收盘涨跌不一：道指跌0.46%，标普……</div></div>
+<div class='it'><span class='tm'>04:57</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2a7-177e-7ee0-aabb-e837f81c62cf" target="_blank" rel="noopener">【U.S. October nonfarm +165k; dollar posts largest one-day gain in nearly five months】U.S. nonfarm payrolls… 〔↑DXY·↓EURUSD·↓US10Y〕</a><div class='trz'>【美国10月非农新增16.5万；美元录得近五个月最大单日涨幅】美国非农就业……</div></div>
+<div class='it'><span class='tm'>04:43</span><a href="https://mktnews.com/flashDetail.html?id=01a1b29a-0c7b-7ee0-aabb-e05b7e39db64" target="_blank" rel="noopener">【Musk: SpaceX expected to top $100bln annualized revenue by Q4 2026】Elon Musk said in a Friday interview he… 〔↑SPCX.O〕</a><div class='trz'>【马斯克：SpaceX预计到2026年第四季度年化收入突破1000亿美元】埃隆·马斯克在周五采访中表示，他……</div></div>
+<div class='it'><span class='tm'>04:33</span><a href="https://mktnews.com/flashDetail.html?id=01a1b291-520f-7ee0-aabb-d1e8bac8744c" target="_blank" rel="noopener">CFTC: For the week to Nov. 3, speculators increased net short positions in CBOT 5-year U.S. Treasury futures… 〔↓US10Y〕</a><div class='trz'>CFTC：截至11月3日当周，投机者增持CBOT 5年期美国国债期货净空头头寸……</div></div>
+<div class='it'><span class='tm'>04:33</span><a href="https://mktnews.com/flashDetail.html?id=01a1b290-cde5-7ee0-aabb-bfff54e0a0fb" target="_blank" rel="noopener">CFTC: For the week ended Nov. 3, COMEX speculative net longs — gold down 3,107 contracts to 104,297; silver… 〔↓XAUUSD·↓Copper〕</a><div class='trz'>CFTC：截至11月3日当周，COMEX投机净多头头寸——黄金减少3,107手至104,297手；白银……</div></div>
+<div class='it'><span class='tm'>05:45</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2d2-f3fc-7ee0-aabc-7253196019d7" target="_blank" rel="noopener">【International oil prices edge higher on Dec. 6】At the close, NYMEX December WTI rose $0.31 to $90.83/bbl… 〔↑WTI·↑Brent〕</a><div class='trz'>【12月6日国际油价小幅走高】收盘时，NYMEX 12月WTI原油上涨0.31美元至90.83美元/桶……</div></div>
+<div class='it'><span class='tm'>05:27</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2c2-d085-7ee0-aabc-656b17050f76" target="_blank" rel="noopener">SpaceX (SPCX.O) said director Donald Harrison will resign from the board and that the resignation is not due… 〔-SPCX.O〕</a><div class='trz'>SpaceX（SPCX.O）表示，董事唐纳德·哈里森将辞去董事会职务，并称此次辞职并非由于……</div></div>
+<div class='it'><span class='tm'>05:22</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2bd-d05f-7ee0-aabc-58db6621f54d" target="_blank" rel="noopener">Market sources: Google (GOOG.O) purchased $548 million of Qualcomm (QCOM.O) shares. 〔↑QCOM.O·-GOOG.O〕</a><div class='trz'>市场消息人士：谷歌（GOOG.O）购买了价值5.48亿美元的高通（QCOM.O）股票。</div></div>
+<div class='it'><span class='tm'>05:17</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2b9-31a1-7ee0-aabc-4dad7eb970e1" target="_blank" rel="noopener">DBRS Morningstar confirmed the Federal Republic of Germany&#x27;s AAA sovereign rating and affirmed a stable… 〔↑EURUSD·↑DAX〕</a><div class='trz'>DBRS晨星确认德意志联邦共和国AAA主权评级，并维持稳定展望……</div></div>
+<div class='it'><span class='tm'>05:09</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2b2-54a1-7ee0-aabc-39fb038d4576" target="_blank" rel="noopener">S&amp;P says the Middle East war is transmitting to Poland via higher energy prices, but the Polish economy has… 〔↑Brent〕</a><div class='trz'>标普表示，中东战争正通过能源价格上涨传导至波兰，但波兰经济已……</div></div>
+<div class='it'><span class='tm'>05:08</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2b1-4e67-7ee0-aabc-36f9c72c7053" target="_blank" rel="noopener">【Dollar index jumps 0.74% to 102.298 at New York close】The dollar index, which measures the dollar against… 〔↑DXY·↓EURUSD·↑USDJPY〕</a><div class='trz'>【纽约收盘美元指数跳涨0.74%至102.298】衡量美元兑……的美元指数……</div></div>
+<div class='it'><span class='tm'>05:08</span><a href="https://mktnews.com/flashDetail.html?id=01a1b2b0-fa8d-7ee0-aabc-2d7ff7c202c0" target="_blank" rel="noopener">【Series of explosions heard in Kyiv】On the 6th (local time), multiple explosions were reported in Kyiv after… 〔↑XAUUSD·↑DXY·↑Brent〕</a><div class='trz'>【基辅传出系列爆炸声】当地时间6日，基辅据报发生多起爆炸，此前……</div></div>
+</details>
+</section>
+<section id='sec-overseas'><h2><span class='no'>5</span>隔夜美股与环球热点 <span class='cnt'>对A股影响</span></h2>
+<div class='card'><b>隔夜美股</b><div class='line' style='margin-top:8px'>
+<span class='q'><b>道琼斯</b><span class='px'>51,285.73</span><span class="chg down">-0.46%</span></span>
+<span class='q'><b>纳斯达克</b><span class='px'>24,579.42</span><span class="chg up">+1.09%</span></span>
+<span class='q'><b>标普500指数</b><span class='px'>7,376.86</span><span class="chg up">+0.31%</span></span>
+</div></div>
+<div class='card'><b>中概股 / 中国资产</b><span class='cnt' style='color:#67707e;font-size:12.5px'>（影响A股/港股开盘情绪）</span><div class='line' style='margin-top:8px'>
+<span class='q'><b>纳斯达克中国金龙指数</b><span class="chg up">+1.67%</span></span>
+<span class='q'><b>阿里巴巴</b><span class="chg up">+1.28%</span></span>
+<span class='q'><b>京东</b><span class="chg up">+1.64%</span></span>
+<span class='q'><b>拼多多</b><span class="chg down">-1.10%</span></span>
+<span class='q'><b>百度</b><span class="chg up">+3.01%</span></span>
+<span class='q'><b>网易</b><span class="chg up">+2.28%</span></span>
+<span class='q'><b>携程</b><span class="chg up">+1.28%</span></span>
+<span class='q'><b>理想汽车</b><span class="chg up">+5.12%</span></span>
+<span class='q'><b>蔚来</b><span class="chg up">+5.94%</span></span>
+<span class='q'><b>小鹏汽车</b><span class="chg up">+6.67%</span></span>
+<span class='q'><b>哔哩哔哩</b><span class="chg up">+2.88%</span></span>
+</div></div>
+<div class='card'><b>焦点个股</b><div class='line' style='margin-top:8px'>
+<span class='q'><b>英伟达</b><span class='px'>186.64</span><span class="chg up">+2.78%</span></span>
+<span class='q'><b>特斯拉</b><span class='px'>358.22</span><span class="chg up">+4.23%</span></span>
+<span class='q'><b>苹果</b><span class='px'>342.37</span><span class="chg down">-0.52%</span></span>
+<span class='q'><b>微软</b><span class='px'>530.61</span><span class="chg down">-0.99%</span></span>
+<span class='q'><b>谷歌A类股</b><span class='px'>284.78</span><span class="chg up">+0.78%</span></span>
+<span class='q'><b>亚马逊</b><span class='px'>259.30</span><span class="chg down">-0.35%</span></span>
+<span class='q'><b>Meta Platforms</b><span class='px'>610.15</span><span class="chg up">+0.84%</span></span>
+<span class='q'><b>超威半导体</b><span class='px'>449.04</span><span class="chg up">+11.04%</span></span>
+<span class='q'><b>COIN</b><span class='px'>134.76</span><span class="chg down">-1.51%</span></span>
+<span class='q'><b>PLTR</b><span class='px'>160.38</span><span class="chg up">+3.48%</span></span>
+</div></div>
+<div class='card'><b>新闻热度 · 板块</b><div class='line' style='margin-top:8px'>
+<span class='plat'>宏观/利率 <b>10</b></span>
+<span class='plat'>科技/AI/云 <b>6</b></span>
+<span class='plat'>能源 <b>6</b></span>
+<span class='plat'>金融/银行 <b>5</b></span>
+<span class='plat'>半导体/AI芯片 <b>2</b></span>
+<span class='plat'>汽车/新能源 <b>1</b></span>
+</div>
+<div style='margin-top:9px'><b style='font-size:14px'>热点板块 → A股映射</b><span class='cnt' style='color:#98a2b3;font-size:12px'>（隔夜线索，仅供参考）</span>
+<div class='gvec'>宏观/利率（10 条报道）<span class='ar'>→</span>→ A股映射：大盘风向、流动性（风险偏好）</div>
+<div class='gvec'>科技/AI/云（6 条报道）<span class='ar'>→</span>→ A股映射：AI应用、软件、算力</div>
+<div class='gvec'>能源（6 条报道）<span class='ar'>→</span>→ A股映射：石油石化、煤炭（大宗联动）</div>
+<div class='gvec'>金融/银行（5 条报道）<span class='ar'>→</span>→ A股映射：银行、券商（权重与情绪）</div>
+<div class='gvec'>半导体/AI芯片（2 条报道）<span class='ar'>→</span>→ A股映射：半导体/算力链（算力叙事联动）</div>
+</div>
+</div>
+<div class='card'><b>隔夜重点事件</b><div style='margin-top:6px'>
+<div class='it'><span class='chip'>Investing.com</span><a href="https://www.investing.com/news/stock-market-news/as-tech-swoon-roils-market-us-inflation-data-on-tap-5007256" target="_blank" rel="noopener">As tech swoon roils market, US inflation data on tap</a><div class='trz'>科技股下挫搅动市场，美国通胀数据即将公布</div></div>
+<div class='it'><span class='chip'>MarketWatch</span><a href="https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533?mod=mw_rss_topstories" target="_blank" rel="noopener">Nvidia, AMD and other chip stocks rebound — but is relief from the ‘violent’ selloff only temporary?</a><div class='trz'>英伟达、AMD及其他芯片股反弹——但“剧烈”抛售后的缓解只是暂时的吗？</div></div>
+<div class='it'><span class='chip'>CNBC Markets</span><a href="https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html" target="_blank" rel="noopener">Euro zone inflation hits 4% for first time in three years as interest rate hike looms</a><div class='trz'>欧元区通胀三年来首次达到4%，加息迫在眉睫</div></div>
+<div class='it'><span class='chip'>CNBC Markets</span><a href="https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html" target="_blank" rel="noopener">Job openings posted big September gain in positive sign for labor market ahead of payrolls report</a><div class='trz'>9月职位空缺大幅增加，在非农就业报告前释放劳动力市场积极信号</div></div>
+<div class='it'><span class='chip'>WSJ Markets</span><a href="https://www.wsj.com/articles/nikkei-may-rise-as-weak-yen-raises-earnings-hopes-776a8056?mod=rss_markets_main" target="_blank" rel="noopener">Stocks Sink in Broad AI Rout Sparked by China&#x27;s DeepSeek</a><div class='trz'>中国DeepSeek引发AI股大范围暴跌，股市重挫</div></div>
+<div class='it'><span class='chip'>WSJ Markets</span><a href="https://www.wsj.com/articles/jgbs-consolidate-supported-by-u-s-treasurys-gains-7edccc7d?mod=rss_markets_main" target="_blank" rel="noopener">U.S. Treasury Yields Fall But Direction for Long-End Yields Still Seen Upward</a><div class='trz'>美国国债收益率下跌，但长端收益率仍料上行</div></div>
+</div></div>
+<div class='card'><b>美国热搜词</b><div class='line' style='margin-top:8px'>
+<span class='plat'>cboe volatility index <i class='trz2'>芝加哥期权交易所波动率指数（VIX）</i> <b>200+</b></span>
+<span class='plat'>northeastern vs virginia <i class='trz2'>东北大学对阵弗吉尼亚大学</i> <b>1000+</b></span>
+<span class='plat'>tulsa king square one <i class='trz2'>《塔尔萨之王》回到原点</i> <b>200+</b></span>
+<span class='plat'>nuno borges <i class='trz2'>努诺·博尔热斯</i> <b>500+</b></span>
+<span class='plat'>t1 vs kc <i class='trz2'>T1 对阵 KC</i> <b>200+</b></span>
+<span class='plat'>loewe nightmare before christmas <i class='trz2'>罗意威《圣诞夜惊魂》</i> <b>200+</b></span>
+<span class='plat'>casper ruud <i class='trz2'>卡斯珀·鲁德</i> <b>1000+</b></span>
+<span class='plat'>ios <i class='trz2'>iOS 系统</i> <b>200+</b></span>
+<span class='plat'>kristaps porzingis <i class='trz2'>克里斯塔普斯·波尔津吉斯</i> <b>10000+</b></span>
+<span class='plat'>boston college basketball <i class='trz2'>波士顿学院篮球</i> <b>2000+</b></span>
+</div></div>
+<details class='card'><summary><b>英文财经头条</b> <span class='cnt'>去重后 82 条</span></summary>
+<div class='it'><span class='chip'>CNBC</span><a href="https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html" target="_blank" rel="noopener">Investors brace for lower Anthropic valuation, calling $1.5 trillion a &#x27;stretch&#x27;</a><div class='trz'>投资者准备迎接Anthropic估值下调，称1.5万亿美元“偏高”</div></div>
+<div class='it'><span class='chip'>CNBC Markets</span><a href="https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html" target="_blank" rel="noopener">A disturbing employment trend is hiding beneath the latest strong job numbers</a><div class='trz'>最新强劲就业数据背后潜藏令人不安的就业趋势</div></div>
+<div class='it'><span class='chip'>MarketWatch</span><a href="https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories" target="_blank" rel="noopener">‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?</a><div class='trz'>“我没有财务安全网”：我66岁，靠社保生活，仅有500美元储蓄。我还有何指望？</div></div>
+<div class='it'><span class='chip'>WSJ Markets</span><a href="https://www.wsj.com/articles/nikkei-may-rise-as-weak-yen-raises-earnings-hopes-776a8056?mod=rss_markets_main" target="_blank" rel="noopener">Stocks Sink in Broad AI Rout Sparked by China&#x27;s DeepSeek</a><div class='trz'>中国DeepSeek引发AI股大范围暴跌，股市重挫</div></div>
+<div class='it'><span class='chip'>Investing.com</span><a href="https://www.investing.com/news/stock-market-news/as-tech-swoon-roils-market-us-inflation-data-on-tap-5007256" target="_blank" rel="noopener">As tech swoon roils market, US inflation data on tap</a><div class='trz'>科技股下挫搅动市场，美国通胀数据即将公布</div></div>
+<div class='it'><span class='chip'>Nasdaq</span><a href="https://www.nasdaq.com/articles/stock-market-today-nov-6-iren-soars-20-strong-ai-cloud-revenue-growth" target="_blank" rel="noopener">Stock Market Today, Nov. 6: Iren Soars 20% on Strong AI Cloud Revenue Growth</a><div class='trz'>今日股市，11月6日：Iren因AI云收入强劲增长飙升20%</div></div>
+<div class='it'><span class='chip'>Trump(Truth)</span><a href="https://www.trumpstruth.org/statuses/43492" target="_blank" rel="noopener">The Stock Market crashed today because the Dumocrats had a big Tuesday — So sad to see, you only have yourselv</a><div class='trz'>股市今日暴跌，因为“Dumocrats”（民主党人）周二大获全胜——太可悲了，你们只能怪自己</div></div>
+<div class='it'><span class='chip'>CNBC</span><a href="https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html" target="_blank" rel="noopener">Trump says Stephen Miller to replace Susie Wiles as White House chief of staff</a><div class='trz'>特朗普称斯蒂芬·米勒将接替苏西·威尔斯任白宫幕僚长</div></div>
+<div class='it'><span class='chip'>CNBC Markets</span><a href="https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html" target="_blank" rel="noopener">U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%</a><div class='trz'>美国10月新增16.5万个就业岗位，远超预期；失业率降至4.1%</div></div>
+<div class='it'><span class='chip'>MarketWatch</span><a href="https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad?mod=mw_rss_topstories" target="_blank" rel="noopener">Elon Musk opens the door for a big SpaceX acquisition</a><div class='trz'>埃隆·马斯克为SpaceX大规模收购敞开大门</div></div>
+<div class='it'><span class='chip'>WSJ Markets</span><a href="https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb?mod=rss_markets_main" target="_blank" rel="noopener">Comex Gold, Silver Settle Lower</a><div class='trz'>Comex黄金、白银收低</div></div>
+<div class='it'><span class='chip'>Investing.com</span><a href="https://www.investing.com/news/stock-market-news/democrats-planning-flood-of-ai-bills-when-they-take-control-of-congress-5007213" target="_blank" rel="noopener">Democrats planning flood of AI bills when they take control of Congress</a><div class='trz'>民主党人计划在掌控国会后推动大量AI法案</div></div>
+<div class='it'><span class='chip'>Nasdaq</span><a href="https://www.nasdaq.com/articles/why-airbnb-stock-popped-today" target="_blank" rel="noopener">Why Airbnb Stock Popped Today</a><div class='trz'>爱彼迎（Airbnb）股价今日为何大涨</div></div>
+<div class='it'><span class='chip'>Trump(Truth)</span><a href="https://www.trumpstruth.org/statuses/43491" target="_blank" rel="noopener">The Stock Market suffered one of the Worst Days in History based on the results of the Election. Such a sad th</a><div class='trz'>受选举结果影响，股市遭遇史上最糟糕交易日之一。太可悲了</div></div>
+<div class='it'><span class='chip'>CNBC</span><a href="https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html" target="_blank" rel="noopener">OpenAI bugging suspect Alfozan pleads not guilty</a><div class='trz'>涉嫌窃听OpenAI案的嫌疑人Alfozan不认罪</div></div>
+</details>
+<div class='card'><b>新闻热度 · 热门美股</b><div class='line' style='margin-top:8px'>
+<span class='plat'><b>META</b> ×1</span><span class='plat'><b>ADP</b> ×1</span><span class='plat'><b>NET</b> ×1</span><span class='plat'><b>NVDA</b> ×1</span><span class='plat'><b>AMD</b> ×1</span><span class='plat'><b>MU</b> ×1</span><span class='plat'><b>QCOM</b> ×1</span><span class='plat'><b>MSFT</b> ×1</span><span class='plat'><b>TSLA</b> ×1</span><span class='plat'><b>RGA</b> ×1</span><span class='plat'><b>DTI</b> ×1</span><span class='plat'><b>XGN</b> ×1</span>
+</div></div>
+</section>
+<section id='sec-status'><h2><span class='no'>6</span>采集状态</h2><div class='card'>
+<div class='it'><span class='chip ok'>✅</span>微博热搜：50 条（财经命中 4 条）</div>
+<div class='it'><span class='chip ok'>✅</span>抖音热榜：49 条（财经命中 2 条）</div>
+<div class='it'><span class='chip ok'>✅</span>抖音上升热点：50 条（财经命中 0 条）</div>
+<div class='it'><span class='chip ok'>✅</span>百度热搜：51 条（财经命中 5 条）</div>
+<div class='it'><span class='chip ok'>✅</span>头条热榜：50 条（财经命中 8 条）</div>
+<div class='it'><span class='chip ok'>✅</span>知乎热榜：30 条（财经命中 6 条）</div>
+<div class='it'><span class='chip ok'>✅</span>腾讯新闻热榜：50 条（财经命中 9 条）</div>
+<div class='it'><span class='chip ok'>✅</span>B站排行：0 条（财经命中 0 条）</div>
+<div class='it'><span class='chip ok'>✅</span>微信24h热文榜：30 条（财经命中 3 条）</div>
+<div class='it'><span class='chip ok'>✅</span>联合早报：45 条（财经命中 8 条）</div>
+<div class='it'><span class='chip ok'>✅</span>快手热榜：50 条（财经命中 4 条）</div>
+<div class='it'><span class='chip ok'>✅</span>财联社电报：50 条</div>
+<div class='it'><span class='chip ok'>✅</span>36氪热榜：50 条</div>
+<div class='it'><span class='chip ok'>✅</span>新浪财经日榜：10 条</div>
+<div class='it'><span class='chip ok'>✅</span>华尔街见闻：10 条</div>
+<div class='it'><span class='chip ok'>✅</span>东方财富快讯：0 条</div>
+<div class='it'><span class='chip ok'>✅</span>雪球今日话题：20 条</div>
+<div class='it'><span class='chip ok'>✅</span>虎嗅热文：15 条</div>
+<div class='it'><span class='chip ok'>✅</span>第一财经周榜：10 条</div>
+<div class='it'><span class='chip ok'>✅</span>MKT News：12 条</div>
+</div></section>
+<div class='foot'>每日财经热榜 · 浅色站点版 ｜ 数据文件 data/2026-11-07.json ｜ 由 hot_topics.py + site_build.py 生成</div>
+<script>
+(function(){
+  var links=[], cur=null;
+  document.querySelectorAll('.sidenav a.snl[data-t]').forEach(function(a){
+    var el=document.getElementById(a.getAttribute('data-t'));
+    if(el) links.push([el,a]);
+  });
+  function upd(){
+    var y=window.scrollY+150, best=null, bestTop=-1;
+    links.forEach(function(p){
+      var t=p[0].getBoundingClientRect().top+window.scrollY;
+      if(t<=y && t>bestTop){bestTop=t;best=p[1];}
+    });
+    if(!best && links.length) best=links[0][1];
+    if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-40){var last=document.querySelector(".sidenav a[data-t='sec-status']");if(last)best=last;}
+    if(best!==cur){if(cur)cur.classList.remove('on');cur=best;if(cur)cur.classList.add('on');}
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+  window.addEventListener('click',function(){setTimeout(upd,400);});
+  upd();
+})();
+</script></div></body></html>
