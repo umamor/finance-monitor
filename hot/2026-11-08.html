@@ -16,6 +16,11 @@ header{background:#fff;border-bottom:1px solid #e3e8ee;position:sticky;top:0;z-i
 .datenav{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
 .datenav a{padding:2px 11px;border-radius:999px;border:1px solid #e3e8ee;background:#fff;font-size:12.5px;color:#4a5563}
 .datenav a.cur{background:#14202e;color:#fff;border-color:#14202e}
+.datenav .dn-more{position:relative}
+.datenav .dn-more summary{cursor:pointer;list-style:none;padding:2px 11px;border-radius:999px;border:1px dashed #cdd6e0;background:#fff;font-size:12.5px;color:#4a5563}
+.datenav .dn-more summary::-webkit-details-marker{display:none}
+.datenav .dn-more[open] summary{border-color:#14202e;color:#14202e;background:#f1f4f8}
+.datenav .dn-more .dl{position:absolute;right:0;top:130%;z-index:80;background:#fff;border:1px solid #e3e8ee;border-radius:12px;box-shadow:0 10px 30px rgba(20,32,46,.14);padding:8px;display:flex;flex-wrap:wrap;gap:6px;max-width:560px}
 .wrap{max-width:1180px;margin:0 auto;padding:20px 20px 70px}
 .overview{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .ov{background:#fff;border:1px solid #e3e8ee;border-radius:12px;padding:10px 16px;flex:1 1 0;min-width:140px}
@@ -172,16 +177,10 @@ summary{cursor:pointer;color:#1f5fd0;font-size:13px}
 .dh-wd a{color:inherit;text-decoration:none}
 .dh-wd a:hover{color:#1f5fd0;text-decoration:underline}
 .dh-mv{flex:0 0 auto;font-size:12px;font-weight:700;border-radius:7px;padding:1px 7px}
-.dh-mv.up{background:#fdeceb;color:#d6392f}
-.dh-mv.down{background:#e9f7ef;color:#1e9e5a}
-.dh-mv.new{background:#b25e0d;color:#fff;letter-spacing:1px}
-.dh-w.fin{background:#fff8ea}
-.dh-w.fin .dh-wd{color:#8a5a15}
-.dh-w.fin .dh-mv.up{background:#d6392f;color:#fff}
-.dh-w.fin .dh-mv.down{background:#1e9e5a;color:#fff}
-.dh-w.fin .dh-mv.new{background:#c99011;color:#fff}
-.dh-v.fin{background:#fff8ea}
-.dh-v.fin .t{color:#8a5a15}
+.dh-mv.up{background:#d6392f;color:#fff}
+.dh-mv.down{background:#1e9e5a;color:#fff}
+.dh-mv.new{background:#c99011;color:#fff;letter-spacing:1px}
+.cbd{display:inline-block;font-size:11.5px;line-height:17px;padding:0 6px;border:1px solid #dfe5ec;border-radius:6px;flex:0 0 auto;font-weight:600;font-style:normal}
 .dh-sc{flex:0 0 auto;color:#5b6472;font-size:12.5px;font-weight:600;min-width:64px;text-align:right;font-variant-numeric:tabular-nums}
 .dh-spark{flex:0 0 auto;width:76px;height:20px}
 .dh-spark svg{width:100%;height:100%;display:block}
@@ -260,6 +259,7 @@ section[id],details[id]{scroll-margin-top:102px}
 <a href='2026-11-09.html'>2026-11-09</a>
 <a href='2026-11-08.html' class='cur'>2026-11-08</a>
 <a href='2026-11-07.html'>2026-11-07</a>
+<details class='dn-more'><summary>更早（7）</summary><div class='dl'>
 <a href='2026-11-06.html'>2026-11-06</a>
 <a href='2026-11-05.html'>2026-11-05</a>
 <a href='2026-11-04.html'>2026-11-04</a>
@@ -267,14 +267,9 @@ section[id],details[id]{scroll-margin-top:102px}
 <a href='2026-11-02.html'>2026-11-02</a>
 <a href='2026-10-30.html'>2026-10-30</a>
 <a href='2026-10-29.html'>2026-10-29</a>
+</div></details>
 </div></div></header>
 <div class='wrap'>
-<div class='overview'>
-<div class='ov'><b>52</b><span>跨平台聚类</span></div>
-<div class='ov'><b>52</b><span>财经命中条目</span></div>
-<div class='ov'><b>20/20</b><span>信源成功</span></div>
-<div class='ov'><b>83</b><span>环球头条</span></div>
-</div>
 <section id='hourly'><h2>⏱ 实时监测 · 每小时更新 <span class='cnt'>2026-11-08 今日已采集 17 次 · 每小时自动刷新 · 点击时间点回看</span></h2>
 <div class='hbar'><span class='hlabel'>时间轴</span>
 <span class='hchip' data-i='0'>07:08</span>
