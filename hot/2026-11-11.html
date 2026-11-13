@@ -13,11 +13,11 @@ header{background:#fff;border-bottom:1px solid #e3e8ee;position:sticky;top:0;z-i
 .chip{display:inline-block;background:#f1f4f8;border:1px solid #e3e8ee;border-radius:999px;padding:1px 10px;font-size:12.5px;color:#4a5563;margin-right:6px}
 .chip.ok{color:#1e7f4f;border-color:#bfe3cf;background:#eefaf3}
 .chip.bad{color:#c0392b;border-color:#f2c4bf;background:#fdf0ee}
-.datenav{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
-.datenav a{padding:2px 11px;border-radius:999px;border:1px solid #e3e8ee;background:#fff;font-size:12.5px;color:#4a5563}
+.datenav{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.datenav a{padding:0 11px;height:24px;display:inline-flex;align-items:center;justify-content:center;line-height:18px;border-radius:999px;border:1px solid #e3e8ee;background:#fff;font-size:12.5px;color:#4a5563}
 .datenav a.cur{background:#14202e;color:#fff;border-color:#14202e}
-.datenav .dn-more{position:relative}
-.datenav .dn-more summary{cursor:pointer;list-style:none;padding:2px 11px;border-radius:999px;border:1px dashed #cdd6e0;background:#fff;font-size:12.5px;color:#4a5563}
+.datenav .dn-more{position:relative;display:flex;align-items:center;height:24px;align-self:center;margin:0}
+.datenav .dn-more summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;height:24px;padding:0 11px;line-height:18px;border-radius:999px;border:1px dashed #cdd6e0;background:#fff;font-size:12.5px;color:#4a5563}
 .datenav .dn-more summary::-webkit-details-marker{display:none}
 .datenav .dn-more[open] summary{border-color:#14202e;color:#14202e;background:#f1f4f8}
 .datenav .dn-more .dl{position:absolute;right:0;top:130%;z-index:80;background:#fff;border:1px solid #e3e8ee;border-radius:12px;box-shadow:0 10px 30px rgba(20,32,46,.14);padding:8px;display:flex;flex-wrap:wrap;gap:6px;max-width:560px}
