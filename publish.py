@@ -5,6 +5,8 @@
 """
 import shutil
 import subprocess
+import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -35,17 +37,30 @@ def run(*args) -> int:
     return r.returncode
 
 
+def push_retry(n=3) -> bool:
+    """git push 重试（跨境网络偶发失败；失败=线上静默停更，必须重试+报错）"""
+    for i in range(n):
+        if run("git", "push") == 0:
+            return True
+        if i < n - 1:
+            wait = 10 * (i + 1)
+            print(f"[重试] git push 失败，{wait}s 后第 {i + 2}/{n} 次…")
+            time.sleep(wait)
+    return False
+
+
 def main():
     sync(TOOLS / "每日热榜" / "site", REPO / "hot")
     sync(TOOLS / "抖音账号监测" / "site", REPO / "douyin")
     run("git", "add", "-A")
     if run("git", "commit", "-m", f"站点更新 {datetime.now():%Y-%m-%d %H:%M}") != 0:
-        print("（无变更，跳过推送）")
-        return
-    if run("git", "push") == 0:
+        print("（无新变更）")
+    # 无论本轮有无新提交都推送——上一次推送失败时在这里自愈补推
+    if push_retry(3):
         print("[完成] 已推送，线上 1-2 分钟生效（CDN 缓存约 5-10 分钟）")
     else:
-        print("[失败] 推送失败")
+        print("[失败] 推送失败（已重试 3 次）——线上未更新！")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
