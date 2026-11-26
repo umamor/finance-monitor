@@ -12,6 +12,10 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent
 TOOLS = REPO.parent
+# C 盘桥接镜像（2026-11-26 起本机 E/D 盘上的仓库执行 git push 会报
+# "not a git repository"——经排查为环境级问题，推送统一走 C 盘裸镜像中转）
+MIRROR = Path.home() / "AppData" / "Local" / "hermes" / ".fmpush"
+ORIGIN_URL = "https://github.com/umamor/finance-monitor.git"
 
 
 def sync(src: Path, dst: Path) -> bool:
@@ -37,14 +41,44 @@ def run(*args) -> int:
     return r.returncode
 
 
+def _git(cwd: Path, *args) -> int:
+    r = subprocess.run(("git",) + args, cwd=str(cwd), capture_output=True, text=True,
+                       encoding="utf-8", errors="replace")
+    out = (r.stdout or "").strip()
+    if out:
+        print(out)
+    err = (r.stderr or "").strip()
+    if r.returncode != 0 and err:
+        print(err)
+    return r.returncode
+
+
+def ensure_mirror() -> bool:
+    if (MIRROR / "HEAD").exists():
+        return True
+    print(f"[桥接] 镜像不存在，创建：{MIRROR}")
+    try:
+        MIRROR.parent.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        pass
+    if _git(MIRROR.parent, "clone", "--bare", str(REPO), str(MIRROR)) != 0:
+        return False
+    _git(MIRROR, "remote", "set-url", "origin", ORIGIN_URL)
+    return True
+
+
 def push_retry(n=3) -> bool:
-    """git push 重试（跨境网络偶发失败；失败=线上静默停更，必须重试+报错）"""
+    """经 C 盘镜像推送（本机 E/D 盘仓库直接 push 异常；镜像桥接已验证）"""
+    if not ensure_mirror():
+        print("[失败] 桥接镜像不可用")
+        return False
     for i in range(n):
-        if run("git", "push") == 0:
+        _git(MIRROR, "fetch", str(REPO), "+refs/heads/main:refs/remotes/src/main")
+        if _git(MIRROR, "push", "origin", "refs/remotes/src/main:refs/heads/main") == 0:
             return True
         if i < n - 1:
             wait = 10 * (i + 1)
-            print(f"[重试] git push 失败，{wait}s 后第 {i + 2}/{n} 次…")
+            print(f"[重试] push 失败，{wait}s 后第 {i + 2}/{n} 次…")
             time.sleep(wait)
     return False
 
