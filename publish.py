@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """把本地站点同步到 finance-monitor 仓库并推送到 GitHub Pages。
 用法: python -X utf8 publish.py
-同步: 每日热榜/site → hot/ ；抖音账号监测/site（存在时）→ douyin/
+同步: 每日热榜/site → hot/ ；账号矩阵数据站(E:\\账号数据\\site_web) → douyin/（沿用原地址，排除 preview）
 """
 import shutil
 import subprocess
@@ -12,19 +12,20 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent
 TOOLS = REPO.parent
+ACC_SITE = Path(r"E:\账号数据\site_web")   # 账号矩阵数据站（全平台，浅色）
 # C 盘桥接镜像（2026-11-26 起本机 E/D 盘上的仓库执行 git push 会报
 # "not a git repository"——经排查为环境级问题，推送统一走 C 盘裸镜像中转）
 MIRROR = Path.home() / "AppData" / "Local" / "hermes" / ".fmpush"
 ORIGIN_URL = "https://github.com/umamor/finance-monitor.git"
 
 
-def sync(src: Path, dst: Path) -> bool:
+def sync(src: Path, dst: Path, ignore=None) -> bool:
     if not src.exists():
         print(f"[跳过] {src} 不存在")
         return False
     if dst.exists():
         shutil.rmtree(dst)
-    shutil.copytree(src, dst)
+    shutil.copytree(src, dst, ignore=shutil.ignore_patterns(*(ignore or [])))
     print(f"[同步] {src} → {dst.relative_to(REPO)}")
     return True
 
@@ -85,7 +86,7 @@ def push_retry(n=3) -> bool:
 
 def main():
     sync(TOOLS / "每日热榜" / "site", REPO / "hot")
-    sync(TOOLS / "抖音账号监测" / "site", REPO / "douyin")
+    sync(ACC_SITE, REPO / "douyin", ignore=["preview"])   # 账号矩阵数据站（全平台）
     run("git", "add", "-A")
     if run("git", "commit", "-m", f"站点更新 {datetime.now():%Y-%m-%d %H:%M}") != 0:
         print("（无新变更）")

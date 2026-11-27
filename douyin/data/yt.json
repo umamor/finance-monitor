@@ -1,0 +1,241 @@
+{
+ "channels": [
+  {
+   "id": "UCMM38YQdOaUiXMFlWzbRlXw",
+   "title": "Amber聊財",
+   "handle": "@ambersaysfinance",
+   "subs": 21000,
+   "views": 3333180,
+   "videos": 102,
+   "asof": "2026-11-27"
+  },
+  {
+   "id": "UCZNlDT4tKgZS8R6sDuJWwMA",
+   "title": "Amber放大鏡",
+   "handle": "@AmberWithFinance",
+   "subs": 2610,
+   "views": 308232,
+   "videos": 20,
+   "asof": "2026-11-27"
+  },
+  {
+   "id": "UCsWtmTG0UkpuGeeAno4jiGQ",
+   "title": "小鹿財經 Deer Finance",
+   "handle": "@小鹿財經DeerFinance",
+   "subs": 14200,
+   "views": 643122,
+   "videos": 57,
+   "asof": "2026-11-27"
+  },
+  {
+   "id": "UCTueeHImxv4uLBQKsDEMqjQ",
+   "title": "小Lu財經說",
+   "handle": "@財經小鹿FinanceDeer",
+   "subs": 2760,
+   "views": 471533,
+   "videos": 31,
+   "asof": "2026-11-27"
+  },
+  {
+   "id": "UC5lCKye2u8Q0BoE5ggY9myw",
+   "title": "Maple的理財森林",
+   "handle": "@Maple-moneyforest",
+   "subs": 1060,
+   "views": 88389,
+   "videos": 21,
+   "asof": "2026-11-27"
+  }
+ ],
+ "history": {
+  "UCMM38YQdOaUiXMFlWzbRlXw": [
+   {
+    "date": "2026-11-19",
+    "subs": 18600,
+    "views": 2716274,
+    "videos": 98
+   },
+   {
+    "date": "2026-11-20",
+    "subs": 18700,
+    "views": 2716274,
+    "videos": 99
+   },
+   {
+    "date": "2026-11-24",
+    "subs": 20500,
+    "views": 3196967,
+    "videos": 100
+   },
+   {
+    "date": "2026-11-25",
+    "subs": 20600,
+    "views": 3229974,
+    "videos": 100
+   },
+   {
+    "date": "2026-11-26",
+    "subs": 20700,
+    "views": 3259855,
+    "videos": 101
+   },
+   {
+    "date": "2026-11-27",
+    "subs": 21000,
+    "views": 3333180,
+    "videos": 102
+   }
+  ],
+  "UCZNlDT4tKgZS8R6sDuJWwMA": [
+   {
+    "date": "2026-11-19",
+    "subs": 2610,
+    "views": 307688,
+    "videos": 20
+   },
+   {
+    "date": "2026-11-20",
+    "subs": 2610,
+    "views": 307688,
+    "videos": 20
+   },
+   {
+    "date": "2026-11-24",
+    "subs": 2610,
+    "views": 308090,
+    "videos": 20
+   },
+   {
+    "date": "2026-11-25",
+    "subs": 2610,
+    "views": 308133,
+    "videos": 20
+   },
+   {
+    "date": "2026-11-26",
+    "subs": 2610,
+    "views": 308178,
+    "videos": 20
+   },
+   {
+    "date": "2026-11-27",
+    "subs": 2610,
+    "views": 308232,
+    "videos": 20
+   }
+  ],
+  "UCsWtmTG0UkpuGeeAno4jiGQ": [
+   {
+    "date": "2026-11-19",
+    "subs": 14200,
+    "views": 646619,
+    "videos": 66
+   },
+   {
+    "date": "2026-11-20",
+    "subs": 14200,
+    "views": 646619,
+    "videos": 64
+   },
+   {
+    "date": "2026-11-24",
+    "subs": 14200,
+    "views": 646999,
+    "videos": 64
+   },
+   {
+    "date": "2026-11-25",
+    "subs": 14200,
+    "views": 647111,
+    "videos": 64
+   },
+   {
+    "date": "2026-11-26",
+    "subs": 14200,
+    "views": 647275,
+    "videos": 59
+   },
+   {
+    "date": "2026-11-27",
+    "subs": 14200,
+    "views": 643122,
+    "videos": 57
+   }
+  ],
+  "UCTueeHImxv4uLBQKsDEMqjQ": [
+   {
+    "date": "2026-11-19",
+    "subs": 2750,
+    "views": 470164,
+    "videos": 33
+   },
+   {
+    "date": "2026-11-20",
+    "subs": 2750,
+    "views": 470164,
+    "videos": 33
+   },
+   {
+    "date": "2026-11-24",
+    "subs": 2760,
+    "views": 471276,
+    "videos": 33
+   },
+   {
+    "date": "2026-11-25",
+    "subs": 2760,
+    "views": 471312,
+    "videos": 33
+   },
+   {
+    "date": "2026-11-26",
+    "subs": 2760,
+    "views": 471401,
+    "videos": 33
+   },
+   {
+    "date": "2026-11-27",
+    "subs": 2760,
+    "views": 471533,
+    "videos": 31
+   }
+  ],
+  "UC5lCKye2u8Q0BoE5ggY9myw": [
+   {
+    "date": "2026-11-19",
+    "subs": 1040,
+    "views": 85031,
+    "videos": 19
+   },
+   {
+    "date": "2026-11-20",
+    "subs": 1040,
+    "views": 85031,
+    "videos": 19
+   },
+   {
+    "date": "2026-11-24",
+    "subs": 1060,
+    "views": 87410,
+    "videos": 20
+   },
+   {
+    "date": "2026-11-25",
+    "subs": 1060,
+    "views": 87513,
+    "videos": 20
+   },
+   {
+    "date": "2026-11-26",
+    "subs": 1060,
+    "views": 87773,
+    "videos": 21
+   },
+   {
+    "date": "2026-11-27",
+    "subs": 1060,
+    "views": 88389,
+    "videos": 21
+   }
+  ]
+ }
+}
